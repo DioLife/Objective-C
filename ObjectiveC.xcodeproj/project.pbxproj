@@ -258,8 +258,8 @@
 		3DB19B13217DC71E00CD9E24 /* masonry */ = {
 			isa = PBXGroup;
 			children = (
-				3DB19B14217DC71E00CD9E24 /* MasonryVC.m */,
 				3DB19B15217DC71E00CD9E24 /* MasonryVC.h */,
+				3DB19B14217DC71E00CD9E24 /* MasonryVC.m */,
 			);
 			path = masonry;
 			sourceTree = "<group>";
@@ -267,9 +267,9 @@
 		3DB19B16217DC71E00CD9E24 /* MyMBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				3DB19B19217DC71E00CD9E24 /* HUDViewController.h */,
 				3DB19B17217DC71E00CD9E24 /* HUDViewController.m */,
 				3DB19B18217DC71E00CD9E24 /* HUDViewController.xib */,
-				3DB19B19217DC71E00CD9E24 /* HUDViewController.h */,
 			);
 			path = MyMBProgressHUD;
 			sourceTree = "<group>";
