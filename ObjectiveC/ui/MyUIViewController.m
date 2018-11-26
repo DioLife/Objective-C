@@ -9,6 +9,7 @@
 #import "MyUIViewController.h"
 #import "TableViewVC.h"
 #import "WKWebViewVC.h"
+#import "MyVideoViewController.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -22,13 +23,16 @@
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
     
+    MyVideoViewController *videoVC = [MyVideoViewController new];
+    videoVC.title = @"Video";
+    [self.dataArray addObject:videoVC];
+    
     WKWebViewVC *wk = [WKWebViewVC new];
     wk.title = @"WKWebView";
     [self.dataArray addObject:wk];
     
     TableViewVC *tbvc = [[TableViewVC alloc]init];
     tbvc.title = @"TableView";
-    
     [self.dataArray addObject:tbvc];
 }
 

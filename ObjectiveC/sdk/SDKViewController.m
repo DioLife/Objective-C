@@ -10,6 +10,7 @@
 #import "HUDViewController.h"
 #import "MasonryVC.h"
 #import "SDViewController.h"
+#import "MyShareViewController.h"
 
 #define CELLID "MyCell"
 
@@ -24,6 +25,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    MyShareViewController *shareVC = [MyShareViewController new];
+    shareVC.title = @"share";
+    [self.dataArray addObject:shareVC];
     
     SDViewController *sdVC = [SDViewController new];
     sdVC.title = @"SDAutoLayout使用事例";
@@ -40,7 +45,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"All SDK";
+    self.title = @"SDK";
     [self loadData];
 
     self.myTableView.delegate = self;

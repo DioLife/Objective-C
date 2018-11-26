@@ -29,20 +29,20 @@
 // 创建分栏控制器管理的子视图控制器
 - (void)createViewControllers {
     StudyViewController *oneVC = [[StudyViewController alloc] init];
-    oneVC.title = @"oneVC";
+    oneVC.title = @"Objective-C";
     oneVC.tabBarItem.image = [UIImage imageNamed:@"home"];
     oneVC.tabBarItem.selectedImage = [UIImage imageNamed:@"home_selected"];
     MyNavgationController *navCtrl1 = [[MyNavgationController alloc] initWithRootViewController:oneVC];
     //    navCtrl1.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:0];
     
     MyUIViewController *twoVC = [[MyUIViewController alloc] init];
-    twoVC.title = @"twoVC";
+    twoVC.title = @"UI";
     twoVC.tabBarItem.image = [UIImage imageNamed:@"message"];
     twoVC.tabBarItem.selectedImage = [UIImage imageNamed:@"message_selected"];
     UINavigationController *navCtrl2 = [[UINavigationController alloc] initWithRootViewController:twoVC];
     
     SDKViewController *threeVC = [[SDKViewController alloc] init];
-    threeVC.title = @"threeVC";
+    threeVC.title = @"SDK";
     threeVC.tabBarItem.image = [UIImage imageNamed:@"profile"];
     threeVC.tabBarItem.selectedImage = [UIImage imageNamed:@"profile_selected"];
     UINavigationController *navCtrl3 = [[UINavigationController alloc] initWithRootViewController:threeVC];
