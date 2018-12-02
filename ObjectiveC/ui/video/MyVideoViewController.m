@@ -20,16 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //    [self test];
-    [self test2];
-}
-
-- (void)test2 {
-    //1.从mainBundle获取test.mp4的具体路径
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"m3u8" ofType:@"m3u"];
-    NSLog(@"%@", path);
-    //2.文件的url
-    NSURL *url = [NSURL fileURLWithPath:path];
+    [self test];
 }
 
 // 播放mp4

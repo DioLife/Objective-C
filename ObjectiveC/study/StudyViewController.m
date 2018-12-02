@@ -8,6 +8,7 @@
 
 #import "StudyViewController.h"
 #import "LazyloadViewController.h"
+#import "Singleton/ShowSingletonViewController.h"
 #define CELLID "MyCell"
 
 @interface StudyViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -21,6 +22,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    ShowSingletonViewController *showSingletonVC = [ShowSingletonViewController new];
+    showSingletonVC.title = @"单例";
+    [self.dataArray addObject:showSingletonVC];
     
     LazyloadViewController *lazy = [LazyloadViewController new];
     lazy.title = @"lazyload";

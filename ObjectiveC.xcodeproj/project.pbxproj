@@ -47,6 +47,8 @@
 		CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E1A21A8298E00015F2B /* t2.m3u8 */; };
 		CE3D1E4E21ABDC9700015F2B /* MyShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D1E4C21ABDC9700015F2B /* MyShareViewController.m */; };
 		CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E4D21ABDC9700015F2B /* MyShareViewController.xib */; };
+		CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8DD21B3FE8300E4748F /* MyManager.m */; };
+		CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */; };
 		F045CC4C41AE49B78FE92A83 /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +111,10 @@
 		CE3D1E4B21ABDC9700015F2B /* MyShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyShareViewController.h; sourceTree = "<group>"; };
 		CE3D1E4C21ABDC9700015F2B /* MyShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyShareViewController.m; sourceTree = "<group>"; };
 		CE3D1E4D21ABDC9700015F2B /* MyShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyShareViewController.xib; sourceTree = "<group>"; };
+		CE80B8DC21B3FE8300E4748F /* MyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
+		CE80B8DD21B3FE8300E4748F /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
+		CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowSingletonViewController.h; sourceTree = "<group>"; };
+		CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowSingletonViewController.m; sourceTree = "<group>"; };
 		D8CB2BE31910BF6BD19D6441 /* Pods-ObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +183,7 @@
 		3D220CCE217DC17A00E3799F /* study */ = {
 			isa = PBXGroup;
 			children = (
+				CE80B8DB21B3FE4300E4748F /* Singleton */,
 				3DB19AFB217DC4AB00CD9E24 /* lazyload */,
 				3D220CE2217DC1E300E3799F /* StudyViewController.h */,
 				3D220CE3217DC1E300E3799F /* StudyViewController.m */,
@@ -341,6 +348,17 @@
 			path = share;
 			sourceTree = "<group>";
 		};
+		CE80B8DB21B3FE4300E4748F /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				CE80B8DC21B3FE8300E4748F /* MyManager.h */,
+				CE80B8DD21B3FE8300E4748F /* MyManager.m */,
+				CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */,
+				CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		D6A82ECBDE9E9FEF0A3FDAA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,12 +482,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */,
+				CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */,
 				3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
 				CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
 				3D220CC7217DBF9000E3799F /* main.m in Sources */,
+				CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */,
 				3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */,
 				CE3D1E4E21ABDC9700015F2B /* MyShareViewController.m in Sources */,
 				3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */,
