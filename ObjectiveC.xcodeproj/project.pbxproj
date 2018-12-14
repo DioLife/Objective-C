@@ -266,8 +266,8 @@
 		3DB19B05217DC59600CD9E24 /* tableview */ = {
 			isa = PBXGroup;
 			children = (
-				3DB19B06217DC59600CD9E24 /* TableViewVC.m */,
 				3DB19B07217DC59600CD9E24 /* TableViewVC.h */,
+				3DB19B06217DC59600CD9E24 /* TableViewVC.m */,
 			);
 			path = tableview;
 			sourceTree = "<group>";
