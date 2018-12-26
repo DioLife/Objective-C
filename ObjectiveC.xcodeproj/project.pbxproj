@@ -8,18 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CB8217DBF8F00E3799F /* AppDelegate.m */; };
-		3D220CBF217DBF8F00E3799F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CBD217DBF8F00E3799F /* Main.storyboard */; };
 		3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CC0217DBF9000E3799F /* Assets.xcassets */; };
-		3D220CC4217DBF9000E3799F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CC2217DBF9000E3799F /* LaunchScreen.storyboard */; };
 		3D220CC7217DBF9000E3799F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CC6217DBF9000E3799F /* main.m */; };
-		3D220CDA217DC1C500E3799F /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CD2217DC1C400E3799F /* home@2x.png */; };
-		3D220CDB217DC1C500E3799F /* home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CD3217DC1C400E3799F /* home_selected@2x.png */; };
-		3D220CDC217DC1C500E3799F /* profile_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CD4217DC1C400E3799F /* profile_selected@2x.png */; };
-		3D220CDD217DC1C500E3799F /* search_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CD5217DC1C500E3799F /* search_selected@2x.png */; };
-		3D220CDE217DC1C500E3799F /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CD6217DC1C500E3799F /* search@2x.png */; };
-		3D220CDF217DC1C500E3799F /* message_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CD7217DC1C500E3799F /* message_selected@2x.png */; };
-		3D220CE0217DC1C500E3799F /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CD8217DC1C500E3799F /* profile@2x.png */; };
-		3D220CE1217DC1C500E3799F /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CD9217DC1C500E3799F /* message@2x.png */; };
 		3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CE3217DC1E300E3799F /* StudyViewController.m */; };
 		3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CE4217DC1E300E3799F /* StudyViewController.xib */; };
 		3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CE8217DC1F700E3799F /* MyUIViewController.m */; };
@@ -57,19 +47,9 @@
 		3D220CB4217DBF8F00E3799F /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D220CB7217DBF8F00E3799F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D220CB8217DBF8F00E3799F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3D220CBE217DBF8F00E3799F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D220CC0217DBF9000E3799F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3D220CC3217DBF9000E3799F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D220CC5217DBF9000E3799F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D220CC6217DBF9000E3799F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3D220CD2217DC1C400E3799F /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
-		3D220CD3217DC1C400E3799F /* home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_selected@2x.png"; sourceTree = "<group>"; };
-		3D220CD4217DC1C400E3799F /* profile_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_selected@2x.png"; sourceTree = "<group>"; };
-		3D220CD5217DC1C500E3799F /* search_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_selected@2x.png"; sourceTree = "<group>"; };
-		3D220CD6217DC1C500E3799F /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
-		3D220CD7217DC1C500E3799F /* message_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_selected@2x.png"; sourceTree = "<group>"; };
-		3D220CD8217DC1C500E3799F /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
-		3D220CD9217DC1C500E3799F /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@2x.png"; sourceTree = "<group>"; };
 		3D220CE2217DC1E300E3799F /* StudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyViewController.h; sourceTree = "<group>"; };
 		3D220CE3217DC1E300E3799F /* StudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyViewController.m; sourceTree = "<group>"; };
 		3D220CE4217DC1E300E3799F /* StudyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyViewController.xib; sourceTree = "<group>"; };
@@ -155,17 +135,11 @@
 				3D220CD0217DC19F00E3799F /* sdk */,
 				3D220CCF217DC19700E3799F /* ui */,
 				3D220CCE217DC17A00E3799F /* study */,
-				3D220CCD217DC17200E3799F /* images */,
-				CE3D1E0E21A7F22100015F2B /* video */,
+				CECFB03521D38BD200CB737F /* main */,
+				CECFB03621D38BEC00CB737F /* resource */,
 				3D220CB7217DBF8F00E3799F /* AppDelegate.h */,
 				3D220CB8217DBF8F00E3799F /* AppDelegate.m */,
-				3D220CF2217DC23B00E3799F /* MyNavgationController.h */,
-				3D220CF3217DC23B00E3799F /* MyNavgationController.m */,
-				3D220CF1217DC23B00E3799F /* MyTabBarController.h */,
-				3D220CF4217DC23C00E3799F /* MyTabBarController.m */,
-				3D220CBD217DBF8F00E3799F /* Main.storyboard */,
 				3D220CC0217DBF9000E3799F /* Assets.xcassets */,
-				3D220CC2217DBF9000E3799F /* LaunchScreen.storyboard */,
 				3D220CC5217DBF9000E3799F /* Info.plist */,
 				3D220CC6217DBF9000E3799F /* main.m */,
 			);
@@ -175,7 +149,6 @@
 		3D220CCD217DC17200E3799F /* images */ = {
 			isa = PBXGroup;
 			children = (
-				3D220CD1217DC1B300E3799F /* tabBar */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -219,21 +192,6 @@
 				3D220CEE217DC20200E3799F /* SDKViewController.xib */,
 			);
 			path = sdk;
-			sourceTree = "<group>";
-		};
-		3D220CD1217DC1B300E3799F /* tabBar */ = {
-			isa = PBXGroup;
-			children = (
-				3D220CD3217DC1C400E3799F /* home_selected@2x.png */,
-				3D220CD2217DC1C400E3799F /* home@2x.png */,
-				3D220CD7217DC1C500E3799F /* message_selected@2x.png */,
-				3D220CD9217DC1C500E3799F /* message@2x.png */,
-				3D220CD4217DC1C400E3799F /* profile_selected@2x.png */,
-				3D220CD8217DC1C500E3799F /* profile@2x.png */,
-				3D220CD5217DC1C500E3799F /* search_selected@2x.png */,
-				3D220CD6217DC1C500E3799F /* search@2x.png */,
-			);
-			path = tabBar;
 			sourceTree = "<group>";
 		};
 		3DB19AFB217DC4AB00CD9E24 /* lazyload */ = {
@@ -359,6 +317,26 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
+		CECFB03521D38BD200CB737F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				3D220CF2217DC23B00E3799F /* MyNavgationController.h */,
+				3D220CF3217DC23B00E3799F /* MyNavgationController.m */,
+				3D220CF1217DC23B00E3799F /* MyTabBarController.h */,
+				3D220CF4217DC23C00E3799F /* MyTabBarController.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		CECFB03621D38BEC00CB737F /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				3D220CCD217DC17200E3799F /* images */,
+				CE3D1E0E21A7F22100015F2B /* video */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		D6A82ECBDE9E9FEF0A3FDAA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,30 +404,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D220CDE217DC1C500E3799F /* search@2x.png in Resources */,
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
-				3D220CC4217DBF9000E3799F /* LaunchScreen.storyboard in Resources */,
-				3D220CDF217DC1C500E3799F /* message_selected@2x.png in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
 				3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */,
-				3D220CDA217DC1C500E3799F /* home@2x.png in Resources */,
 				3D220CF0217DC20200E3799F /* SDKViewController.xib in Resources */,
 				3DB19B0E217DC59600CD9E24 /* t2.html in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
-				3D220CE0217DC1C500E3799F /* profile@2x.png in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
-				3D220CDC217DC1C500E3799F /* profile_selected@2x.png in Resources */,
-				3D220CDB217DC1C500E3799F /* home_selected@2x.png in Resources */,
 				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
 				3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */,
 				3DB19B0F217DC59600CD9E24 /* myweb.html in Resources */,
-				3D220CE1217DC1C500E3799F /* message@2x.png in Resources */,
 				3DB19B0D217DC59600CD9E24 /* show.html in Resources */,
-				3D220CBF217DBF8F00E3799F /* Main.storyboard in Resources */,
-				3D220CDD217DC1C500E3799F /* search_selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,25 +470,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3D220CBD217DBF8F00E3799F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D220CBE217DBF8F00E3799F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3D220CC2217DBF9000E3799F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D220CC3217DBF9000E3799F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3D220CC8217DBF9000E3799F /* Debug */ = {
@@ -648,7 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = william.ObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -667,7 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = william.ObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
