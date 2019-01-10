@@ -9,5 +9,6 @@ target 'ObjectiveC' do
   pod 'Masonry', '~> 1.1.0'
   pod 'SDAutoLayout', '~> 2.2.1'
   pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'AFNetworking', '~> 3.2.1'
 
 end

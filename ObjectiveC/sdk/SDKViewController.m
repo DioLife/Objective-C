@@ -11,6 +11,7 @@
 #import "MasonryVC.h"
 #import "SDViewController.h"
 #import "MyShareViewController.h"
+#import "AFNetworkingVC.h"
 
 #define CELLID "MyCell"
 
@@ -25,6 +26,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    AFNetworkingVC *afVC = [AFNetworkingVC new];
+    afVC.title = @"AFNetworking";
+    [self.dataArray addObject:afVC];
     
     MyShareViewController *shareVC = [MyShareViewController new];
     shareVC.title = @"share";

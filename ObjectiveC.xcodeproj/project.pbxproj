@@ -39,6 +39,8 @@
 		CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E4D21ABDC9700015F2B /* MyShareViewController.xib */; };
 		CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8DD21B3FE8300E4748F /* MyManager.m */; };
 		CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */; };
+		CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */; };
+		CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */; };
 		F045CC4C41AE49B78FE92A83 /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,9 @@
 		CE80B8DD21B3FE8300E4748F /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
 		CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowSingletonViewController.h; sourceTree = "<group>"; };
 		CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowSingletonViewController.m; sourceTree = "<group>"; };
+		CEE30A6721E5ED7500AD82FA /* AFNetworkingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVC.h; sourceTree = "<group>"; };
+		CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVC.m; sourceTree = "<group>"; };
+		CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFNetworkingVC.xib; sourceTree = "<group>"; };
 		D8CB2BE31910BF6BD19D6441 /* Pods-ObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,13 +151,6 @@
 			path = ObjectiveC;
 			sourceTree = "<group>";
 		};
-		3D220CCD217DC17200E3799F /* images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
 		3D220CCE217DC17A00E3799F /* study */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +181,7 @@
 		3D220CD0217DC19F00E3799F /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				CEE30A6621E5ED5B00AD82FA /* AFNetworking */,
 				CE3D1E4521ABD35200015F2B /* share */,
 				3DB19B13217DC71E00CD9E24 /* masonry */,
 				3DB19B16217DC71E00CD9E24 /* MyMBProgressHUD */,
@@ -331,10 +330,19 @@
 		CECFB03621D38BEC00CB737F /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				3D220CCD217DC17200E3799F /* images */,
 				CE3D1E0E21A7F22100015F2B /* video */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		CEE30A6621E5ED5B00AD82FA /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CEE30A6721E5ED7500AD82FA /* AFNetworkingVC.h */,
+				CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */,
+				CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 		D6A82ECBDE9E9FEF0A3FDAA7 /* Frameworks */ = {
@@ -413,6 +421,7 @@
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
+				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
 				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
 				3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */,
@@ -454,6 +463,7 @@
 				3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
+				CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */,
 				CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
 				3D220CC7217DBF9000E3799F /* main.m in Sources */,
