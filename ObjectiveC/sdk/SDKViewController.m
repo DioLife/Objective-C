@@ -12,8 +12,7 @@
 #import "SDViewController.h"
 #import "MyShareViewController.h"
 #import "AFNetworkingVC.h"
-
-#define CELLID "MyCell"
+#import "HQFlowView/HQFlowViewVC.h"
 
 @interface SDKViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -26,6 +25,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    HQFlowViewVC *hqflowVC = [HQFlowViewVC new];
+    hqflowVC.title = @"3D轮播图";
+    [self.dataArray addObject:hqflowVC];
     
     AFNetworkingVC *afVC = [AFNetworkingVC new];
     afVC.title = @"AFNetworking";
@@ -50,7 +53,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"SDK";
+    self.navigationItem.title = @"SDK";
     [self loadData];
 
     self.myTableView.delegate = self;
@@ -79,7 +82,9 @@
 //点击cell事件
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController *anyVC = _dataArray[indexPath.row];
+    self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:anyVC animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 
 

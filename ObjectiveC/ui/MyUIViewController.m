@@ -38,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"UI";
     [self loadData];
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;

@@ -9,9 +9,6 @@
 #import "MyVideoViewController.h"
 #import <AVFoundation/AVFoundation.h> //需要导入框架
 
-#define EYScreenWidth [[UIScreen mainScreen] bounds].size.width
-#define EYScreenHeight [[UIScreen mainScreen] bounds].size.height
-
 @interface MyVideoViewController ()
 
 @end
@@ -37,7 +34,7 @@
     //4.根据播放器创建一个视图播放的图层
     AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:player];
     //5.设置图层的大小
-    layer.frame = CGRectMake(0, 0, EYScreenWidth, EYScreenHeight);
+    layer.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
     
     //6.添加到控制器的view的图层上面
     [self.view.layer addSublayer:layer];
@@ -45,15 +42,5 @@
     //7.开始播放
     [player play];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
