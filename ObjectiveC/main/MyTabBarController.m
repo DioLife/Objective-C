@@ -55,6 +55,8 @@
     self.tabBar.tintColor = [UIColor purpleColor];
     //    // 设置分栏按钮的选中指定图片
     //    tabBar.selectionIndicatorImage = [UIImage imageNamed:@"search"];
+    //默认的item
+    self.selectedIndex = 1;
 }
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{

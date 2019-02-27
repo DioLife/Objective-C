@@ -10,6 +10,9 @@
 #import "TableViewVC.h"
 #import "WKWebViewVC.h"
 #import "MyVideoViewController.h"
+#import "MyCollectionViewVC.h"
+#import "NibCollectionViewVC.h"
+#import "ViewController.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -22,6 +25,18 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    ViewController *codeViewVC = [ViewController new];
+    codeViewVC.title = @"自定义View";
+    [self.dataArray addObject:codeViewVC];
+    
+    NibCollectionViewVC *nibCollVC = [NibCollectionViewVC new];
+    nibCollVC.title = @"nib CollectionView";
+    [self.dataArray addObject:nibCollVC];
+    
+    MyCollectionViewVC *collectionVC = [MyCollectionViewVC new];
+    collectionVC.title = @"代码CollectionView";
+    [self.dataArray addObject:collectionVC];
     
     MyVideoViewController *videoVC = [MyVideoViewController new];
     videoVC.title = @"Video";
@@ -67,7 +82,9 @@
 //点击cell事件
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController *anyVC = _dataArray[indexPath.row];
+    self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:anyVC animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 
 - (void)didReceiveMemoryWarning {

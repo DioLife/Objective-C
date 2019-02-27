@@ -30,6 +30,18 @@
 		3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19B17217DC71E00CD9E24 /* HUDViewController.m */; };
 		3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB19B18217DC71E00CD9E24 /* HUDViewController.xib */; };
 		3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19B1C217DC71E00CD9E24 /* SDViewController.m */; };
+		5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AC42226D0CB0094DF79 /* MyCollectionViewVC.m */; };
+		5FF96AC82226D49C0094DF79 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AC72226D49C0094DF79 /* MyCollectionViewCell.m */; };
+		5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96ACB2226DBC70094DF79 /* NibCollectionViewVC.m */; };
+		5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF96ACC2226DBC70094DF79 /* NibCollectionViewVC.xib */; };
+		5FF96AD22226DBE10094DF79 /* NibCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AD02226DBE10094DF79 /* NibCollectionViewCell.m */; };
+		5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF96AD12226DBE10094DF79 /* NibCollectionViewCell.xib */; };
+		5FF96AD92226E2430094DF79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AD82226E2430094DF79 /* ViewController.m */; };
+		5FF96ADF2226E2670094DF79 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96ADE2226E2670094DF79 /* MyView.m */; };
+		5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE12226E2770094DF79 /* MyNibView.m */; };
+		5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF96AE32226E2890094DF79 /* MyNibView.xib */; };
+		5FF96AE72226E3160094DF79 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE62226E3160094DF79 /* BookModel.m */; };
+		5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE92226F2200094DF79 /* PersonModel.m */; };
 		CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D1E0C21A7F1EB00015F2B /* MyVideoViewController.m */; };
 		CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E0F21A7F23500015F2B /* m3u8.m3u */; };
 		CE3D1E1321A8186400015F2B /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E1221A8186400015F2B /* test.mp4 */; };
@@ -87,6 +99,27 @@
 		3DB19B19217DC71E00CD9E24 /* HUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
 		3DB19B1B217DC71E00CD9E24 /* SDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
 		3DB19B1C217DC71E00CD9E24 /* SDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
+		5FF96AC32226D0CB0094DF79 /* MyCollectionViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewVC.h; sourceTree = "<group>"; };
+		5FF96AC42226D0CB0094DF79 /* MyCollectionViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewVC.m; sourceTree = "<group>"; };
+		5FF96AC62226D49C0094DF79 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		5FF96AC72226D49C0094DF79 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		5FF96ACA2226DBC70094DF79 /* NibCollectionViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NibCollectionViewVC.h; sourceTree = "<group>"; };
+		5FF96ACB2226DBC70094DF79 /* NibCollectionViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NibCollectionViewVC.m; sourceTree = "<group>"; };
+		5FF96ACC2226DBC70094DF79 /* NibCollectionViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibCollectionViewVC.xib; sourceTree = "<group>"; };
+		5FF96ACF2226DBE10094DF79 /* NibCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NibCollectionViewCell.h; sourceTree = "<group>"; };
+		5FF96AD02226DBE10094DF79 /* NibCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NibCollectionViewCell.m; sourceTree = "<group>"; };
+		5FF96AD12226DBE10094DF79 /* NibCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibCollectionViewCell.xib; sourceTree = "<group>"; };
+		5FF96AD72226E2430094DF79 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5FF96AD82226E2430094DF79 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5FF96ADD2226E2670094DF79 /* MyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		5FF96ADE2226E2670094DF79 /* MyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		5FF96AE02226E2770094DF79 /* MyNibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNibView.h; sourceTree = "<group>"; };
+		5FF96AE12226E2770094DF79 /* MyNibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNibView.m; sourceTree = "<group>"; };
+		5FF96AE32226E2890094DF79 /* MyNibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyNibView.xib; sourceTree = "<group>"; };
+		5FF96AE52226E3160094DF79 /* BookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
+		5FF96AE62226E3160094DF79 /* BookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
+		5FF96AE82226F2200094DF79 /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		5FF96AE92226F2200094DF79 /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 		ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3D1E0B21A7F1EB00015F2B /* MyVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVideoViewController.h; sourceTree = "<group>"; };
 		CE3D1E0C21A7F1EB00015F2B /* MyVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVideoViewController.m; sourceTree = "<group>"; };
@@ -179,6 +212,8 @@
 		3D220CCF217DC19700E3799F /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				5FF96AD42226E20C0094DF79 /* view */,
+				5FF96AC12226D0630094DF79 /* collectionview */,
 				CE3D1E0A21A7F1B800015F2B /* video */,
 				3DB19B05217DC59600CD9E24 /* tableview */,
 				3DB19B08217DC59600CD9E24 /* webview */,
@@ -267,6 +302,73 @@
 				3DB19B1C217DC71E00CD9E24 /* SDViewController.m */,
 			);
 			path = sdautolayout;
+			sourceTree = "<group>";
+		};
+		5FF96AC12226D0630094DF79 /* collectionview */ = {
+			isa = PBXGroup;
+			children = (
+				5FF96AC92226DB4C0094DF79 /* nib */,
+				5FF96AC22226D0730094DF79 /* code */,
+			);
+			path = collectionview;
+			sourceTree = "<group>";
+		};
+		5FF96AC22226D0730094DF79 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				5FF96AC32226D0CB0094DF79 /* MyCollectionViewVC.h */,
+				5FF96AC42226D0CB0094DF79 /* MyCollectionViewVC.m */,
+				5FF96AC62226D49C0094DF79 /* MyCollectionViewCell.h */,
+				5FF96AC72226D49C0094DF79 /* MyCollectionViewCell.m */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		5FF96AC92226DB4C0094DF79 /* nib */ = {
+			isa = PBXGroup;
+			children = (
+				5FF96ACA2226DBC70094DF79 /* NibCollectionViewVC.h */,
+				5FF96ACB2226DBC70094DF79 /* NibCollectionViewVC.m */,
+				5FF96ACC2226DBC70094DF79 /* NibCollectionViewVC.xib */,
+				5FF96ACF2226DBE10094DF79 /* NibCollectionViewCell.h */,
+				5FF96AD02226DBE10094DF79 /* NibCollectionViewCell.m */,
+				5FF96AD12226DBE10094DF79 /* NibCollectionViewCell.xib */,
+				5FF96AE82226F2200094DF79 /* PersonModel.h */,
+				5FF96AE92226F2200094DF79 /* PersonModel.m */,
+			);
+			path = nib;
+			sourceTree = "<group>";
+		};
+		5FF96AD42226E20C0094DF79 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5FF96AD72226E2430094DF79 /* ViewController.h */,
+				5FF96AD82226E2430094DF79 /* ViewController.m */,
+				5FF96AE52226E3160094DF79 /* BookModel.h */,
+				5FF96AE62226E3160094DF79 /* BookModel.m */,
+				5FF96AD62226E21D0094DF79 /* nib */,
+				5FF96AD52226E2170094DF79 /* code */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5FF96AD52226E2170094DF79 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				5FF96ADD2226E2670094DF79 /* MyView.h */,
+				5FF96ADE2226E2670094DF79 /* MyView.m */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		5FF96AD62226E21D0094DF79 /* nib */ = {
+			isa = PBXGroup;
+			children = (
+				5FF96AE02226E2770094DF79 /* MyNibView.h */,
+				5FF96AE12226E2770094DF79 /* MyNibView.m */,
+				5FF96AE32226E2890094DF79 /* MyNibView.xib */,
+			);
+			path = nib;
 			sourceTree = "<group>";
 		};
 		BBEEFED4BB651D1A5F8E0205 /* Pods */ = {
@@ -467,13 +569,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
+				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
+				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
 				3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */,
 				3D220CF0217DC20200E3799F /* SDKViewController.xib in Resources */,
 				3DB19B0E217DC59600CD9E24 /* t2.html in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
+				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
@@ -515,18 +620,27 @@
 				3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */,
 				CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */,
 				CE40E2CE221BDB7E0072CF9E /* HQFlowView.m in Sources */,
+				5FF96ADF2226E2670094DF79 /* MyView.m in Sources */,
 				3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */,
+				5FF96AD92226E2430094DF79 /* ViewController.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
+				5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */,
+				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
+				5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */,
 				CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */,
 				CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */,
+				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
 				CE40E2D0221BDB7E0072CF9E /* HQImagePageControl.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
 				3D220CC7217DBF9000E3799F /* main.m in Sources */,
 				CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */,
 				3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */,
+				5FF96AC82226D49C0094DF79 /* MyCollectionViewCell.m in Sources */,
 				CE3D1E4E21ABDC9700015F2B /* MyShareViewController.m in Sources */,
+				5FF96AE72226E3160094DF79 /* BookModel.m in Sources */,
 				3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */,
+				5FF96AD22226DBE10094DF79 /* NibCollectionViewCell.m in Sources */,
 				3DB19B10217DC59600CD9E24 /* TableViewVC.m in Sources */,
 				CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */,
 				3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */,
@@ -656,7 +770,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Z8F76R3VZ;
+				DEVELOPMENT_TEAM = 37J2F4W4WM;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;
@@ -678,7 +792,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Z8F76R3VZ;
+				DEVELOPMENT_TEAM = 37J2F4W4WM;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;
