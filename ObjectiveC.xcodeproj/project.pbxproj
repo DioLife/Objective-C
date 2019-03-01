@@ -59,6 +59,7 @@
 		CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE32222931B9006E2064 /* YCMenuView.m */; };
 		CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE36222932EE006E2064 /* MenuListViewController.m */; };
 		CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9EE37222932EE006E2064 /* MenuListViewController.xib */; };
+		CEC9EE3D22294C85006E2064 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE3C22294C85006E2064 /* OtherViewController.m */; };
 		CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */; };
 		CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */; };
 		F045CC4C41AE49B78FE92A83 /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */; };
@@ -154,6 +155,8 @@
 		CEC9EE35222932EE006E2064 /* MenuListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuListViewController.h; sourceTree = "<group>"; };
 		CEC9EE36222932EE006E2064 /* MenuListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuListViewController.m; sourceTree = "<group>"; };
 		CEC9EE37222932EE006E2064 /* MenuListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
+		CEC9EE3B22294C85006E2064 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		CEC9EE3C22294C85006E2064 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		CEE30A6721E5ED7500AD82FA /* AFNetworkingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVC.h; sourceTree = "<group>"; };
 		CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVC.m; sourceTree = "<group>"; };
 		CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFNetworkingVC.xib; sourceTree = "<group>"; };
@@ -194,6 +197,7 @@
 		3D220CB6217DBF8F00E3799F /* ObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				CEC9EE3A22294C71006E2064 /* other */,
 				3D220CD0217DC19F00E3799F /* sdk */,
 				3D220CCF217DC19700E3799F /* ui */,
 				3D220CCE217DC17A00E3799F /* language */,
@@ -502,6 +506,15 @@
 			path = menulist;
 			sourceTree = "<group>";
 		};
+		CEC9EE3A22294C71006E2064 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9EE3B22294C85006E2064 /* OtherViewController.h */,
+				CEC9EE3C22294C85006E2064 /* OtherViewController.m */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
 		CECFB03521D38BD200CB737F /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -678,6 +691,7 @@
 				3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */,
 				5FF96AD22226DBE10094DF79 /* NibCollectionViewCell.m in Sources */,
 				CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */,
+				CEC9EE3D22294C85006E2064 /* OtherViewController.m in Sources */,
 				3DB19B10217DC59600CD9E24 /* TableViewVC.m in Sources */,
 				CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */,
 				3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */,
