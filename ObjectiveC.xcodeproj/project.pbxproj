@@ -55,6 +55,10 @@
 		CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE40E2D3221BDBC90072CF9E /* HQFlowViewVC.m */; };
 		CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8DD21B3FE8300E4748F /* MyManager.m */; };
 		CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */; };
+		CEC9EE022228DBEE006E2064 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE012228DBEE006E2064 /* Common.m */; };
+		CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE32222931B9006E2064 /* YCMenuView.m */; };
+		CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE36222932EE006E2064 /* MenuListViewController.m */; };
+		CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9EE37222932EE006E2064 /* MenuListViewController.xib */; };
 		CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */; };
 		CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */; };
 		F045CC4C41AE49B78FE92A83 /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */; };
@@ -143,6 +147,13 @@
 		CE80B8DD21B3FE8300E4748F /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
 		CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowSingletonViewController.h; sourceTree = "<group>"; };
 		CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowSingletonViewController.m; sourceTree = "<group>"; };
+		CEC9EE002228DBEE006E2064 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		CEC9EE012228DBEE006E2064 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		CEC9EE31222931B8006E2064 /* YCMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMenuView.h; sourceTree = "<group>"; };
+		CEC9EE32222931B9006E2064 /* YCMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMenuView.m; sourceTree = "<group>"; };
+		CEC9EE35222932EE006E2064 /* MenuListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuListViewController.h; sourceTree = "<group>"; };
+		CEC9EE36222932EE006E2064 /* MenuListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuListViewController.m; sourceTree = "<group>"; };
+		CEC9EE37222932EE006E2064 /* MenuListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
 		CEE30A6721E5ED7500AD82FA /* AFNetworkingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVC.h; sourceTree = "<group>"; };
 		CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVC.m; sourceTree = "<group>"; };
 		CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFNetworkingVC.xib; sourceTree = "<group>"; };
@@ -227,6 +238,7 @@
 		3D220CD0217DC19F00E3799F /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				CEC9EE34222932CD006E2064 /* menulist */,
 				CE40E2D1221BDBAE0072CF9E /* HQFlowView */,
 				CEE30A6621E5ED5B00AD82FA /* AFNetworking */,
 				CE3D1E4521ABD35200015F2B /* share */,
@@ -412,6 +424,7 @@
 		CE40E2C6221BDAAE0072CF9E /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				CEC9EE3022293193006E2064 /* YCMenuView */,
 				CE40E2C7221BDB7E0072CF9E /* HQFlowView */,
 			);
 			path = lib;
@@ -443,6 +456,8 @@
 			isa = PBXGroup;
 			children = (
 				CE40E2D6221BDF450072CF9E /* PrefixHeader.pch */,
+				CEC9EE002228DBEE006E2064 /* Common.h */,
+				CEC9EE012228DBEE006E2064 /* Common.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -466,6 +481,25 @@
 				CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */,
 			);
 			path = Singleton;
+			sourceTree = "<group>";
+		};
+		CEC9EE3022293193006E2064 /* YCMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9EE31222931B8006E2064 /* YCMenuView.h */,
+				CEC9EE32222931B9006E2064 /* YCMenuView.m */,
+			);
+			path = YCMenuView;
+			sourceTree = "<group>";
+		};
+		CEC9EE34222932CD006E2064 /* menulist */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9EE35222932EE006E2064 /* MenuListViewController.h */,
+				CEC9EE36222932EE006E2064 /* MenuListViewController.m */,
+				CEC9EE37222932EE006E2064 /* MenuListViewController.xib */,
+			);
+			path = menulist;
 			sourceTree = "<group>";
 		};
 		CECFB03521D38BD200CB737F /* main */ = {
@@ -577,6 +611,7 @@
 				3D220CF0217DC20200E3799F /* SDKViewController.xib in Resources */,
 				3DB19B0E217DC59600CD9E24 /* t2.html in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
+				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
@@ -629,6 +664,7 @@
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
 				5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */,
 				CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */,
+				CEC9EE022228DBEE006E2064 /* Common.m in Sources */,
 				CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */,
 				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
 				CE40E2D0221BDB7E0072CF9E /* HQImagePageControl.m in Sources */,
@@ -641,10 +677,12 @@
 				5FF96AE72226E3160094DF79 /* BookModel.m in Sources */,
 				3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */,
 				5FF96AD22226DBE10094DF79 /* NibCollectionViewCell.m in Sources */,
+				CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */,
 				3DB19B10217DC59600CD9E24 /* TableViewVC.m in Sources */,
 				CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */,
 				3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */,
 				3D220CF6217DC23C00E3799F /* MyTabBarController.m in Sources */,
+				CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */,
 				CE40E2CF221BDB7E0072CF9E /* HQIndexBannerSubview.m in Sources */,
 				3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */,
 				3D220CF5217DC23C00E3799F /* MyNavgationController.m in Sources */,

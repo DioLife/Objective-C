@@ -13,6 +13,7 @@
 #import "MyShareViewController.h"
 #import "AFNetworkingVC.h"
 #import "HQFlowView/HQFlowViewVC.h"
+#import "MenuListViewController.h"
 
 @interface SDKViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -25,6 +26,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    MenuListViewController *menulistVC = [MenuListViewController new];
+    menulistVC.title = @"展开选项列表";
+    [self.dataArray addObject:menulistVC];
     
     HQFlowViewVC *hqflowVC = [HQFlowViewVC new];
     hqflowVC.title = @"3D轮播图";
@@ -58,7 +63,7 @@
 
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
-    [self.myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@CELLID];
+    [self.myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CELLID];
 }
 
 //Sections数量
@@ -71,9 +76,9 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@CELLID];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELLID];
     if(cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@CELLID];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELLID];
     }
     UIViewController *anyVC = _dataArray[indexPath.row];
     cell.textLabel.text = anyVC.title;
