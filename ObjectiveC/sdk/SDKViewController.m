@@ -14,6 +14,8 @@
 #import "AFNetworkingVC.h"
 #import "HQFlowView/HQFlowViewVC.h"
 #import "MenuListViewController.h"
+#import "ColorViewController.h"
+#import "Color2ViewController.h"
 
 @interface SDKViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -26,6 +28,14 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    Color2ViewController *color2VC = [Color2ViewController new];
+    color2VC.title = @"颜色选取2";
+    [self.dataArray addObject:color2VC];
+    
+    ColorViewController *colorVC = [ColorViewController new];
+    colorVC.title = @"颜色选取";
+    [self.dataArray addObject:colorVC];
     
     MenuListViewController *menulistVC = [MenuListViewController new];
     menulistVC.title = @"展开选项列表";

@@ -22,4 +22,10 @@
     return tabBarHeight;
 }
 
++(CGFloat)getTopHeight {
+    CGFloat navHeight = [self getNavigationBarHeight];
+    CGFloat height = statusBarHeight + navHeight;
+    return height;
+}
+
 @end

@@ -42,6 +42,20 @@
 		5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF96AE32226E2890094DF79 /* MyNibView.xib */; };
 		5FF96AE72226E3160094DF79 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE62226E3160094DF79 /* BookModel.m */; };
 		5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE92226F2200094DF79 /* PersonModel.m */; };
+		CE193BDF222B971A002F670B /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BDE222B971A002F670B /* ColorViewController.m */; };
+		CE193BE3222BB554002F670B /* Color2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BE1222BB554002F670B /* Color2ViewController.m */; };
+		CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE193BE2222BB554002F670B /* Color2ViewController.xib */; };
+		CE193C01222BB61B002F670B /* colors_pantone.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE193BE7222BB61B002F670B /* colors_pantone.plist */; };
+		CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE193BE8222BB61B002F670B /* colors_crayola.plist */; };
+		CE193C03222BB61B002F670B /* KKColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BEB222BB61B002F670B /* KKColorCell.m */; };
+		CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE193BEC222BB61B002F670B /* KKColorCell.xib */; };
+		CE193C05222BB61B002F670B /* KKColorsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BED222BB61B002F670B /* KKColorsHeaderView.m */; };
+		CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE193BEF222BB61B002F670B /* KKColorsHeaderView.xib */; };
+		CE193C07222BB61B002F670B /* KKColorsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BF3222BB61B002F670B /* KKColorsLoader.m */; };
+		CE193C08222BB61B002F670B /* KKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BF6222BB61B002F670B /* KKColor.m */; };
+		CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BF9222BB61B002F670B /* KKColorListViewController.m */; };
+		CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */; };
+		CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */; };
 		CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D1E0C21A7F1EB00015F2B /* MyVideoViewController.m */; };
 		CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E0F21A7F23500015F2B /* m3u8.m3u */; };
 		CE3D1E1321A8186400015F2B /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E1221A8186400015F2B /* test.mp4 */; };
@@ -126,6 +140,31 @@
 		5FF96AE82226F2200094DF79 /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		5FF96AE92226F2200094DF79 /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 		ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE193BDD222B971A002F670B /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		CE193BDE222B971A002F670B /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		CE193BE0222BB554002F670B /* Color2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color2ViewController.h; sourceTree = "<group>"; };
+		CE193BE1222BB554002F670B /* Color2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color2ViewController.m; sourceTree = "<group>"; };
+		CE193BE2222BB554002F670B /* Color2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Color2ViewController.xib; sourceTree = "<group>"; };
+		CE193BE7222BB61B002F670B /* colors_pantone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors_pantone.plist; sourceTree = "<group>"; };
+		CE193BE8222BB61B002F670B /* colors_crayola.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors_crayola.plist; sourceTree = "<group>"; };
+		CE193BEA222BB61B002F670B /* KKColorsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorsHeaderView.h; sourceTree = "<group>"; };
+		CE193BEB222BB61B002F670B /* KKColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorCell.m; sourceTree = "<group>"; };
+		CE193BEC222BB61B002F670B /* KKColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKColorCell.xib; sourceTree = "<group>"; };
+		CE193BED222BB61B002F670B /* KKColorsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorsHeaderView.m; sourceTree = "<group>"; };
+		CE193BEE222BB61B002F670B /* KKColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorCell.h; sourceTree = "<group>"; };
+		CE193BEF222BB61B002F670B /* KKColorsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKColorsHeaderView.xib; sourceTree = "<group>"; };
+		CE193BF1222BB61B002F670B /* KKColorsSchemeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorsSchemeType.h; sourceTree = "<group>"; };
+		CE193BF2222BB61B002F670B /* KKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColor.h; sourceTree = "<group>"; };
+		CE193BF3222BB61B002F670B /* KKColorsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorsLoader.m; sourceTree = "<group>"; };
+		CE193BF4222BB61B002F670B /* KKColorListPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorListPicker.h; sourceTree = "<group>"; };
+		CE193BF5222BB61B002F670B /* KKColorsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorsLoader.h; sourceTree = "<group>"; };
+		CE193BF6222BB61B002F670B /* KKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColor.m; sourceTree = "<group>"; };
+		CE193BF8222BB61B002F670B /* KKColorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorListViewController.h; sourceTree = "<group>"; };
+		CE193BF9222BB61B002F670B /* KKColorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorListViewController.m; sourceTree = "<group>"; };
+		CE193BFC222BB61B002F670B /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
+		CE193BFF222BB61B002F670B /* UIView+KKToolKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KKToolKitAdditions.h"; sourceTree = "<group>"; };
+		CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KKToolKitAdditions.m"; sourceTree = "<group>"; };
 		CE3D1E0B21A7F1EB00015F2B /* MyVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVideoViewController.h; sourceTree = "<group>"; };
 		CE3D1E0C21A7F1EB00015F2B /* MyVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVideoViewController.m; sourceTree = "<group>"; };
 		CE3D1E0F21A7F23500015F2B /* m3u8.m3u */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m3u8.m3u; sourceTree = "<group>"; };
@@ -242,6 +281,7 @@
 		3D220CD0217DC19F00E3799F /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				CE193BDC222B9636002F670B /* colorPicker */,
 				CEC9EE34222932CD006E2064 /* menulist */,
 				CE40E2D1221BDBAE0072CF9E /* HQFlowView */,
 				CEE30A6621E5ED5B00AD82FA /* AFNetworking */,
@@ -396,6 +436,101 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE193BDC222B9636002F670B /* colorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				CE193BDD222B971A002F670B /* ColorViewController.h */,
+				CE193BDE222B971A002F670B /* ColorViewController.m */,
+				CE193BE0222BB554002F670B /* Color2ViewController.h */,
+				CE193BE1222BB554002F670B /* Color2ViewController.m */,
+				CE193BE2222BB554002F670B /* Color2ViewController.xib */,
+			);
+			path = colorPicker;
+			sourceTree = "<group>";
+		};
+		CE193BE5222BB61B002F670B /* KKColorListPicker */ = {
+			isa = PBXGroup;
+			children = (
+				CE193BE6222BB61B002F670B /* Schemes */,
+				CE193BE9222BB61B002F670B /* Cells */,
+				CE193BF0222BB61B002F670B /* Classes */,
+				CE193BF7222BB61B002F670B /* Controllers */,
+				CE193BFA222BB61B002F670B /* Categories */,
+			);
+			path = KKColorListPicker;
+			sourceTree = "<group>";
+		};
+		CE193BE6222BB61B002F670B /* Schemes */ = {
+			isa = PBXGroup;
+			children = (
+				CE193BE7222BB61B002F670B /* colors_pantone.plist */,
+				CE193BE8222BB61B002F670B /* colors_crayola.plist */,
+			);
+			path = Schemes;
+			sourceTree = "<group>";
+		};
+		CE193BE9222BB61B002F670B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE193BEA222BB61B002F670B /* KKColorsHeaderView.h */,
+				CE193BEB222BB61B002F670B /* KKColorCell.m */,
+				CE193BEC222BB61B002F670B /* KKColorCell.xib */,
+				CE193BED222BB61B002F670B /* KKColorsHeaderView.m */,
+				CE193BEE222BB61B002F670B /* KKColorCell.h */,
+				CE193BEF222BB61B002F670B /* KKColorsHeaderView.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE193BF0222BB61B002F670B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE193BF1222BB61B002F670B /* KKColorsSchemeType.h */,
+				CE193BF2222BB61B002F670B /* KKColor.h */,
+				CE193BF3222BB61B002F670B /* KKColorsLoader.m */,
+				CE193BF4222BB61B002F670B /* KKColorListPicker.h */,
+				CE193BF5222BB61B002F670B /* KKColorsLoader.h */,
+				CE193BF6222BB61B002F670B /* KKColor.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CE193BF7222BB61B002F670B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE193BF8222BB61B002F670B /* KKColorListViewController.h */,
+				CE193BF9222BB61B002F670B /* KKColorListViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE193BFA222BB61B002F670B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CE193BFB222BB61B002F670B /* UIColor */,
+				CE193BFE222BB61B002F670B /* UIView */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CE193BFB222BB61B002F670B /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				CE193BFC222BB61B002F670B /* UIColor+CustomColors.h */,
+				CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		CE193BFE222BB61B002F670B /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				CE193BFF222BB61B002F670B /* UIView+KKToolKitAdditions.h */,
+				CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		CE3D1E0A21A7F1B800015F2B /* video */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +563,7 @@
 		CE40E2C6221BDAAE0072CF9E /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				CE193BE5222BB61B002F670B /* KKColorListPicker */,
 				CEC9EE3022293193006E2064 /* YCMenuView */,
 				CE40E2C7221BDB7E0072CF9E /* HQFlowView */,
 			);
@@ -615,8 +751,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE193C01222BB61B002F670B /* colors_pantone.plist in Resources */,
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
+				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
@@ -624,6 +762,7 @@
 				3D220CF0217DC20200E3799F /* SDKViewController.xib in Resources */,
 				3DB19B0E217DC59600CD9E24 /* t2.html in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
+				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
@@ -631,6 +770,8 @@
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
 				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
+				CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */,
+				CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */,
 				3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */,
 				3DB19B0F217DC59600CD9E24 /* myweb.html in Resources */,
 				3DB19B0D217DC59600CD9E24 /* show.html in Resources */,
@@ -666,24 +807,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */,
+				CE193C03222BB61B002F670B /* KKColorCell.m in Sources */,
 				CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */,
 				CE40E2CE221BDB7E0072CF9E /* HQFlowView.m in Sources */,
 				5FF96ADF2226E2670094DF79 /* MyView.m in Sources */,
 				3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */,
 				5FF96AD92226E2430094DF79 /* ViewController.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
+				CE193BE3222BB554002F670B /* Color2ViewController.m in Sources */,
 				5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */,
+				CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */,
 				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
 				5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */,
 				CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */,
+				CE193C05222BB61B002F670B /* KKColorsHeaderView.m in Sources */,
 				CEC9EE022228DBEE006E2064 /* Common.m in Sources */,
 				CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */,
+				CE193BDF222B971A002F670B /* ColorViewController.m in Sources */,
+				CE193C07222BB61B002F670B /* KKColorsLoader.m in Sources */,
+				CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */,
 				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
 				CE40E2D0221BDB7E0072CF9E /* HQImagePageControl.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
 				3D220CC7217DBF9000E3799F /* main.m in Sources */,
 				CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */,
+				CE193C08222BB61B002F670B /* KKColor.m in Sources */,
 				3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */,
 				5FF96AC82226D49C0094DF79 /* MyCollectionViewCell.m in Sources */,
 				CE3D1E4E21ABDC9700015F2B /* MyShareViewController.m in Sources */,
@@ -694,6 +843,7 @@
 				CEC9EE3D22294C85006E2064 /* OtherViewController.m in Sources */,
 				3DB19B10217DC59600CD9E24 /* TableViewVC.m in Sources */,
 				CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */,
+				CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */,
 				3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */,
 				3D220CF6217DC23C00E3799F /* MyTabBarController.m in Sources */,
 				CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */,
@@ -822,7 +972,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Z8F76R3VZ;
+				DEVELOPMENT_TEAM = PBT4D78HA7;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;
@@ -844,7 +994,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Z8F76R3VZ;
+				DEVELOPMENT_TEAM = PBT4D78HA7;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;

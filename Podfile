@@ -10,5 +10,6 @@ target 'ObjectiveC' do
   pod 'SDAutoLayout', '~> 2.2.1'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'AFNetworking', '~> 3.2.1'
+  pod 'Color-Picker-for-iOS', '~> 2.0'
 
 end
