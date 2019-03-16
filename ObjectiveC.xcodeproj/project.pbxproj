@@ -30,6 +30,8 @@
 		3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19B17217DC71E00CD9E24 /* HUDViewController.m */; };
 		3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB19B18217DC71E00CD9E24 /* HUDViewController.xib */; };
 		3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19B1C217DC71E00CD9E24 /* SDViewController.m */; };
+		5F36E86D223D352400CE3093 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F36E86B223D352400CE3093 /* RACViewController.m */; };
+		5F36E86E223D352400CE3093 /* RACViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F36E86C223D352400CE3093 /* RACViewController.xib */; };
 		5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AC42226D0CB0094DF79 /* MyCollectionViewVC.m */; };
 		5FF96AC82226D49C0094DF79 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AC72226D49C0094DF79 /* MyCollectionViewCell.m */; };
 		5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96ACB2226DBC70094DF79 /* NibCollectionViewVC.m */; };
@@ -118,6 +120,9 @@
 		3DB19B19217DC71E00CD9E24 /* HUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
 		3DB19B1B217DC71E00CD9E24 /* SDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
 		3DB19B1C217DC71E00CD9E24 /* SDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
+		5F36E86A223D352400CE3093 /* RACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
+		5F36E86B223D352400CE3093 /* RACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		5F36E86C223D352400CE3093 /* RACViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACViewController.xib; sourceTree = "<group>"; };
 		5FF96AC32226D0CB0094DF79 /* MyCollectionViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewVC.h; sourceTree = "<group>"; };
 		5FF96AC42226D0CB0094DF79 /* MyCollectionViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewVC.m; sourceTree = "<group>"; };
 		5FF96AC62226D49C0094DF79 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
@@ -281,6 +286,7 @@
 		3D220CD0217DC19F00E3799F /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				5F36E869223D34FF00CE3093 /* rac */,
 				CE193BDC222B9636002F670B /* colorPicker */,
 				CEC9EE34222932CD006E2064 /* menulist */,
 				CE40E2D1221BDBAE0072CF9E /* HQFlowView */,
@@ -358,6 +364,16 @@
 				3DB19B1C217DC71E00CD9E24 /* SDViewController.m */,
 			);
 			path = sdautolayout;
+			sourceTree = "<group>";
+		};
+		5F36E869223D34FF00CE3093 /* rac */ = {
+			isa = PBXGroup;
+			children = (
+				5F36E86A223D352400CE3093 /* RACViewController.h */,
+				5F36E86B223D352400CE3093 /* RACViewController.m */,
+				5F36E86C223D352400CE3093 /* RACViewController.xib */,
+			);
+			path = rac;
 			sourceTree = "<group>";
 		};
 		5FF96AC12226D0630094DF79 /* collectionview */ = {
@@ -768,6 +784,7 @@
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
+				5F36E86E223D352400CE3093 /* RACViewController.xib in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
 				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
 				CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */,
@@ -843,6 +860,7 @@
 				CEC9EE3D22294C85006E2064 /* OtherViewController.m in Sources */,
 				3DB19B10217DC59600CD9E24 /* TableViewVC.m in Sources */,
 				CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */,
+				5F36E86D223D352400CE3093 /* RACViewController.m in Sources */,
 				CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */,
 				3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */,
 				3D220CF6217DC23C00E3799F /* MyTabBarController.m in Sources */,

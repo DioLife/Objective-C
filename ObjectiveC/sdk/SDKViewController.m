@@ -16,6 +16,7 @@
 #import "MenuListViewController.h"
 #import "ColorViewController.h"
 #import "Color2ViewController.h"
+#import "rac/RACViewController.h"
 
 @interface SDKViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -28,6 +29,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    RACViewController *racVC = [RACViewController new];
+    racVC.title = @"ReactiveCocoa";
+    [self.dataArray addObject:racVC];
     
     Color2ViewController *color2VC = [Color2ViewController new];
     color2VC.title = @"颜色选取2";
