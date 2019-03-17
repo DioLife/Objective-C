@@ -11,6 +11,6 @@ target 'ObjectiveC' do
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'AFNetworking', '~> 3.2.1'
   pod 'Color-Picker-for-iOS', '~> 2.0'
-  pod 'ReactiveCocoa', '~> 8.0.2'
+  pod 'ReactiveObjC', '~> 3.1.0'
 
 end

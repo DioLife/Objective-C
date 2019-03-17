@@ -58,6 +58,10 @@
 		CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BF9222BB61B002F670B /* KKColorListViewController.m */; };
 		CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */; };
 		CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */; };
+		CE389CE8223DF3440099BD35 /* ClearCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE389CE6223DF3440099BD35 /* ClearCacheViewController.m */; };
+		CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */; };
+		CE389CEF223DF3F40099BD35 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE389CED223DF3F40099BD35 /* OtherViewController.m */; };
+		CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE389CEE223DF3F40099BD35 /* OtherViewController.xib */; };
 		CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D1E0C21A7F1EB00015F2B /* MyVideoViewController.m */; };
 		CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E0F21A7F23500015F2B /* m3u8.m3u */; };
 		CE3D1E1321A8186400015F2B /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E1221A8186400015F2B /* test.mp4 */; };
@@ -75,7 +79,6 @@
 		CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE32222931B9006E2064 /* YCMenuView.m */; };
 		CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE36222932EE006E2064 /* MenuListViewController.m */; };
 		CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9EE37222932EE006E2064 /* MenuListViewController.xib */; };
-		CEC9EE3D22294C85006E2064 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE3C22294C85006E2064 /* OtherViewController.m */; };
 		CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */; };
 		CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */; };
 		F045CC4C41AE49B78FE92A83 /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */; };
@@ -170,6 +173,12 @@
 		CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
 		CE193BFF222BB61B002F670B /* UIView+KKToolKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KKToolKitAdditions.h"; sourceTree = "<group>"; };
 		CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KKToolKitAdditions.m"; sourceTree = "<group>"; };
+		CE389CE5223DF3440099BD35 /* ClearCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearCacheViewController.h; sourceTree = "<group>"; };
+		CE389CE6223DF3440099BD35 /* ClearCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearCacheViewController.m; sourceTree = "<group>"; };
+		CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClearCacheViewController.xib; sourceTree = "<group>"; };
+		CE389CEC223DF3F40099BD35 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		CE389CED223DF3F40099BD35 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		CE389CEE223DF3F40099BD35 /* OtherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
 		CE3D1E0B21A7F1EB00015F2B /* MyVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVideoViewController.h; sourceTree = "<group>"; };
 		CE3D1E0C21A7F1EB00015F2B /* MyVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVideoViewController.m; sourceTree = "<group>"; };
 		CE3D1E0F21A7F23500015F2B /* m3u8.m3u */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m3u8.m3u; sourceTree = "<group>"; };
@@ -199,8 +208,6 @@
 		CEC9EE35222932EE006E2064 /* MenuListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuListViewController.h; sourceTree = "<group>"; };
 		CEC9EE36222932EE006E2064 /* MenuListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuListViewController.m; sourceTree = "<group>"; };
 		CEC9EE37222932EE006E2064 /* MenuListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
-		CEC9EE3B22294C85006E2064 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
-		CEC9EE3C22294C85006E2064 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		CEE30A6721E5ED7500AD82FA /* AFNetworkingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVC.h; sourceTree = "<group>"; };
 		CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVC.m; sourceTree = "<group>"; };
 		CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFNetworkingVC.xib; sourceTree = "<group>"; };
@@ -547,6 +554,16 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		CE389CE4223DF2F00099BD35 /* clearCache */ = {
+			isa = PBXGroup;
+			children = (
+				CE389CE5223DF3440099BD35 /* ClearCacheViewController.h */,
+				CE389CE6223DF3440099BD35 /* ClearCacheViewController.m */,
+				CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */,
+			);
+			path = clearCache;
+			sourceTree = "<group>";
+		};
 		CE3D1E0A21A7F1B800015F2B /* video */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,8 +678,10 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				CEC9EE3B22294C85006E2064 /* OtherViewController.h */,
-				CEC9EE3C22294C85006E2064 /* OtherViewController.m */,
+				CE389CE4223DF2F00099BD35 /* clearCache */,
+				CE389CEC223DF3F40099BD35 /* OtherViewController.h */,
+				CE389CED223DF3F40099BD35 /* OtherViewController.m */,
+				CE389CEE223DF3F40099BD35 /* OtherViewController.xib */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -774,11 +793,13 @@
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
+				CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */,
 				3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */,
 				3D220CF0217DC20200E3799F /* SDKViewController.xib in Resources */,
 				3DB19B0E217DC59600CD9E24 /* t2.html in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
 				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
+				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
 				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
@@ -828,6 +849,7 @@
 				CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */,
 				CE40E2CE221BDB7E0072CF9E /* HQFlowView.m in Sources */,
 				5FF96ADF2226E2670094DF79 /* MyView.m in Sources */,
+				CE389CEF223DF3F40099BD35 /* OtherViewController.m in Sources */,
 				3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */,
 				5FF96AD92226E2430094DF79 /* ViewController.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
@@ -857,7 +879,7 @@
 				3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */,
 				5FF96AD22226DBE10094DF79 /* NibCollectionViewCell.m in Sources */,
 				CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */,
-				CEC9EE3D22294C85006E2064 /* OtherViewController.m in Sources */,
+				CE389CE8223DF3440099BD35 /* ClearCacheViewController.m in Sources */,
 				3DB19B10217DC59600CD9E24 /* TableViewVC.m in Sources */,
 				CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */,
 				5F36E86D223D352400CE3093 /* RACViewController.m in Sources */,

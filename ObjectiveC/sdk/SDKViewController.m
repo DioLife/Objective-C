@@ -76,6 +76,12 @@
     self.navigationItem.title = @"SDK";
     [self loadData];
 
+    if (@available(iOS 11.0, *)) {//判断系统版本
+        self.myTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
     [self.myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CELLID];

@@ -1,5 +1,5 @@
 //
-//  OtherViewController.h
+//  ClearCacheViewController.h
 //  ObjectiveC
 //
 //  Created by hello on 2019/3/17.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OtherViewController : UIViewController
+@interface ClearCacheViewController : UIViewController
 
 @end
 
