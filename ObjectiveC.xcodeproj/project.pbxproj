@@ -73,6 +73,8 @@
 		CE40E2CF221BDB7E0072CF9E /* HQIndexBannerSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = CE40E2C9221BDB7E0072CF9E /* HQIndexBannerSubview.m */; };
 		CE40E2D0221BDB7E0072CF9E /* HQImagePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE40E2CA221BDB7E0072CF9E /* HQImagePageControl.m */; };
 		CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE40E2D3221BDBC90072CF9E /* HQFlowViewVC.m */; };
+		CE7386D922410957004C7239 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7386D722410957004C7239 /* AVPlayerViewController.m */; };
+		CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7386D822410957004C7239 /* AVPlayerViewController.xib */; };
 		CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8DD21B3FE8300E4748F /* MyManager.m */; };
 		CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */; };
 		CEC9EE022228DBEE006E2064 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE012228DBEE006E2064 /* Common.m */; };
@@ -197,6 +199,9 @@
 		CE40E2D2221BDBC90072CF9E /* HQFlowViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQFlowViewVC.h; sourceTree = "<group>"; };
 		CE40E2D3221BDBC90072CF9E /* HQFlowViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQFlowViewVC.m; sourceTree = "<group>"; };
 		CE40E2D6221BDF450072CF9E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CE7386D622410957004C7239 /* AVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
+		CE7386D722410957004C7239 /* AVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
+		CE7386D822410957004C7239 /* AVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
 		CE80B8DC21B3FE8300E4748F /* MyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
 		CE80B8DD21B3FE8300E4748F /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
 		CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowSingletonViewController.h; sourceTree = "<group>"; };
@@ -266,6 +271,7 @@
 		3D220CCE217DC17A00E3799F /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CE7386D5224108F4004C7239 /* Audio */,
 				CE80B8DB21B3FE4300E4748F /* Singleton */,
 				3DB19AFB217DC4AB00CD9E24 /* lazyload */,
 				3D220CE2217DC1E300E3799F /* StudyViewController.h */,
@@ -645,6 +651,16 @@
 			path = web;
 			sourceTree = "<group>";
 		};
+		CE7386D5224108F4004C7239 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				CE7386D622410957004C7239 /* AVPlayerViewController.h */,
+				CE7386D722410957004C7239 /* AVPlayerViewController.m */,
+				CE7386D822410957004C7239 /* AVPlayerViewController.xib */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		CE80B8DB21B3FE4300E4748F /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -800,6 +816,7 @@
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
 				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
+				CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */,
 				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
@@ -855,6 +872,7 @@
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
 				CE193BE3222BB554002F670B /* Color2ViewController.m in Sources */,
 				5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */,
+				CE7386D922410957004C7239 /* AVPlayerViewController.m in Sources */,
 				CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */,
 				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
