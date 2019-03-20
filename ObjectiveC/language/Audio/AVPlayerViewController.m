@@ -27,7 +27,7 @@
         //允许调整速率,此设置必须在prepareplay 之前
         _player.enableRate = YES;
         _player.delegate = self;
-        
+        _player.numberOfLoops = MAXBSIZE;
         [_player prepareToPlay];
     }
     return _player;
