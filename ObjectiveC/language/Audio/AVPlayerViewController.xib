@@ -28,6 +28,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="play"/>
+                    <connections>
+                        <action selector="startPlay:" destination="-1" eventType="touchUpInside" id="qvO-7d-Pml"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJX-AA-wlY">
                     <rect key="frame" x="100" y="140" width="175" height="40"/>
@@ -37,7 +40,10 @@
                         <constraint firstAttribute="height" constant="40" id="ynI-8b-YL6"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                    <state key="normal" title="paluse"/>
+                    <state key="normal" title="pause"/>
+                    <connections>
+                        <action selector="pause:" destination="-1" eventType="touchUpInside" id="mof-mL-gpu"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dE-68-d8z">
                     <rect key="frame" x="100" y="210" width="175" height="40"/>
@@ -47,7 +53,10 @@
                         <constraint firstAttribute="height" constant="40" id="9FS-kr-4HZ"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                    <state key="normal" title="play"/>
+                    <state key="normal" title="stop"/>
+                    <connections>
+                        <action selector="stop:" destination="-1" eventType="touchUpInside" id="7i2-K1-kQ1"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -75,6 +75,11 @@
 		CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE40E2D3221BDBC90072CF9E /* HQFlowViewVC.m */; };
 		CE7386D922410957004C7239 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7386D722410957004C7239 /* AVPlayerViewController.m */; };
 		CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7386D822410957004C7239 /* AVPlayerViewController.xib */; };
+		CE7386EC2242508B004C7239 /* bg_maze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE7386E92242508B004C7239 /* bg_maze.mp3 */; };
+		CE7386ED2242508B004C7239 /* bg_ordinary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE7386EA2242508B004C7239 /* bg_ordinary.mp3 */; };
+		CE7386EE2242508B004C7239 /* back02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE7386EB2242508B004C7239 /* back02.mp3 */; };
+		CE7386F12242593A004C7239 /* Splash.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE7386EF2242593A004C7239 /* Splash.caf */; };
+		CE7386F22242593A004C7239 /* jump_maze.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE7386F02242593A004C7239 /* jump_maze.wav */; };
 		CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8DD21B3FE8300E4748F /* MyManager.m */; };
 		CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */; };
 		CEC9EE022228DBEE006E2064 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE012228DBEE006E2064 /* Common.m */; };
@@ -202,6 +207,11 @@
 		CE7386D622410957004C7239 /* AVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
 		CE7386D722410957004C7239 /* AVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		CE7386D822410957004C7239 /* AVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
+		CE7386E92242508B004C7239 /* bg_maze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_maze.mp3; sourceTree = "<group>"; };
+		CE7386EA2242508B004C7239 /* bg_ordinary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_ordinary.mp3; sourceTree = "<group>"; };
+		CE7386EB2242508B004C7239 /* back02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = back02.mp3; sourceTree = "<group>"; };
+		CE7386EF2242593A004C7239 /* Splash.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splash.caf; sourceTree = "<group>"; };
+		CE7386F02242593A004C7239 /* jump_maze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump_maze.wav; sourceTree = "<group>"; };
 		CE80B8DC21B3FE8300E4748F /* MyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
 		CE80B8DD21B3FE8300E4748F /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
 		CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowSingletonViewController.h; sourceTree = "<group>"; };
@@ -661,6 +671,18 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		CE7386E822425068004C7239 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				CE7386F02242593A004C7239 /* jump_maze.wav */,
+				CE7386EF2242593A004C7239 /* Splash.caf */,
+				CE7386EB2242508B004C7239 /* back02.mp3 */,
+				CE7386E92242508B004C7239 /* bg_maze.mp3 */,
+				CE7386EA2242508B004C7239 /* bg_ordinary.mp3 */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
 		CE80B8DB21B3FE4300E4748F /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,6 +740,7 @@
 		CECFB03621D38BEC00CB737F /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				CE7386E822425068004C7239 /* sound */,
 				CE40E2D7221BE2B60072CF9E /* web */,
 				3DB19AFF217DC59500CD9E24 /* images */,
 				CE3D1E0E21A7F22100015F2B /* video */,
@@ -805,14 +828,18 @@
 				CE193C01222BB61B002F670B /* colors_pantone.plist in Resources */,
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
+				CE7386ED2242508B004C7239 /* bg_ordinary.mp3 in Resources */,
 				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
+				CE7386EE2242508B004C7239 /* back02.mp3 in Resources */,
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
 				CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */,
 				3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */,
 				3D220CF0217DC20200E3799F /* SDKViewController.xib in Resources */,
 				3DB19B0E217DC59600CD9E24 /* t2.html in Resources */,
+				CE7386F12242593A004C7239 /* Splash.caf in Resources */,
+				CE7386EC2242508B004C7239 /* bg_maze.mp3 in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
 				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
@@ -820,6 +847,7 @@
 				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
+				CE7386F22242593A004C7239 /* jump_maze.wav in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
 				5F36E86E223D352400CE3093 /* RACViewController.xib in Resources */,

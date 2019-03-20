@@ -27,16 +27,12 @@
     
     MyManager *obj3 = [MyManager sharedManager];
     NSLog(@"obj3 = %@",obj3);
+    
+    MyManager *obj4 = [[MyManager alloc] init];
+    NSLog(@"obj4 = %@",obj4);
+    
+    MyManager *obj5 = [[MyManager alloc] init];
+    NSLog(@"obj5 = %@",obj5);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
