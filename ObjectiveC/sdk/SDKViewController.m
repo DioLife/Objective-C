@@ -17,6 +17,7 @@
 #import "ColorViewController.h"
 #import "Color2ViewController.h"
 #import "rac/RACViewController.h"
+#import "ToastViewController.h"
 
 @interface SDKViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -29,6 +30,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    ToastViewController *toastVC = [ToastViewController new];
+    toastVC.title= @"toast";
+    [self.dataArray addObject:toastVC];
     
     RACViewController *racVC = [RACViewController new];
     racVC.title = @"ReactiveCocoa";

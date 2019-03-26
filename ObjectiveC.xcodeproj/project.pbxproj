@@ -82,6 +82,14 @@
 		CE7386F22242593A004C7239 /* jump_maze.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE7386F02242593A004C7239 /* jump_maze.wav */; };
 		CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8DD21B3FE8300E4748F /* MyManager.m */; };
 		CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */; };
+		CE94208B22478D5500C10CD0 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94208A22478D5500C10CD0 /* RequestManager.m */; };
+		CE94208F22478D6800C10CD0 /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94208D22478D6800C10CD0 /* RequestViewController.m */; };
+		CE94209022478D6800C10CD0 /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE94208E22478D6800C10CD0 /* RequestViewController.xib */; };
+		CE9420AD2248908F00C10CD0 /* JudgeNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9420AB2248908F00C10CD0 /* JudgeNetworkingVC.m */; };
+		CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9420AC2248908F00C10CD0 /* JudgeNetworkingVC.xib */; };
+		CE9420BB2248BB2C00C10CD0 /* ToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9420B92248BB2C00C10CD0 /* ToastViewController.m */; };
+		CE9420BC2248BB2C00C10CD0 /* ToastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9420BA2248BB2C00C10CD0 /* ToastViewController.xib */; };
+		CE9420BF2248BB4C00C10CD0 /* CBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9420BE2248BB4C00C10CD0 /* CBToast.m */; };
 		CEC9EE022228DBEE006E2064 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE012228DBEE006E2064 /* Common.m */; };
 		CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE32222931B9006E2064 /* YCMenuView.m */; };
 		CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE36222932EE006E2064 /* MenuListViewController.m */; };
@@ -216,6 +224,19 @@
 		CE80B8DD21B3FE8300E4748F /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
 		CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowSingletonViewController.h; sourceTree = "<group>"; };
 		CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowSingletonViewController.m; sourceTree = "<group>"; };
+		CE94208922478D5500C10CD0 /* RequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		CE94208A22478D5500C10CD0 /* RequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		CE94208C22478D6800C10CD0 /* RequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
+		CE94208D22478D6800C10CD0 /* RequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
+		CE94208E22478D6800C10CD0 /* RequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
+		CE9420AA2248908F00C10CD0 /* JudgeNetworkingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JudgeNetworkingVC.h; sourceTree = "<group>"; };
+		CE9420AB2248908F00C10CD0 /* JudgeNetworkingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JudgeNetworkingVC.m; sourceTree = "<group>"; };
+		CE9420AC2248908F00C10CD0 /* JudgeNetworkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JudgeNetworkingVC.xib; sourceTree = "<group>"; };
+		CE9420B82248BB2C00C10CD0 /* ToastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastViewController.h; sourceTree = "<group>"; };
+		CE9420B92248BB2C00C10CD0 /* ToastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastViewController.m; sourceTree = "<group>"; };
+		CE9420BA2248BB2C00C10CD0 /* ToastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastViewController.xib; sourceTree = "<group>"; };
+		CE9420BD2248BB4C00C10CD0 /* CBToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBToast.h; sourceTree = "<group>"; };
+		CE9420BE2248BB4C00C10CD0 /* CBToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBToast.m; sourceTree = "<group>"; };
 		CEC9EE002228DBEE006E2064 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		CEC9EE012228DBEE006E2064 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		CEC9EE31222931B8006E2064 /* YCMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMenuView.h; sourceTree = "<group>"; };
@@ -309,6 +330,7 @@
 		3D220CD0217DC19F00E3799F /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				CE9420B72248BB1C00C10CD0 /* toast */,
 				5F36E869223D34FF00CE3093 /* rac */,
 				CE193BDC222B9636002F670B /* colorPicker */,
 				CEC9EE34222932CD006E2064 /* menulist */,
@@ -694,6 +716,40 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
+		CE94208822478D3C00C10CD0 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				CE94208C22478D6800C10CD0 /* RequestViewController.h */,
+				CE94208D22478D6800C10CD0 /* RequestViewController.m */,
+				CE94208E22478D6800C10CD0 /* RequestViewController.xib */,
+				CE94208922478D5500C10CD0 /* RequestManager.h */,
+				CE94208A22478D5500C10CD0 /* RequestManager.m */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		CE9420A92248907300C10CD0 /* judgeNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CE9420AA2248908F00C10CD0 /* JudgeNetworkingVC.h */,
+				CE9420AB2248908F00C10CD0 /* JudgeNetworkingVC.m */,
+				CE9420AC2248908F00C10CD0 /* JudgeNetworkingVC.xib */,
+			);
+			path = judgeNetworking;
+			sourceTree = "<group>";
+		};
+		CE9420B72248BB1C00C10CD0 /* toast */ = {
+			isa = PBXGroup;
+			children = (
+				CE9420BD2248BB4C00C10CD0 /* CBToast.h */,
+				CE9420BE2248BB4C00C10CD0 /* CBToast.m */,
+				CE9420B82248BB2C00C10CD0 /* ToastViewController.h */,
+				CE9420B92248BB2C00C10CD0 /* ToastViewController.m */,
+				CE9420BA2248BB2C00C10CD0 /* ToastViewController.xib */,
+			);
+			path = toast;
+			sourceTree = "<group>";
+		};
 		CEC9EE3022293193006E2064 /* YCMenuView */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,6 +772,8 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CE9420A92248907300C10CD0 /* judgeNetworking */,
+				CE94208822478D3C00C10CD0 /* request */,
 				CE389CE4223DF2F00099BD35 /* clearCache */,
 				CE389CEC223DF3F40099BD35 /* OtherViewController.h */,
 				CE389CED223DF3F40099BD35 /* OtherViewController.m */,
@@ -827,6 +885,7 @@
 			files = (
 				CE193C01222BB61B002F670B /* colors_pantone.plist in Resources */,
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
+				CE94209022478D6800C10CD0 /* RequestViewController.xib in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
 				CE7386ED2242508B004C7239 /* bg_ordinary.mp3 in Resources */,
 				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
@@ -851,10 +910,12 @@
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
 				5F36E86E223D352400CE3093 /* RACViewController.xib in Resources */,
+				CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
 				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
 				CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */,
 				CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */,
+				CE9420BC2248BB2C00C10CD0 /* ToastViewController.xib in Resources */,
 				3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */,
 				3DB19B0F217DC59600CD9E24 /* myweb.html in Resources */,
 				3DB19B0D217DC59600CD9E24 /* show.html in Resources */,
@@ -904,8 +965,11 @@
 				CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */,
 				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
+				CE94208B22478D5500C10CD0 /* RequestManager.m in Sources */,
+				CE9420BF2248BB4C00C10CD0 /* CBToast.m in Sources */,
 				5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */,
 				CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */,
+				CE9420BB2248BB2C00C10CD0 /* ToastViewController.m in Sources */,
 				CE193C05222BB61B002F670B /* KKColorsHeaderView.m in Sources */,
 				CEC9EE022228DBEE006E2064 /* Common.m in Sources */,
 				CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */,
@@ -931,6 +995,8 @@
 				5F36E86D223D352400CE3093 /* RACViewController.m in Sources */,
 				CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */,
 				3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */,
+				CE94208F22478D6800C10CD0 /* RequestViewController.m in Sources */,
+				CE9420AD2248908F00C10CD0 /* JudgeNetworkingVC.m in Sources */,
 				3D220CF6217DC23C00E3799F /* MyTabBarController.m in Sources */,
 				CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */,
 				CE40E2CF221BDB7E0072CF9E /* HQIndexBannerSubview.m in Sources */,

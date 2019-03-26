@@ -7,7 +7,9 @@
 //
 
 #import "OtherViewController.h"
-#import "clearCache/ClearCacheViewController.h"
+#import "ClearCacheViewController.h"
+#import "RequestViewController.h"
+#import "JudgeNetworkingVC.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -20,6 +22,14 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    JudgeNetworkingVC *judgeVC = [JudgeNetworkingVC new];
+    judgeVC.title = @"网络判断";
+    [self.dataArray addObject:judgeVC];
+    
+    RequestViewController *requestVC = [RequestViewController new];
+    requestVC.title = @"封装的网络请求";
+    [self.dataArray addObject:requestVC];
     
     ClearCacheViewController *clearCacheVC = [ClearCacheViewController new];
     clearCacheVC.title = @"清理缓存";
