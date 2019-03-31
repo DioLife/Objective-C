@@ -58,6 +58,7 @@
     }else{
         NSLog(@"网络不通畅");
     }
+    NSLog(@"the last line! ==== go here!");
 }
 
 @end

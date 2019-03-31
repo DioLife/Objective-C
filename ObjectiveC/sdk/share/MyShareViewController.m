@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     NSString *text = @"this is a text.";
-    UIImage *img = [UIImage imageNamed:@"home"];
+    UIImage *img = [UIImage imageNamed:@"1"];
     NSURL *urlToShare = [NSURL URLWithString:@"http://www.google.com"];
     self.SharePic = [NSArray arrayWithObjects:text,img, urlToShare, nil];
 }

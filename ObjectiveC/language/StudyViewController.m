@@ -10,6 +10,7 @@
 #import "LazyloadViewController.h"
 #import "ShowSingletonViewController.h"
 #import "Audio/AVPlayerViewController.h"
+#import "GCD/GCDViewController.h"
 
 @interface StudyViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -22,6 +23,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    GCDViewController *GCDVC = [GCDViewController new];
+    GCDVC.title = @"GCD";
+    [self.dataArray addObject:GCDVC];
     
     AVPlayerViewController *audioVC = [AVPlayerViewController new];
     audioVC.title = @"音频播放";

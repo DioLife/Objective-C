@@ -1,5 +1,5 @@
 .DS_Store
-/ObjectiveC.xcworkspace
+ObjectiveC.xcworkspace/
 /Pods
 Podfile.lock
 ObjectiveC.xcodeproj/

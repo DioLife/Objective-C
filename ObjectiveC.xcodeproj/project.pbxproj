@@ -62,6 +62,8 @@
 		CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */; };
 		CE389CEF223DF3F40099BD35 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE389CED223DF3F40099BD35 /* OtherViewController.m */; };
 		CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE389CEE223DF3F40099BD35 /* OtherViewController.xib */; };
+		CE3B3953224CE91000CF5E61 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3B3951224CE91000CF5E61 /* GCDViewController.m */; };
+		CE3B3954224CE91000CF5E61 /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3B3952224CE91000CF5E61 /* GCDViewController.xib */; };
 		CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D1E0C21A7F1EB00015F2B /* MyVideoViewController.m */; };
 		CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E0F21A7F23500015F2B /* m3u8.m3u */; };
 		CE3D1E1321A8186400015F2B /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CE3D1E1221A8186400015F2B /* test.mp4 */; };
@@ -194,6 +196,9 @@
 		CE389CEC223DF3F40099BD35 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
 		CE389CED223DF3F40099BD35 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		CE389CEE223DF3F40099BD35 /* OtherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
+		CE3B3950224CE91000CF5E61 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		CE3B3951224CE91000CF5E61 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		CE3B3952224CE91000CF5E61 /* GCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDViewController.xib; sourceTree = "<group>"; };
 		CE3D1E0B21A7F1EB00015F2B /* MyVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVideoViewController.h; sourceTree = "<group>"; };
 		CE3D1E0C21A7F1EB00015F2B /* MyVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVideoViewController.m; sourceTree = "<group>"; };
 		CE3D1E0F21A7F23500015F2B /* m3u8.m3u */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m3u8.m3u; sourceTree = "<group>"; };
@@ -302,6 +307,7 @@
 		3D220CCE217DC17A00E3799F /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CE3B394F224CE8F800CF5E61 /* GCD */,
 				CE7386D5224108F4004C7239 /* Audio */,
 				CE80B8DB21B3FE4300E4748F /* Singleton */,
 				3DB19AFB217DC4AB00CD9E24 /* lazyload */,
@@ -600,6 +606,16 @@
 				CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */,
 			);
 			path = clearCache;
+			sourceTree = "<group>";
+		};
+		CE3B394F224CE8F800CF5E61 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				CE3B3950224CE91000CF5E61 /* GCDViewController.h */,
+				CE3B3951224CE91000CF5E61 /* GCDViewController.m */,
+				CE3B3952224CE91000CF5E61 /* GCDViewController.xib */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		CE3D1E0A21A7F1B800015F2B /* video */ = {
@@ -904,6 +920,7 @@
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
 				CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */,
 				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
+				CE3B3954224CE91000CF5E61 /* GCDViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
 				CE7386F22242593A004C7239 /* jump_maze.wav in Resources */,
@@ -998,6 +1015,7 @@
 				CE94208F22478D6800C10CD0 /* RequestViewController.m in Sources */,
 				CE9420AD2248908F00C10CD0 /* JudgeNetworkingVC.m in Sources */,
 				3D220CF6217DC23C00E3799F /* MyTabBarController.m in Sources */,
+				CE3B3953224CE91000CF5E61 /* GCDViewController.m in Sources */,
 				CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */,
 				CE40E2CF221BDB7E0072CF9E /* HQIndexBannerSubview.m in Sources */,
 				3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */,
