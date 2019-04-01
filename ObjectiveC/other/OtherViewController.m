@@ -10,6 +10,8 @@
 #import "ClearCacheViewController.h"
 #import "RequestViewController.h"
 #import "JudgeNetworkingVC.h"
+#import "LocalizableViewController.h"
+#import "OrientationVC.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -22,6 +24,14 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    OrientationVC *orientationVC = [OrientationVC new];
+    orientationVC.title = @"屏幕方向变化";
+    [self.dataArray addObject:orientationVC];
+    
+    LocalizableViewController *localizableVC= [LocalizableViewController new];
+    localizableVC.title = @"本地化";
+    [self.dataArray addObject:localizableVC];
     
     JudgeNetworkingVC *judgeVC = [JudgeNetworkingVC new];
     judgeVC.title = @"网络判断";

@@ -44,6 +44,12 @@
 		5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF96AE32226E2890094DF79 /* MyNibView.xib */; };
 		5FF96AE72226E3160094DF79 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE62226E3160094DF79 /* BookModel.m */; };
 		5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE92226F2200094DF79 /* PersonModel.m */; };
+		CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE027747225075C800BA7A88 /* LocalizableViewController.m */; };
+		CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE027748225075C800BA7A88 /* LocalizableViewController.xib */; };
+		CE02774F2250799E00BA7A88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0277512250799E00BA7A88 /* InfoPlist.strings */; };
+		CE027753225079A600BA7A88 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE027755225079A600BA7A88 /* Localizable.strings */; };
+		CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0277D92250DB3B00BA7A88 /* OrientationVC.m */; };
+		CE0277DC2250DB3B00BA7A88 /* OrientationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0277DA2250DB3B00BA7A88 /* OrientationVC.xib */; };
 		CE193BDF222B971A002F670B /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BDE222B971A002F670B /* ColorViewController.m */; };
 		CE193BE3222BB554002F670B /* Color2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BE1222BB554002F670B /* Color2ViewController.m */; };
 		CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE193BE2222BB554002F670B /* Color2ViewController.xib */; };
@@ -165,6 +171,16 @@
 		5FF96AE82226F2200094DF79 /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		5FF96AE92226F2200094DF79 /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 		ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE027746225075C800BA7A88 /* LocalizableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizableViewController.h; sourceTree = "<group>"; };
+		CE027747225075C800BA7A88 /* LocalizableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizableViewController.m; sourceTree = "<group>"; };
+		CE027748225075C800BA7A88 /* LocalizableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalizableViewController.xib; sourceTree = "<group>"; };
+		CE0277502250799E00BA7A88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE027752225079A300BA7A88 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		CE027754225079A600BA7A88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE027756225079A900BA7A88 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE0277D82250DB3B00BA7A88 /* OrientationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrientationVC.h; sourceTree = "<group>"; };
+		CE0277D92250DB3B00BA7A88 /* OrientationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrientationVC.m; sourceTree = "<group>"; };
+		CE0277DA2250DB3B00BA7A88 /* OrientationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrientationVC.xib; sourceTree = "<group>"; };
 		CE193BDD222B971A002F670B /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
 		CE193BDE222B971A002F670B /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 		CE193BE0222BB554002F670B /* Color2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color2ViewController.h; sourceTree = "<group>"; };
@@ -503,6 +519,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE027745225075BC00BA7A88 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				CE027746225075C800BA7A88 /* LocalizableViewController.h */,
+				CE027747225075C800BA7A88 /* LocalizableViewController.m */,
+				CE027748225075C800BA7A88 /* LocalizableViewController.xib */,
+				CE0277512250799E00BA7A88 /* InfoPlist.strings */,
+				CE027755225079A600BA7A88 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		CE0277D72250DB1400BA7A88 /* Orientation */ = {
+			isa = PBXGroup;
+			children = (
+				CE0277D82250DB3B00BA7A88 /* OrientationVC.h */,
+				CE0277D92250DB3B00BA7A88 /* OrientationVC.m */,
+				CE0277DA2250DB3B00BA7A88 /* OrientationVC.xib */,
+			);
+			path = Orientation;
+			sourceTree = "<group>";
+		};
 		CE193BDC222B9636002F670B /* colorPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -788,6 +826,8 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CE0277D72250DB1400BA7A88 /* Orientation */,
+				CE027745225075BC00BA7A88 /* Localizable */,
 				CE9420A92248907300C10CD0 /* judgeNetworking */,
 				CE94208822478D3C00C10CD0 /* request */,
 				CE389CE4223DF2F00099BD35 /* clearCache */,
@@ -881,8 +921,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"zh-Hans",
+				en,
 			);
 			mainGroup = 3D220CAB217DBF8E00E3799F;
 			productRefGroup = 3D220CB5217DBF8F00E3799F /* Products */;
@@ -904,6 +945,7 @@
 				CE94209022478D6800C10CD0 /* RequestViewController.xib in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
 				CE7386ED2242508B004C7239 /* bg_ordinary.mp3 in Resources */,
+				CE027753225079A600BA7A88 /* Localizable.strings in Resources */,
 				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
 				CE7386EE2242508B004C7239 /* back02.mp3 in Resources */,
@@ -915,6 +957,7 @@
 				3DB19B0E217DC59600CD9E24 /* t2.html in Resources */,
 				CE7386F12242593A004C7239 /* Splash.caf in Resources */,
 				CE7386EC2242508B004C7239 /* bg_maze.mp3 in Resources */,
+				CE02774F2250799E00BA7A88 /* InfoPlist.strings in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
 				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
@@ -922,10 +965,12 @@
 				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
 				CE3B3954224CE91000CF5E61 /* GCDViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
+				CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
 				CE7386F22242593A004C7239 /* jump_maze.wav in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
+				CE0277DC2250DB3B00BA7A88 /* OrientationVC.xib in Resources */,
 				5F36E86E223D352400CE3093 /* RACViewController.xib in Resources */,
 				CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
@@ -994,8 +1039,10 @@
 				CE193C07222BB61B002F670B /* KKColorsLoader.m in Sources */,
 				CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */,
 				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
+				CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */,
 				CE40E2D0221BDB7E0072CF9E /* HQImagePageControl.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
+				CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */,
 				3D220CC7217DBF9000E3799F /* main.m in Sources */,
 				CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */,
 				CE193C08222BB61B002F670B /* KKColor.m in Sources */,
@@ -1024,6 +1071,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE0277512250799E00BA7A88 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0277502250799E00BA7A88 /* en */,
+				CE027752225079A300BA7A88 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE027755225079A600BA7A88 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE027754225079A600BA7A88 /* en */,
+				CE027756225079A900BA7A88 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3D220CC8217DBF9000E3799F /* Debug */ = {
