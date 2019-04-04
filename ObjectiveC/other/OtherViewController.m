@@ -12,6 +12,8 @@
 #import "JudgeNetworkingVC.h"
 #import "LocalizableViewController.h"
 #import "OrientationVC.h"
+#import "SpeechViewController.h"
+#import "MessageViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -24,6 +26,14 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    MessageViewController *messageVC = [MessageViewController new];
+    messageVC.title = @"发信息";
+    [self.dataArray addObject:messageVC];
+    
+    SpeechViewController *speechVC = [SpeechViewController new];
+    speechVC.title = @"语音处理";
+    [self.dataArray addObject:speechVC];
     
     OrientationVC *orientationVC = [OrientationVC new];
     orientationVC.title = @"屏幕方向变化";

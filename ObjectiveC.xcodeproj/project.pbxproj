@@ -88,6 +88,11 @@
 		CE7386EE2242508B004C7239 /* back02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE7386EB2242508B004C7239 /* back02.mp3 */; };
 		CE7386F12242593A004C7239 /* Splash.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE7386EF2242593A004C7239 /* Splash.caf */; };
 		CE7386F22242593A004C7239 /* jump_maze.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE7386F02242593A004C7239 /* jump_maze.wav */; };
+		CE7D1BD12255C1F300DEE23E /* SpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D1BCF2255C1F300DEE23E /* SpeechViewController.m */; };
+		CE7D1BD22255C1F300DEE23E /* SpeechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1BD02255C1F300DEE23E /* SpeechViewController.xib */; };
+		CE7D1BDA2255C8B900DEE23E /* language.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1BD92255C8B900DEE23E /* language.json */; };
+		CE7D1BE0225626C500DEE23E /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D1BDE225626C500DEE23E /* MessageViewController.m */; };
+		CE7D1BE1225626C500DEE23E /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1BDF225626C500DEE23E /* MessageViewController.xib */; };
 		CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8DD21B3FE8300E4748F /* MyManager.m */; };
 		CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */; };
 		CE94208B22478D5500C10CD0 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94208A22478D5500C10CD0 /* RequestManager.m */; };
@@ -241,6 +246,13 @@
 		CE7386EB2242508B004C7239 /* back02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = back02.mp3; sourceTree = "<group>"; };
 		CE7386EF2242593A004C7239 /* Splash.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splash.caf; sourceTree = "<group>"; };
 		CE7386F02242593A004C7239 /* jump_maze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump_maze.wav; sourceTree = "<group>"; };
+		CE7D1BCE2255C1F300DEE23E /* SpeechViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechViewController.h; sourceTree = "<group>"; };
+		CE7D1BCF2255C1F300DEE23E /* SpeechViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechViewController.m; sourceTree = "<group>"; };
+		CE7D1BD02255C1F300DEE23E /* SpeechViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechViewController.xib; sourceTree = "<group>"; };
+		CE7D1BD92255C8B900DEE23E /* language.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = language.json; sourceTree = "<group>"; };
+		CE7D1BDD225626C500DEE23E /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		CE7D1BDE225626C500DEE23E /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		CE7D1BDF225626C500DEE23E /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 		CE80B8DC21B3FE8300E4748F /* MyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
 		CE80B8DD21B3FE8300E4748F /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
 		CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowSingletonViewController.h; sourceTree = "<group>"; };
@@ -759,6 +771,27 @@
 			path = sound;
 			sourceTree = "<group>";
 		};
+		CE7D1BCD2255C1DB00DEE23E /* speech */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D1BCE2255C1F300DEE23E /* SpeechViewController.h */,
+				CE7D1BCF2255C1F300DEE23E /* SpeechViewController.m */,
+				CE7D1BD02255C1F300DEE23E /* SpeechViewController.xib */,
+				CE7D1BD92255C8B900DEE23E /* language.json */,
+			);
+			path = speech;
+			sourceTree = "<group>";
+		};
+		CE7D1BDC225626B200DEE23E /* message */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D1BDD225626C500DEE23E /* MessageViewController.h */,
+				CE7D1BDE225626C500DEE23E /* MessageViewController.m */,
+				CE7D1BDF225626C500DEE23E /* MessageViewController.xib */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
 		CE80B8DB21B3FE4300E4748F /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -826,6 +859,8 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D1BDC225626B200DEE23E /* message */,
+				CE7D1BCD2255C1DB00DEE23E /* speech */,
 				CE0277D72250DB1400BA7A88 /* Orientation */,
 				CE027745225075BC00BA7A88 /* Localizable */,
 				CE9420A92248907300C10CD0 /* judgeNetworking */,
@@ -948,6 +983,7 @@
 				CE027753225079A600BA7A88 /* Localizable.strings in Resources */,
 				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
+				CE7D1BD22255C1F300DEE23E /* SpeechViewController.xib in Resources */,
 				CE7386EE2242508B004C7239 /* back02.mp3 in Resources */,
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
@@ -959,6 +995,7 @@
 				CE7386EC2242508B004C7239 /* bg_maze.mp3 in Resources */,
 				CE02774F2250799E00BA7A88 /* InfoPlist.strings in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
+				CE7D1BDA2255C8B900DEE23E /* language.json in Resources */,
 				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
 				CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */,
@@ -968,6 +1005,7 @@
 				CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
 				CE7386F22242593A004C7239 /* jump_maze.wav in Resources */,
+				CE7D1BE1225626C500DEE23E /* MessageViewController.xib in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
 				CE0277DC2250DB3B00BA7A88 /* OrientationVC.xib in Resources */,
@@ -1028,6 +1066,7 @@
 				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
 				CE94208B22478D5500C10CD0 /* RequestManager.m in Sources */,
+				CE7D1BD12255C1F300DEE23E /* SpeechViewController.m in Sources */,
 				CE9420BF2248BB4C00C10CD0 /* CBToast.m in Sources */,
 				5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */,
 				CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */,
@@ -1059,6 +1098,7 @@
 				5F36E86D223D352400CE3093 /* RACViewController.m in Sources */,
 				CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */,
 				3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */,
+				CE7D1BE0225626C500DEE23E /* MessageViewController.m in Sources */,
 				CE94208F22478D6800C10CD0 /* RequestViewController.m in Sources */,
 				CE9420AD2248908F00C10CD0 /* JudgeNetworkingVC.m in Sources */,
 				3D220CF6217DC23C00E3799F /* MyTabBarController.m in Sources */,
@@ -1209,6 +1249,7 @@
 			baseConfigurationReference = 0E94860C7857D9655B0E2759 /* Pods-ObjectiveC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PBT4D78HA7;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
@@ -1231,6 +1272,7 @@
 			baseConfigurationReference = D8CB2BE31910BF6BD19D6441 /* Pods-ObjectiveC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PBT4D78HA7;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
