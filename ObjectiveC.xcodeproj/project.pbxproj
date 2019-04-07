@@ -98,6 +98,11 @@
 		CE7D1D3C2257421300DEE23E /* AudioPlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1D3A2257421300DEE23E /* AudioPlayerVC.xib */; };
 		CE7D1D3F2257453300DEE23E /* rock_clash.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1D3D2257453300DEE23E /* rock_clash.wav */; };
 		CE7D1D402257453300DEE23E /* shot.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1D3E2257453300DEE23E /* shot.wav */; };
+		CE7D20332259E44900DEE23E /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D20312259E44900DEE23E /* LottieViewController.m */; };
+		CE7D20342259E44900DEE23E /* LottieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20322259E44900DEE23E /* LottieViewController.xib */; };
+		CE7D20392259E4F700DEE23E /* Boat_Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20362259E4F700DEE23E /* Boat_Loader.json */; };
+		CE7D203A2259E4F700DEE23E /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20372259E4F700DEE23E /* vcTransition2.json */; };
+		CE7D203B2259E4F700DEE23E /* water-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20382259E4F700DEE23E /* water-loading.json */; };
 		CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8DD21B3FE8300E4748F /* MyManager.m */; };
 		CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */; };
 		CE94208B22478D5500C10CD0 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94208A22478D5500C10CD0 /* RequestManager.m */; };
@@ -265,6 +270,12 @@
 		CE7D1D3A2257421300DEE23E /* AudioPlayerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayerVC.xib; sourceTree = "<group>"; };
 		CE7D1D3D2257453300DEE23E /* rock_clash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rock_clash.wav; sourceTree = "<group>"; };
 		CE7D1D3E2257453300DEE23E /* shot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shot.wav; sourceTree = "<group>"; };
+		CE7D20302259E44900DEE23E /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieViewController.h; sourceTree = "<group>"; };
+		CE7D20312259E44900DEE23E /* LottieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieViewController.m; sourceTree = "<group>"; };
+		CE7D20322259E44900DEE23E /* LottieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieViewController.xib; sourceTree = "<group>"; };
+		CE7D20362259E4F700DEE23E /* Boat_Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat_Loader.json; sourceTree = "<group>"; };
+		CE7D20372259E4F700DEE23E /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
+		CE7D20382259E4F700DEE23E /* water-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "water-loading.json"; sourceTree = "<group>"; };
 		CE80B8DC21B3FE8300E4748F /* MyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
 		CE80B8DD21B3FE8300E4748F /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
 		CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowSingletonViewController.h; sourceTree = "<group>"; };
@@ -376,6 +387,7 @@
 		3D220CD0217DC19F00E3799F /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D202F2259E42B00DEE23E /* lottie */,
 				CE9420B72248BB1C00C10CD0 /* toast */,
 				5F36E869223D34FF00CE3093 /* rac */,
 				CE193BDC222B9636002F670B /* colorPicker */,
@@ -818,6 +830,26 @@
 			path = audioPlayer;
 			sourceTree = "<group>";
 		};
+		CE7D202F2259E42B00DEE23E /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D20302259E44900DEE23E /* LottieViewController.h */,
+				CE7D20312259E44900DEE23E /* LottieViewController.m */,
+				CE7D20322259E44900DEE23E /* LottieViewController.xib */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
+		CE7D20352259E4E700DEE23E /* json */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D20362259E4F700DEE23E /* Boat_Loader.json */,
+				CE7D20372259E4F700DEE23E /* vcTransition2.json */,
+				CE7D20382259E4F700DEE23E /* water-loading.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
 		CE80B8DB21B3FE4300E4748F /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -916,6 +948,7 @@
 		CECFB03621D38BEC00CB737F /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D20352259E4E700DEE23E /* json */,
 				CE7386E822425068004C7239 /* sound */,
 				CE40E2D7221BE2B60072CF9E /* web */,
 				3DB19AFF217DC59500CD9E24 /* images */,
@@ -1013,6 +1046,7 @@
 				CE7D1BD22255C1F300DEE23E /* SpeechViewController.xib in Resources */,
 				CE7D1D3F2257453300DEE23E /* rock_clash.wav in Resources */,
 				CE7386EE2242508B004C7239 /* back02.mp3 in Resources */,
+				CE7D203B2259E4F700DEE23E /* water-loading.json in Resources */,
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
 				CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */,
@@ -1027,6 +1061,8 @@
 				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
 				CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */,
+				CE7D20342259E44900DEE23E /* LottieViewController.xib in Resources */,
+				CE7D203A2259E4F700DEE23E /* vcTransition2.json in Resources */,
 				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
 				CE3B3954224CE91000CF5E61 /* GCDViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
@@ -1047,6 +1083,7 @@
 				CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */,
 				CE9420BC2248BB2C00C10CD0 /* ToastViewController.xib in Resources */,
 				3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */,
+				CE7D20392259E4F700DEE23E /* Boat_Loader.json in Resources */,
 				3DB19B0F217DC59600CD9E24 /* myweb.html in Resources */,
 				3DB19B0D217DC59600CD9E24 /* show.html in Resources */,
 			);
@@ -1085,6 +1122,7 @@
 				CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */,
 				CE40E2CE221BDB7E0072CF9E /* HQFlowView.m in Sources */,
 				5FF96ADF2226E2670094DF79 /* MyView.m in Sources */,
+				CE7D20332259E44900DEE23E /* LottieViewController.m in Sources */,
 				CE389CEF223DF3F40099BD35 /* OtherViewController.m in Sources */,
 				3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */,
 				CE7D1D3B2257421300DEE23E /* AudioPlayerVC.m in Sources */,

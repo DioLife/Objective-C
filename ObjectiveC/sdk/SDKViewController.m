@@ -18,6 +18,7 @@
 #import "Color2ViewController.h"
 #import "rac/RACViewController.h"
 #import "ToastViewController.h"
+#import "LottieViewController.h"
 
 @interface SDKViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -30,6 +31,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    LottieViewController *lottieVC = [LottieViewController new];
+    lottieVC.title = @"lottie";
+    [self.dataArray addObject:lottieVC];
     
     ToastViewController *toastVC = [ToastViewController new];
     toastVC.title= @"toast";
