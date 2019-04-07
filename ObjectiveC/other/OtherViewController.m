@@ -14,6 +14,7 @@
 #import "OrientationVC.h"
 #import "SpeechViewController.h"
 #import "MessageViewController.h"
+#import "AudioPlayerVC.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -26,6 +27,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    AudioPlayerVC *audioVC = [AudioPlayerVC new];
+    audioVC.title = @"封装一个音频播放器";
+    [self.dataArray addObject:audioVC];
     
     MessageViewController *messageVC = [MessageViewController new];
     messageVC.title = @"发信息";

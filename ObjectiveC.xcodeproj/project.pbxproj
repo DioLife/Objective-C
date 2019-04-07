@@ -93,6 +93,11 @@
 		CE7D1BDA2255C8B900DEE23E /* language.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1BD92255C8B900DEE23E /* language.json */; };
 		CE7D1BE0225626C500DEE23E /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D1BDE225626C500DEE23E /* MessageViewController.m */; };
 		CE7D1BE1225626C500DEE23E /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1BDF225626C500DEE23E /* MessageViewController.xib */; };
+		CE7D1D37225741EB00DEE23E /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D1D36225741EB00DEE23E /* AudioPlayer.m */; };
+		CE7D1D3B2257421300DEE23E /* AudioPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D1D392257421300DEE23E /* AudioPlayerVC.m */; };
+		CE7D1D3C2257421300DEE23E /* AudioPlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1D3A2257421300DEE23E /* AudioPlayerVC.xib */; };
+		CE7D1D3F2257453300DEE23E /* rock_clash.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1D3D2257453300DEE23E /* rock_clash.wav */; };
+		CE7D1D402257453300DEE23E /* shot.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1D3E2257453300DEE23E /* shot.wav */; };
 		CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8DD21B3FE8300E4748F /* MyManager.m */; };
 		CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80B8E021B4002700E4748F /* ShowSingletonViewController.m */; };
 		CE94208B22478D5500C10CD0 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94208A22478D5500C10CD0 /* RequestManager.m */; };
@@ -253,6 +258,13 @@
 		CE7D1BDD225626C500DEE23E /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		CE7D1BDE225626C500DEE23E /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		CE7D1BDF225626C500DEE23E /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		CE7D1D35225741EB00DEE23E /* AudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		CE7D1D36225741EB00DEE23E /* AudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		CE7D1D382257421300DEE23E /* AudioPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayerVC.h; sourceTree = "<group>"; };
+		CE7D1D392257421300DEE23E /* AudioPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerVC.m; sourceTree = "<group>"; };
+		CE7D1D3A2257421300DEE23E /* AudioPlayerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayerVC.xib; sourceTree = "<group>"; };
+		CE7D1D3D2257453300DEE23E /* rock_clash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rock_clash.wav; sourceTree = "<group>"; };
+		CE7D1D3E2257453300DEE23E /* shot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shot.wav; sourceTree = "<group>"; };
 		CE80B8DC21B3FE8300E4748F /* MyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
 		CE80B8DD21B3FE8300E4748F /* MyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
 		CE80B8DF21B4002700E4748F /* ShowSingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowSingletonViewController.h; sourceTree = "<group>"; };
@@ -762,6 +774,8 @@
 		CE7386E822425068004C7239 /* sound */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D1D3D2257453300DEE23E /* rock_clash.wav */,
+				CE7D1D3E2257453300DEE23E /* shot.wav */,
 				CE7386F02242593A004C7239 /* jump_maze.wav */,
 				CE7386EF2242593A004C7239 /* Splash.caf */,
 				CE7386EB2242508B004C7239 /* back02.mp3 */,
@@ -790,6 +804,18 @@
 				CE7D1BDF225626C500DEE23E /* MessageViewController.xib */,
 			);
 			path = message;
+			sourceTree = "<group>";
+		};
+		CE7D1D34225741CE00DEE23E /* audioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D1D35225741EB00DEE23E /* AudioPlayer.h */,
+				CE7D1D36225741EB00DEE23E /* AudioPlayer.m */,
+				CE7D1D382257421300DEE23E /* AudioPlayerVC.h */,
+				CE7D1D392257421300DEE23E /* AudioPlayerVC.m */,
+				CE7D1D3A2257421300DEE23E /* AudioPlayerVC.xib */,
+			);
+			path = audioPlayer;
 			sourceTree = "<group>";
 		};
 		CE80B8DB21B3FE4300E4748F /* Singleton */ = {
@@ -859,6 +885,7 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D1D34225741CE00DEE23E /* audioPlayer */,
 				CE7D1BDC225626B200DEE23E /* message */,
 				CE7D1BCD2255C1DB00DEE23E /* speech */,
 				CE0277D72250DB1400BA7A88 /* Orientation */,
@@ -984,6 +1011,7 @@
 				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
 				CE7D1BD22255C1F300DEE23E /* SpeechViewController.xib in Resources */,
+				CE7D1D3F2257453300DEE23E /* rock_clash.wav in Resources */,
 				CE7386EE2242508B004C7239 /* back02.mp3 in Resources */,
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
@@ -1005,11 +1033,13 @@
 				CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
 				CE7386F22242593A004C7239 /* jump_maze.wav in Resources */,
+				CE7D1D402257453300DEE23E /* shot.wav in Resources */,
 				CE7D1BE1225626C500DEE23E /* MessageViewController.xib in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
 				CE0277DC2250DB3B00BA7A88 /* OrientationVC.xib in Resources */,
 				5F36E86E223D352400CE3093 /* RACViewController.xib in Resources */,
+				CE7D1D3C2257421300DEE23E /* AudioPlayerVC.xib in Resources */,
 				CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
 				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
@@ -1057,12 +1087,14 @@
 				5FF96ADF2226E2670094DF79 /* MyView.m in Sources */,
 				CE389CEF223DF3F40099BD35 /* OtherViewController.m in Sources */,
 				3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */,
+				CE7D1D3B2257421300DEE23E /* AudioPlayerVC.m in Sources */,
 				5FF96AD92226E2430094DF79 /* ViewController.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
 				CE193BE3222BB554002F670B /* Color2ViewController.m in Sources */,
 				5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */,
 				CE7386D922410957004C7239 /* AVPlayerViewController.m in Sources */,
 				CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */,
+				CE7D1D37225741EB00DEE23E /* AudioPlayer.m in Sources */,
 				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
 				CE94208B22478D5500C10CD0 /* RequestManager.m in Sources */,
