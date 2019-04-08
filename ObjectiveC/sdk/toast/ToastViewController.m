@@ -62,18 +62,18 @@
 
 - (void)showToastAction:(UIButton *)buton{
     switch (buton.tag) {
-            case 1:
+        case 1:
         {
             [CBToast showToastAction:buton.currentTitle];
         }
             break;
-            case 2:
+        case 2:
         {
             //根据top，bottom，center来显示位置。 时间3.0s
             [CBToast showToast:buton.currentTitle location:@"bottom" showTime:3.0];
         }
             break;
-            case 3:
+        case 3:
         {
             if (buton.selected) {
                 [CBToast showToastAction];
@@ -83,7 +83,7 @@
             buton.selected = !buton.selected;
         }
             break;
-            case 4:
+        case 4:
         {
             if (buton.selected) {
                 [CBToast showIndicatorToastAction:buton.currentTitle];

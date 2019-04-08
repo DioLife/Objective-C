@@ -71,32 +71,25 @@
         case UIDeviceOrientationFaceUp:
             NSLog(@"屏幕朝上平躺");
             break;
-            
         case UIDeviceOrientationFaceDown:
             NSLog(@"屏幕朝下平躺");
             break;
-            
             //系統無法判斷目前Device的方向，有可能是斜置
         case UIDeviceOrientationUnknown:
             NSLog(@"未知方向");
             break;
-            
         case UIDeviceOrientationLandscapeLeft:
             NSLog(@"屏幕向左横置");
             break;
-            
         case UIDeviceOrientationLandscapeRight:
             NSLog(@"屏幕向右橫置");
             break;
-            
         case UIDeviceOrientationPortrait:
             NSLog(@"屏幕直立");
             break;
-            
         case UIDeviceOrientationPortraitUpsideDown:
             NSLog(@"屏幕直立，上下顛倒");
             break;
-            
         default:
             NSLog(@"无法辨识");
             break;
