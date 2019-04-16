@@ -19,6 +19,21 @@
 
 }
 
+- (IBAction)delay:(UIButton *)sender {
+    NSInteger time = 3;
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    //在主线程执行
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, time * NSEC_PER_SEC), mainQueue, ^{
+        NSLog(@"在主线程执行: 3秒后执行这个方法");
+    });
+
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+    //在子线程执行
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, time * NSEC_PER_SEC), globalQueue, ^{
+        NSLog(@"在子线程执行: 3秒后执行这个方法");
+    });
+}
+
 //异步
 - (IBAction)asynchronousAction:(UIButton *)sender {
     dispatch_queue_t queue = dispatch_queue_create("a different name", DISPATCH_QUEUE_CONCURRENT);

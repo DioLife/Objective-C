@@ -76,6 +76,8 @@
 		CE287AE62265CE9900B6C517 /* YYPersonModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287AE52265CE9900B6C517 /* YYPersonModel2.m */; };
 		CE287AE92265CEB500B6C517 /* YYEatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287AE82265CEB500B6C517 /* YYEatModel.m */; };
 		CE287AEB2265D0DB00B6C517 /* test3.json in Resources */ = {isa = PBXBuildFile; fileRef = CE287AEA2265D0DB00B6C517 /* test3.json */; };
+		CE287AFB2265E77B00B6C517 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287AF92265E77B00B6C517 /* DelegateViewController.m */; };
+		CE287AFC2265E77B00B6C517 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE287AFA2265E77B00B6C517 /* DelegateViewController.xib */; };
 		CE389CE8223DF3440099BD35 /* ClearCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE389CE6223DF3440099BD35 /* ClearCacheViewController.m */; };
 		CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */; };
 		CE389CEF223DF3F40099BD35 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE389CED223DF3F40099BD35 /* OtherViewController.m */; };
@@ -129,6 +131,13 @@
 		CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE32222931B9006E2064 /* YCMenuView.m */; };
 		CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE36222932EE006E2064 /* MenuListViewController.m */; };
 		CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9EE37222932EE006E2064 /* MenuListViewController.xib */; };
+		CED3B8B62265F185008988CE /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8B52265F185008988CE /* Man.m */; };
+		CED3B8B92265F1B8008988CE /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8B82265F1B8008988CE /* Dog.m */; };
+		CED3B8BC2265F1C1008988CE /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8BB2265F1C1008988CE /* Fish.m */; };
+		CED3B8BF2265F3CF008988CE /* DelegateView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8BE2265F3CF008988CE /* DelegateView.m */; };
+		CED3B8C12265F3DC008988CE /* DelegateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED3B8C02265F3DC008988CE /* DelegateView.xib */; };
+		CED3B8CF22660844008988CE /* Man2.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8CE22660844008988CE /* Man2.m */; };
+		CED3B8D52266085A008988CE /* Dog2.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8D42266085A008988CE /* Dog2.m */; };
 		CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */; };
 		CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */; };
 		CEFA19C522648744002C245A /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA19B522648744002C245A /* DLLRUCache.m */; };
@@ -267,6 +276,9 @@
 		CE287AE72265CEB500B6C517 /* YYEatModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYEatModel.h; sourceTree = "<group>"; };
 		CE287AE82265CEB500B6C517 /* YYEatModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYEatModel.m; sourceTree = "<group>"; };
 		CE287AEA2265D0DB00B6C517 /* test3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test3.json; sourceTree = "<group>"; };
+		CE287AF82265E77B00B6C517 /* DelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
+		CE287AF92265E77B00B6C517 /* DelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
+		CE287AFA2265E77B00B6C517 /* DelegateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateViewController.xib; sourceTree = "<group>"; };
 		CE389CE5223DF3440099BD35 /* ClearCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearCacheViewController.h; sourceTree = "<group>"; };
 		CE389CE6223DF3440099BD35 /* ClearCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearCacheViewController.m; sourceTree = "<group>"; };
 		CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClearCacheViewController.xib; sourceTree = "<group>"; };
@@ -346,6 +358,23 @@
 		CEC9EE35222932EE006E2064 /* MenuListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuListViewController.h; sourceTree = "<group>"; };
 		CEC9EE36222932EE006E2064 /* MenuListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuListViewController.m; sourceTree = "<group>"; };
 		CEC9EE37222932EE006E2064 /* MenuListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
+		CED3B8B22265F02A008988CE /* Eat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eat.h; sourceTree = "<group>"; };
+		CED3B8B42265F185008988CE /* Man.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
+		CED3B8B52265F185008988CE /* Man.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
+		CED3B8B72265F1B8008988CE /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		CED3B8B82265F1B8008988CE /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		CED3B8BA2265F1C1008988CE /* Fish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
+		CED3B8BB2265F1C1008988CE /* Fish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
+		CED3B8BD2265F3CF008988CE /* DelegateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateView.h; sourceTree = "<group>"; };
+		CED3B8BE2265F3CF008988CE /* DelegateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateView.m; sourceTree = "<group>"; };
+		CED3B8C02265F3DC008988CE /* DelegateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateView.xib; sourceTree = "<group>"; };
+		CED3B8C9226602EB008988CE /* Drink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		CED3B8CA2266040A008988CE /* TestDelegate2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDelegate2.h; sourceTree = "<group>"; };
+		CED3B8CC2266081A008988CE /* Eat2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eat2.h; sourceTree = "<group>"; };
+		CED3B8CD22660844008988CE /* Man2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Man2.h; sourceTree = "<group>"; };
+		CED3B8CE22660844008988CE /* Man2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man2.m; sourceTree = "<group>"; };
+		CED3B8D32266085A008988CE /* Dog2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog2.h; sourceTree = "<group>"; };
+		CED3B8D42266085A008988CE /* Dog2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog2.m; sourceTree = "<group>"; };
 		CEE30A6721E5ED7500AD82FA /* AFNetworkingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVC.h; sourceTree = "<group>"; };
 		CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVC.m; sourceTree = "<group>"; };
 		CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFNetworkingVC.xib; sourceTree = "<group>"; };
@@ -429,6 +458,7 @@
 		3D220CCE217DC17A00E3799F /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CE287AF72265E75B00B6C517 /* delegate */,
 				CE3B394F224CE8F800CF5E61 /* GCD */,
 				CE7386D5224108F4004C7239 /* Audio */,
 				CE80B8DB21B3FE4300E4748F /* Singleton */,
@@ -790,6 +820,19 @@
 			path = model5;
 			sourceTree = "<group>";
 		};
+		CE287AF72265E75B00B6C517 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CED3B8C322660055008988CE /* way3 */,
+				CED3B8CB226607E6008988CE /* delegate */,
+				CED3B8C222660042008988CE /* protocol */,
+				CE287AF82265E77B00B6C517 /* DelegateViewController.h */,
+				CE287AF92265E77B00B6C517 /* DelegateViewController.m */,
+				CE287AFA2265E77B00B6C517 /* DelegateViewController.xib */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
 		CE389CE4223DF2F00099BD35 /* clearCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -1081,6 +1124,44 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		CED3B8C222660042008988CE /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CED3B8B42265F185008988CE /* Man.h */,
+				CED3B8B52265F185008988CE /* Man.m */,
+				CED3B8B72265F1B8008988CE /* Dog.h */,
+				CED3B8B82265F1B8008988CE /* Dog.m */,
+				CED3B8BA2265F1C1008988CE /* Fish.h */,
+				CED3B8BB2265F1C1008988CE /* Fish.m */,
+				CED3B8B22265F02A008988CE /* Eat.h */,
+				CED3B8C9226602EB008988CE /* Drink.h */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		CED3B8C322660055008988CE /* way3 */ = {
+			isa = PBXGroup;
+			children = (
+				CED3B8BD2265F3CF008988CE /* DelegateView.h */,
+				CED3B8BE2265F3CF008988CE /* DelegateView.m */,
+				CED3B8C02265F3DC008988CE /* DelegateView.xib */,
+				CED3B8CA2266040A008988CE /* TestDelegate2.h */,
+			);
+			path = way3;
+			sourceTree = "<group>";
+		};
+		CED3B8CB226607E6008988CE /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CED3B8CD22660844008988CE /* Man2.h */,
+				CED3B8CE22660844008988CE /* Man2.m */,
+				CED3B8D32266085A008988CE /* Dog2.h */,
+				CED3B8D42266085A008988CE /* Dog2.m */,
+				CED3B8CC2266081A008988CE /* Eat2.h */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
 		CEE30A6621E5ED5B00AD82FA /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -1272,6 +1353,7 @@
 				CE7386F22242593A004C7239 /* jump_maze.wav in Resources */,
 				CE7D1D402257453300DEE23E /* shot.wav in Resources */,
 				CEFA19D122648769002C245A /* DLSlideViewVC.xib in Resources */,
+				CED3B8C12265F3DC008988CE /* DelegateView.xib in Resources */,
 				CE7D1BE1225626C500DEE23E /* MessageViewController.xib in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
@@ -1281,6 +1363,7 @@
 				CE7D1D3C2257421300DEE23E /* AudioPlayerVC.xib in Resources */,
 				CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
+				CE287AFC2265E77B00B6C517 /* DelegateViewController.xib in Resources */,
 				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
 				CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */,
 				CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */,
@@ -1323,6 +1406,7 @@
 				3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */,
 				CE193C03222BB61B002F670B /* KKColorCell.m in Sources */,
 				CEFA19C722648744002C245A /* DLScrollTabbarView.m in Sources */,
+				CED3B8D52266085A008988CE /* Dog2.m in Sources */,
 				CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */,
 				CE40E2CE221BDB7E0072CF9E /* HQFlowView.m in Sources */,
 				CE287AE92265CEB500B6C517 /* YYEatModel.m in Sources */,
@@ -1356,6 +1440,7 @@
 				CEFA19CA22648744002C245A /* DLCustomSlideView.m in Sources */,
 				CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */,
 				CE9420BB2248BB2C00C10CD0 /* ToastViewController.m in Sources */,
+				CED3B8B62265F185008988CE /* Man.m in Sources */,
 				CE193C05222BB61B002F670B /* KKColorsHeaderView.m in Sources */,
 				CEC9EE022228DBEE006E2064 /* Common.m in Sources */,
 				CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */,
@@ -1366,6 +1451,7 @@
 				CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */,
 				CE40E2D0221BDB7E0072CF9E /* HQImagePageControl.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
+				CED3B8BF2265F3CF008988CE /* DelegateView.m in Sources */,
 				CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */,
 				3D220CC7217DBF9000E3799F /* main.m in Sources */,
 				CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */,
@@ -1391,12 +1477,16 @@
 				CE94208F22478D6800C10CD0 /* RequestViewController.m in Sources */,
 				CE287AAD22659DB300B6C517 /* YYPersonModel.m in Sources */,
 				CE9420AD2248908F00C10CD0 /* JudgeNetworkingVC.m in Sources */,
+				CED3B8B92265F1B8008988CE /* Dog.m in Sources */,
 				3D220CF6217DC23C00E3799F /* MyTabBarController.m in Sources */,
 				CE287AA62265838500B6C517 /* DataModel.m in Sources */,
 				CE3B3953224CE91000CF5E61 /* GCDViewController.m in Sources */,
 				CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */,
 				CE40E2CF221BDB7E0072CF9E /* HQIndexBannerSubview.m in Sources */,
+				CED3B8BC2265F1C1008988CE /* Fish.m in Sources */,
+				CED3B8CF22660844008988CE /* Man2.m in Sources */,
 				3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */,
+				CE287AFB2265E77B00B6C517 /* DelegateViewController.m in Sources */,
 				3D220CF5217DC23C00E3799F /* MyNavgationController.m in Sources */,
 				CEFA19C622648744002C245A /* DLTabedSlideView.m in Sources */,
 			);

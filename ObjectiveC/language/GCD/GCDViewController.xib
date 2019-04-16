@@ -77,6 +77,15 @@
                         <action selector="asynchronousAction:" destination="-1" eventType="touchUpInside" id="mRD-md-hAW"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFh-r1-s0x">
+                    <rect key="frame" x="90" y="439" width="234" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="delay"/>
+                    <connections>
+                        <action selector="delay:" destination="-1" eventType="touchUpInside" id="kvt-Rd-N2c"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -92,6 +101,7 @@
                 <constraint firstItem="3Tw-T7-1XI" firstAttribute="height" secondItem="gR0-9L-53Y" secondAttribute="height" id="Pg7-en-WAB"/>
                 <constraint firstItem="Zmg-eW-sfw" firstAttribute="centerX" secondItem="gR0-9L-53Y" secondAttribute="centerX" id="Ulq-8m-d4J"/>
                 <constraint firstItem="nK2-LX-AZt" firstAttribute="width" secondItem="gR0-9L-53Y" secondAttribute="width" id="WQB-5Z-ShR"/>
+                <constraint firstItem="NFh-r1-s0x" firstAttribute="top" secondItem="SvD-vQ-NfV" secondAttribute="bottom" constant="20" id="XER-cP-25W"/>
                 <constraint firstItem="Zmg-eW-sfw" firstAttribute="height" secondItem="gR0-9L-53Y" secondAttribute="height" id="ZD8-pF-eUk"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gR0-9L-53Y" secondAttribute="trailing" constant="90" id="ZV0-r3-lBg"/>
                 <constraint firstItem="SvD-vQ-NfV" firstAttribute="top" secondItem="PVi-Jg-KRb" secondAttribute="bottom" constant="25" id="aUv-bW-hce"/>
@@ -100,7 +110,10 @@
                 <constraint firstItem="SvD-vQ-NfV" firstAttribute="width" secondItem="gR0-9L-53Y" secondAttribute="width" id="olO-6M-DTY"/>
                 <constraint firstItem="Zmg-eW-sfw" firstAttribute="width" secondItem="gR0-9L-53Y" secondAttribute="width" id="q1d-Hg-EOk"/>
                 <constraint firstItem="PVi-Jg-KRb" firstAttribute="height" secondItem="gR0-9L-53Y" secondAttribute="height" id="rbS-Nw-uNW"/>
+                <constraint firstItem="NFh-r1-s0x" firstAttribute="width" secondItem="gR0-9L-53Y" secondAttribute="width" id="wCv-Nd-9EP"/>
+                <constraint firstItem="NFh-r1-s0x" firstAttribute="height" secondItem="gR0-9L-53Y" secondAttribute="height" id="wQD-jr-Bfv"/>
                 <constraint firstItem="Zmg-eW-sfw" firstAttribute="top" secondItem="gR0-9L-53Y" secondAttribute="bottom" constant="25" id="wQw-mR-YzZ"/>
+                <constraint firstItem="NFh-r1-s0x" firstAttribute="centerX" secondItem="gR0-9L-53Y" secondAttribute="centerX" id="xZ8-C7-WQh"/>
                 <constraint firstItem="SvD-vQ-NfV" firstAttribute="centerX" secondItem="gR0-9L-53Y" secondAttribute="centerX" id="xg2-9L-sHA"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

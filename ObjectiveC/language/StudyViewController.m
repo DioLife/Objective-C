@@ -11,6 +11,7 @@
 #import "ShowSingletonViewController.h"
 #import "Audio/AVPlayerViewController.h"
 #import "GCD/GCDViewController.h"
+#import "DelegateViewController.h"
 
 @interface StudyViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -23,6 +24,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    DelegateViewController *delegateVC = [DelegateViewController new];
+    delegateVC.title = @"delegate";
+    [self.dataArray addObject:delegateVC];
     
     GCDViewController *GCDVC = [GCDViewController new];
     GCDVC.title = @"GCD";
