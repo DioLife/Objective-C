@@ -15,6 +15,7 @@
 #import "SpeechViewController.h"
 #import "MessageViewController.h"
 #import "AudioPlayerVC.h"
+#import "ParseViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -27,6 +28,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    ParseViewController *parseVC = [ParseViewController new];
+    parseVC.title = @"解析JSON";
+    [self.dataArray addObject:parseVC];
     
     AudioPlayerVC *audioVC = [AudioPlayerVC new];
     audioVC.title = @"封装一个音频播放器";

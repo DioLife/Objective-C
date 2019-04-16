@@ -19,6 +19,7 @@
 #import "rac/RACViewController.h"
 #import "ToastViewController.h"
 #import "LottieViewController.h"
+#import "DLSlideViewVC.h"
 
 @interface SDKViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -31,6 +32,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    DLSlideViewVC *dlsVC = [DLSlideViewVC new];
+    dlsVC.title = @"DLSlideView";
+    [self.dataArray addObject:dlsVC];
     
     LottieViewController *lottieVC = [LottieViewController new];
     lottieVC.title = @"lottie";

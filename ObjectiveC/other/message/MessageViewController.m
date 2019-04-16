@@ -43,12 +43,18 @@
     NSString *appid = @"925021570";
     NSString *str = [NSString stringWithFormat:@"http://itunes.apple.com/us/app/id%@",appid];
     NSURL *url = [NSURL URLWithString:str];
-    if ([[[UIDevice currentDevice] systemVersion]intValue] >= 10) {//iOS 系统版本 10 以上
+    if (@available(iOS 10.0, *)) {
         NSDictionary *dict = [NSDictionary dictionary];
         [[UIApplication sharedApplication] openURL:url options:dict completionHandler:nil];
-    }else {
+    }else{
         [[UIApplication sharedApplication] openURL:url];
     }
+//    if ([[[UIDevice currentDevice] systemVersion]intValue] >= 10) {//iOS 系统版本 10 以上
+//        NSDictionary *dict = [NSDictionary dictionary];
+//        [[UIApplication sharedApplication] openURL:url options:dict completionHandler:nil];
+//    }else {
+//        [[UIApplication sharedApplication] openURL:url];
+//    }
 }
 
 //仅支持iOS10.3+（需要做校验）且每个APP内每年最多弹出3次评分alart
