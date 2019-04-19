@@ -20,6 +20,33 @@
     
 }
 
+- (IBAction)postAction:(UIButton *)sender {
+    NSString *urlStr = @"http://api.dxys.live/app/movie/v1/category";
+    NSDictionary *parameters = @{@"deviceType":@"1",
+                                 @"appVersion":@"majiabao.test.com.ios@1.0.6"};
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer.timeoutInterval = 30;
+    [manager.securityPolicy setAllowInvalidCertificates:YES];
+    AFJSONResponseSerializer *response=[AFJSONResponseSerializer serializer];
+    response.removesKeysWithNullValues=YES;
+    manager.responseSerializer=response;
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes=[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", @"text/plain",nil];
+    //设置请求头
+    [manager.requestSerializer setValue:@"utf-8" forHTTPHeaderField:@"Content-Type"];
+    
+    
+    [manager POST:urlStr parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@", responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"error:%@", error);
+    }];
+}
+
+- (IBAction)getAc:(UIButton *)sender {
+
+}
+
 - (IBAction)uploadAction:(UIButton *)sender {
     AFHTTPSessionManager *manager=[AFHTTPSessionManager manager];
     AFJSONResponseSerializer *response=[AFJSONResponseSerializer serializer];

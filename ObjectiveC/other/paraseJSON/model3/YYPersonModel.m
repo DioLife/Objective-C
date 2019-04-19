@@ -10,4 +10,12 @@
 
 @implementation YYPersonModel
 
+//处理系统关键字
++ (NSDictionary<NSString *, id> *)modelCustomPropertyMapper
+{
+    return @{@"userid":@"id",
+             @"des":@"description"
+             };
+}
+
 @end

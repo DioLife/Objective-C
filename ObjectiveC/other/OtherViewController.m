@@ -16,6 +16,7 @@
 #import "MessageViewController.h"
 #import "AudioPlayerVC.h"
 #import "ParseViewController.h"
+#import "SerializeViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -28,6 +29,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    SerializeViewController *serializeVC = [SerializeViewController new];
+    serializeVC.title = @"序列化";
+    [self.dataArray addObject:serializeVC];
     
     ParseViewController *parseVC = [ParseViewController new];
     parseVC.title = @"解析JSON";

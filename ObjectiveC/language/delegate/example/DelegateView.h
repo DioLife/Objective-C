@@ -19,8 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DelegateView : UIView
 
-@property(nonatomic, assign)id<TestDelegate> myDelegate;
-@property(nonatomic, assign)id<TestDelegate2> myDelegate2;
+@property(nonatomic, weak)id<TestDelegate> myDelegate;
+@property(nonatomic, weak)id<TestDelegate2> myDelegate2;
 
 @end
 

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SerializeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kgj-Q6-w5h">
+                    <rect key="frame" x="10" y="54" width="394" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8b-as-7a4">
+                            <rect key="frame" x="0.0" y="0.0" width="192" height="45"/>
+                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="序列化1"/>
+                            <connections>
+                                <action selector="serialize1:" destination="-1" eventType="touchUpInside" id="Z1L-ba-hLn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qu-lh-GlH">
+                            <rect key="frame" x="202" y="0.0" width="192" height="45"/>
+                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="反序化1"/>
+                            <connections>
+                                <action selector="deserialize:" destination="-1" eventType="touchUpInside" id="h0B-pv-Uq6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ip4-uv-NpI"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1nU-7k-DSX">
+                    <rect key="frame" x="10" y="119" width="394" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJZ-No-FSz">
+                            <rect key="frame" x="0.0" y="0.0" width="192" height="45"/>
+                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="序列化2"/>
+                            <connections>
+                                <action selector="serialize2:" destination="-1" eventType="touchUpInside" id="9Rg-Zc-9Bf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4L2-rW-NQz">
+                            <rect key="frame" x="202" y="0.0" width="192" height="45"/>
+                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="反序化2"/>
+                            <connections>
+                                <action selector="deserialize2:" destination="-1" eventType="touchUpInside" id="qDW-rV-dl5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="kAZ-Td-CPt"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1nU-7k-DSX" firstAttribute="top" secondItem="kgj-Q6-w5h" secondAttribute="bottom" constant="20" id="2W2-qV-1rM"/>
+                <constraint firstItem="1nU-7k-DSX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="7nY-nJ-6sV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kgj-Q6-w5h" secondAttribute="trailing" constant="10" id="DTm-fs-fzF"/>
+                <constraint firstItem="kgj-Q6-w5h" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="dfT-4a-2tn"/>
+                <constraint firstItem="kgj-Q6-w5h" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="m53-jh-XZz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1nU-7k-DSX" secondAttribute="trailing" constant="10" id="v3f-qL-cLw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

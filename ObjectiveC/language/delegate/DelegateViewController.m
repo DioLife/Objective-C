@@ -25,8 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //        [self study1];
-    [self study2];
-//    [self study3];
+//    [self study2];
+    [self study3];
 }
 
 -(void)study3{

@@ -78,10 +78,10 @@
 }
 
 - (IBAction)parse3:(UIButton *)sender {
-    NSDictionary *dic = @{@"name":@"张三", @"age":@(12), @"sex":@"男"};
+    NSDictionary *dic = @{@"id":@"11",@"description":@"test",@"name":@"张三", @"age":@(12), @"sex":@"男"};
     // 将数据转模型
     YYPersonModel *model = [YYPersonModel yy_modelWithJSON:dic];
-    NSLog(@"name:%@, age:%d, sex:%@", model.name, model.age, model.sex);
+    NSLog(@"id:%ld,description:%@,name:%@, age:%d, sex:%@", model.userid ,model.des ,model.name, model.age, model.sex);
 }
 
 - (IBAction)parse2:(UIButton *)sender {

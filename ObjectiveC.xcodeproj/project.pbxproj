@@ -138,6 +138,11 @@
 		CED3B8C12265F3DC008988CE /* DelegateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED3B8C02265F3DC008988CE /* DelegateView.xib */; };
 		CED3B8CF22660844008988CE /* Man2.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8CE22660844008988CE /* Man2.m */; };
 		CED3B8D52266085A008988CE /* Dog2.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8D42266085A008988CE /* Dog2.m */; };
+		CED3B95022670A61008988CE /* SerializeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B94E22670A61008988CE /* SerializeViewController.m */; };
+		CED3B95122670A61008988CE /* SerializeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED3B94F22670A61008988CE /* SerializeViewController.xib */; };
+		CED3B95422670E2A008988CE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B95322670E2A008988CE /* Person.m */; };
+		CED3B95F22674A52008988CE /* PickimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B95D22674A52008988CE /* PickimageViewController.m */; };
+		CED3B96022674A52008988CE /* PickimageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED3B95E22674A52008988CE /* PickimageViewController.xib */; };
 		CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */; };
 		CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */; };
 		CEFA19C522648744002C245A /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA19B522648744002C245A /* DLLRUCache.m */; };
@@ -375,6 +380,14 @@
 		CED3B8CE22660844008988CE /* Man2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man2.m; sourceTree = "<group>"; };
 		CED3B8D32266085A008988CE /* Dog2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog2.h; sourceTree = "<group>"; };
 		CED3B8D42266085A008988CE /* Dog2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog2.m; sourceTree = "<group>"; };
+		CED3B94D22670A61008988CE /* SerializeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerializeViewController.h; sourceTree = "<group>"; };
+		CED3B94E22670A61008988CE /* SerializeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerializeViewController.m; sourceTree = "<group>"; };
+		CED3B94F22670A61008988CE /* SerializeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerializeViewController.xib; sourceTree = "<group>"; };
+		CED3B95222670E2A008988CE /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		CED3B95322670E2A008988CE /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		CED3B95C22674A52008988CE /* PickimageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickimageViewController.h; sourceTree = "<group>"; };
+		CED3B95D22674A52008988CE /* PickimageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickimageViewController.m; sourceTree = "<group>"; };
+		CED3B95E22674A52008988CE /* PickimageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickimageViewController.xib; sourceTree = "<group>"; };
 		CEE30A6721E5ED7500AD82FA /* AFNetworkingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVC.h; sourceTree = "<group>"; };
 		CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVC.m; sourceTree = "<group>"; };
 		CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFNetworkingVC.xib; sourceTree = "<group>"; };
@@ -473,6 +486,7 @@
 		3D220CCF217DC19700E3799F /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				CED3B95B22674A3C008988CE /* pickimage */,
 				5FF96AD42226E20C0094DF79 /* view */,
 				5FF96AC12226D0630094DF79 /* collectionview */,
 				CE3D1E0A21A7F1B800015F2B /* video */,
@@ -823,7 +837,7 @@
 		CE287AF72265E75B00B6C517 /* delegate */ = {
 			isa = PBXGroup;
 			children = (
-				CED3B8C322660055008988CE /* way3 */,
+				CED3B8C322660055008988CE /* example */,
 				CED3B8CB226607E6008988CE /* delegate */,
 				CED3B8C222660042008988CE /* protocol */,
 				CE287AF82265E77B00B6C517 /* DelegateViewController.h */,
@@ -1083,6 +1097,7 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CED3B94C22670A52008988CE /* serialize */,
 				CEFA19D822657263002C245A /* paraseJSON */,
 				CE7D1D34225741CE00DEE23E /* audioPlayer */,
 				CE7D1BDC225626B200DEE23E /* message */,
@@ -1139,7 +1154,7 @@
 			path = protocol;
 			sourceTree = "<group>";
 		};
-		CED3B8C322660055008988CE /* way3 */ = {
+		CED3B8C322660055008988CE /* example */ = {
 			isa = PBXGroup;
 			children = (
 				CED3B8BD2265F3CF008988CE /* DelegateView.h */,
@@ -1147,7 +1162,7 @@
 				CED3B8C02265F3DC008988CE /* DelegateView.xib */,
 				CED3B8CA2266040A008988CE /* TestDelegate2.h */,
 			);
-			path = way3;
+			path = example;
 			sourceTree = "<group>";
 		};
 		CED3B8CB226607E6008988CE /* delegate */ = {
@@ -1160,6 +1175,28 @@
 				CED3B8CC2266081A008988CE /* Eat2.h */,
 			);
 			path = delegate;
+			sourceTree = "<group>";
+		};
+		CED3B94C22670A52008988CE /* serialize */ = {
+			isa = PBXGroup;
+			children = (
+				CED3B94D22670A61008988CE /* SerializeViewController.h */,
+				CED3B94E22670A61008988CE /* SerializeViewController.m */,
+				CED3B94F22670A61008988CE /* SerializeViewController.xib */,
+				CED3B95222670E2A008988CE /* Person.h */,
+				CED3B95322670E2A008988CE /* Person.m */,
+			);
+			path = serialize;
+			sourceTree = "<group>";
+		};
+		CED3B95B22674A3C008988CE /* pickimage */ = {
+			isa = PBXGroup;
+			children = (
+				CED3B95C22674A52008988CE /* PickimageViewController.h */,
+				CED3B95D22674A52008988CE /* PickimageViewController.m */,
+				CED3B95E22674A52008988CE /* PickimageViewController.xib */,
+			);
+			path = pickimage;
 			sourceTree = "<group>";
 		};
 		CEE30A6621E5ED5B00AD82FA /* AFNetworking */ = {
@@ -1348,6 +1385,7 @@
 				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
 				CE3B3954224CE91000CF5E61 /* GCDViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
+				CED3B95122670A61008988CE /* SerializeViewController.xib in Resources */,
 				CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
 				CE7386F22242593A004C7239 /* jump_maze.wav in Resources */,
@@ -1372,6 +1410,7 @@
 				CE7D20392259E4F700DEE23E /* Boat_Loader.json in Resources */,
 				3DB19B0F217DC59600CD9E24 /* myweb.html in Resources */,
 				3DB19B0D217DC59600CD9E24 /* show.html in Resources */,
+				CED3B96022674A52008988CE /* PickimageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1405,6 +1444,7 @@
 			files = (
 				3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */,
 				CE193C03222BB61B002F670B /* KKColorCell.m in Sources */,
+				CED3B95422670E2A008988CE /* Person.m in Sources */,
 				CEFA19C722648744002C245A /* DLScrollTabbarView.m in Sources */,
 				CED3B8D52266085A008988CE /* Dog2.m in Sources */,
 				CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */,
@@ -1424,6 +1464,7 @@
 				CE287AA02265833500B6C517 /* TestModel.m in Sources */,
 				5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */,
 				CE7386D922410957004C7239 /* AVPlayerViewController.m in Sources */,
+				CED3B95F22674A52008988CE /* PickimageViewController.m in Sources */,
 				CE287AA92265839900B6C517 /* PhoneModel.m in Sources */,
 				CEFA19E32265775C002C245A /* Message.m in Sources */,
 				CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */,
@@ -1472,6 +1513,7 @@
 				CE287AC82265C21E00B6C517 /* ContentModel.m in Sources */,
 				5F36E86D223D352400CE3093 /* RACViewController.m in Sources */,
 				CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */,
+				CED3B95022670A61008988CE /* SerializeViewController.m in Sources */,
 				3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */,
 				CE7D1BE0225626C500DEE23E /* MessageViewController.m in Sources */,
 				CE94208F22478D6800C10CD0 /* RequestViewController.m in Sources */,

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YYPersonModel : NSObject
 
+@property (assign, nonatomic) long userid;
+@property (copy,   nonatomic) NSString *des;
 @property (copy,   nonatomic) NSString *name;
 @property (assign, nonatomic) int age;
 @property (copy,   nonatomic) NSString *sex;

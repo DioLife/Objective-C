@@ -19,10 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-    MyTabBarController *tabBarCtrl = [[MyTabBarController alloc] init];
-    self.window.rootViewController = tabBarCtrl;
     self.window.backgroundColor = [UIColor blueColor];
     [self.window makeKeyAndVisible];
+    MyTabBarController *tabBarCtrl = [[MyTabBarController alloc] init];
+    self.window.rootViewController = tabBarCtrl;
     return YES;
 }
 

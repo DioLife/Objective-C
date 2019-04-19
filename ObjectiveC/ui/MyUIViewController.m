@@ -13,6 +13,7 @@
 #import "MyCollectionViewVC.h"
 #import "NibCollectionViewVC.h"
 #import "ViewController.h"
+#import "PickimageViewController.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -25,6 +26,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    PickimageViewController *pickImageVC = [PickimageViewController new];
+    pickImageVC.title = @"选取图片";
+    [self.dataArray addObject:pickImageVC];
     
     ViewController *codeViewVC = [ViewController new];
     codeViewVC.title = @"自定义View";
@@ -92,14 +97,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
