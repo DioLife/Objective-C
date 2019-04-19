@@ -19,6 +19,12 @@
 #import "model5/YYPersonModel2.h"
 #import "model5/YYEatModel.h"
 
+/*
+ json在线解析
+ https://www.json.cn
+ json在线转model
+ http://modelend.com
+ */
 @interface ParseViewController ()
 
 @property(nonatomic,strong)NSMutableArray * dataArray;
