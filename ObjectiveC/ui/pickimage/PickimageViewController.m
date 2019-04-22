@@ -52,9 +52,8 @@
 ///调用相机
 - (void)persentImagePicker{
     if (!_imagePickerG) {
-        ///初始化相机
+        ///初始化
         _imagePickerG = [[UIImagePickerController alloc]init];
-        [_imagePickerG setAllowsEditing:self.isEdit.isOn]; //是否允许编辑
         ///代理
         _imagePickerG.delegate = self;
     }
@@ -64,30 +63,27 @@
         _imagePickerG.sourceType = UIImagePickerControllerSourceTypeCamera;
     }
     // 后面的摄像头是否可用
-    else if ([self isFirstResponder]){
+    else if ([self isRearCameraAvailable]){
         _imagePickerG.sourceType = UIImagePickerControllerSourceTypeCamera;
-    }
-    else{
+    }else{
         NSLog(@"没有相机可用");
         return;
     }
-    ///允许拍照后裁剪
-    _imagePickerG.allowsEditing = YES;
+    [_imagePickerG setAllowsEditing:self.isEdit.isOn]; // 允许拍照后裁剪
     [self presentViewController:_imagePickerG animated:YES completion:nil];
 }
 
 ///调用本地相册
 - (void)persentImageAlbumPicker{
     if (!_imagePickerG) {
-        ///初始化相机
+        ///初始化
         _imagePickerG = [[UIImagePickerController alloc]init];
-        [_imagePickerG setAllowsEditing:self.isEdit.isOn]; //是否允许编辑
         ///代理
         _imagePickerG.delegate = self;
     }
     ///相册
     _imagePickerG.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    _imagePickerG.allowsEditing = YES;
+    [_imagePickerG setAllowsEditing:self.isEdit.isOn]; //是否允许编辑
     [self presentViewController:_imagePickerG animated:YES completion:nil];
 }
 
@@ -98,13 +94,12 @@
 
 ///选择图片完成（从相册或者拍照完成）
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
-    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];///原图
-    //获取修剪后的图片
-    UIImage *imageUp = [info objectForKey:UIImagePickerControllerEditedImage];
     if (self.isEdit.isOn) {
-        self.showImageV.image = imageUp; //允许获取编辑后的图片
+        UIImage *imageUp = [info objectForKey:UIImagePickerControllerEditedImage];//编辑后的图片
+        self.showImageV.image = imageUp; //获取修剪后的图片
     }else{
-        self.showImageV.image = image; //不允许编辑获取原图
+        UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];//原图
+        self.showImageV.image = image; //获取原图
     }
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
