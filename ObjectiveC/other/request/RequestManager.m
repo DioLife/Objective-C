@@ -31,7 +31,18 @@ static RequestManager *staticInstance = nil;
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [self setRequestWithManager:manager];
     [manager GET:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        success(responseObject);
+//        success(responseObject);
+        NSError *error;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:&error];
+        NSString *jsonString;
+        if (!jsonData) {
+            NSLog(@"%@",error);
+        }else{
+            jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+        }
+//        NSLog(@"type of jsonString:%@", [jsonString class]);
+//        NSLog(@"\n%@", jsonString);
+        success(jsonString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(error);
     }];
@@ -41,7 +52,18 @@ static RequestManager *staticInstance = nil;
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [self setRequestWithManager:manager];
     [manager POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        success(responseObject);
+//        success(responseObject);
+        NSError *error;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:&error];
+        NSString *jsonString;
+        if (!jsonData) {
+            NSLog(@"%@",error);
+        }else{
+            jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+        }
+//        NSLog(@"type of jsonString:%@", [jsonString class]);
+//        NSLog(@"\n%@", jsonString);
+        success(jsonString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(error);
     }];

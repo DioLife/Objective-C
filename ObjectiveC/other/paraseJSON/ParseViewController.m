@@ -91,11 +91,11 @@
 }
 
 - (IBAction)parse2:(UIButton *)sender {
-    NSString * filepath = [[NSBundle mainBundle]pathForResource:@"test" ofType:@"json"];
+    NSString *filepath = [[NSBundle mainBundle]pathForResource:@"test" ofType:@"json"];
     //2.转化为数据   创建data对象接收数据
-    NSData * fileData = [NSData dataWithContentsOfFile:filepath];
-    //3.使用系统提供JSON类  将需要解析的文件传入，由于外层是数组，所以最后解析的数据，应该由数组接收
-    NSDictionary * tempDict = [NSJSONSerialization JSONObjectWithData:fileData options:NSJSONReadingAllowFragments error:nil];
+    NSData *fileData = [NSData dataWithContentsOfFile:filepath];
+    //3.使用系统提供JSON类  将需要解析的文件传入
+    NSDictionary *tempDict = [NSJSONSerialization JSONObjectWithData:fileData options:NSJSONReadingAllowFragments error:nil];
     NSLog(@"\n%@", tempDict);
     TestModel *model = [[TestModel alloc] initWithDict:tempDict];
     ContentModel *content = model.content;

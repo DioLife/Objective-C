@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 +(CGFloat)getNavigationBarHeight;   //获取navigationBar高度
 +(CGFloat)getTabBarHeight;  //获取tabBar高度
 +(CGFloat)getTopHeight; //获取顶部导航栏高度
-+(NSString*)DataTOjsonString:(id)object; //其他类型转字符串
 
 @end
 

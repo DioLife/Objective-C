@@ -37,7 +37,19 @@
     
     
     [manager POST:urlStr parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"type of responseObject :%@", [responseObject class]);
         NSLog(@"%@", responseObject);
+        NSLog(@"========================================================================");
+        NSError *error;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:&error];
+        NSString *jsonString;
+        if (!jsonData) {
+            NSLog(@"%@",error);
+        }else{
+            jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+        }
+        NSLog(@"type of jsonString:%@", [jsonString class]);
+        NSLog(@"\n%@", jsonString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"error:%@", error);
     }];
