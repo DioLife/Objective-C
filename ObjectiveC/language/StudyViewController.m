@@ -12,6 +12,7 @@
 #import "Audio/AVPlayerViewController.h"
 #import "GCD/GCDViewController.h"
 #import "DelegateViewController.h"
+#import "device/DeviceViewController.h"
 
 @interface StudyViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -24,6 +25,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    DeviceViewController *devVC = [DeviceViewController new];
+    devVC.title = @"设备信息";
+    [self.dataArray addObject:devVC];
     
     DelegateViewController *delegateVC = [DelegateViewController new];
     delegateVC.title = @"delegate";
