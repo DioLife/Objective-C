@@ -132,7 +132,6 @@
 		CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE36222932EE006E2064 /* MenuListViewController.m */; };
 		CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9EE37222932EE006E2064 /* MenuListViewController.xib */; };
 		CECDACE92271CAEF0020A98F /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECDACE72271CAEF0020A98F /* DeviceViewController.m */; };
-		CECDACEA2271CAEF0020A98F /* DeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECDACE82271CAEF0020A98F /* DeviceViewController.xib */; };
 		CED3B8B62265F185008988CE /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8B52265F185008988CE /* Man.m */; };
 		CED3B8B92265F1B8008988CE /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8B82265F1B8008988CE /* Dog.m */; };
 		CED3B8BC2265F1C1008988CE /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8BB2265F1C1008988CE /* Fish.m */; };
@@ -367,7 +366,6 @@
 		CEC9EE37222932EE006E2064 /* MenuListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
 		CECDACE62271CAEF0020A98F /* DeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
 		CECDACE72271CAEF0020A98F /* DeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
-		CECDACE82271CAEF0020A98F /* DeviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceViewController.xib; sourceTree = "<group>"; };
 		CED3B8B22265F02A008988CE /* Eat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eat.h; sourceTree = "<group>"; };
 		CED3B8B42265F185008988CE /* Man.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
 		CED3B8B52265F185008988CE /* Man.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
@@ -1125,7 +1123,6 @@
 			children = (
 				CECDACE62271CAEF0020A98F /* DeviceViewController.h */,
 				CECDACE72271CAEF0020A98F /* DeviceViewController.m */,
-				CECDACE82271CAEF0020A98F /* DeviceViewController.xib */,
 			);
 			path = device;
 			sourceTree = "<group>";
@@ -1370,7 +1367,6 @@
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
 				CE94209022478D6800C10CD0 /* RequestViewController.xib in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
-				CECDACEA2271CAEF0020A98F /* DeviceViewController.xib in Resources */,
 				CE7386ED2242508B004C7239 /* bg_ordinary.mp3 in Resources */,
 				CE027753225079A600BA7A88 /* Localizable.strings in Resources */,
 				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
