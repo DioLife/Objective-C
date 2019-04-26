@@ -1,5 +1,5 @@
 .DS_Store
-ObjectiveC.xcworkspace/
 /Pods
 Podfile.lock
-ObjectiveC.xcodeproj/
+ObjectiveC.xcodeproj/project.pbxproj/
+ObjectiveC.xcodeproj/xcuserdata/
