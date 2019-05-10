@@ -26,6 +26,7 @@
     return YES;
 }
 
+//app间跳转
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     // 此处url的值就是APP_1 openURL的url
     NSString *paraStr = url.absoluteString;

@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>ObjC</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -38,6 +40,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>我们将获取你的相机使用权限,但得到的照片仅为此功能使用,不会另作他用, 请放心!</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>我们将获取你的相册使用权限,但得到的照片仅为此功能使用,不会另作他用, 请放心!</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>我们将获取你的相册使用权限,但得到的照片仅为此功能使用,不会另作他用, 请放心!</string>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -57,11 +65,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>我们将获取你的相机使用权限,但得到的照片仅为此功能使用,不会另作他用, 请放心!</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>我们将获取你的相册使用权限,但得到的照片仅为此功能使用,不会另作他用, 请放心!</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>我们将获取你的相册使用权限,但得到的照片仅为此功能使用,不会另作他用, 请放心!</string>
 </dict>
 </plist>

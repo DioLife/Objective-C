@@ -7,7 +7,7 @@
 //
 
 #import "LottieViewController.h"
-#import <lottie-ios/Lottie/Lottie.h>
+#import <Lottie/Lottie.h>
 
 @interface LottieViewController ()
 
