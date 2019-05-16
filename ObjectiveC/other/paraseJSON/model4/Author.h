@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Author : NSObject
 
-@property NSString *name;
-@property NSDate *birthday;
+@property(nonatomic, strong) NSString *name;
+@property(nonatomic, strong) NSDate *birthday;
 
 @end
 

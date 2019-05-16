@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Book : NSObject
 
-@property NSString *name;
-@property NSUInteger pages;
-@property Author *author; //Book 包含 Author 属性
+@property(nonatomic, strong) NSString *name;
+@property(nonatomic, assign) NSUInteger pages;
+@property(nonatomic, strong)Author *author; //Book 包含 Author 属性
 
 @end
 

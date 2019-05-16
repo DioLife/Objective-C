@@ -78,6 +78,11 @@
 		CE287AEB2265D0DB00B6C517 /* test3.json in Resources */ = {isa = PBXBuildFile; fileRef = CE287AEA2265D0DB00B6C517 /* test3.json */; };
 		CE287AFB2265E77B00B6C517 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287AF92265E77B00B6C517 /* DelegateViewController.m */; };
 		CE287AFC2265E77B00B6C517 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE287AFA2265E77B00B6C517 /* DelegateViewController.xib */; };
+		CE34E748228BC3520042C323 /* NetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34E746228BC3520042C323 /* NetworkViewController.m */; };
+		CE34E749228BC3520042C323 /* NetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE34E747228BC3520042C323 /* NetworkViewController.xib */; };
+		CE34E74D228BE1D80042C323 /* body.png in Resources */ = {isa = PBXBuildFile; fileRef = CE34E74B228BE1D70042C323 /* body.png */; };
+		CE34E74E228BE1D80042C323 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = CE34E74C228BE1D70042C323 /* header.png */; };
+		CE34E752228BF5820042C323 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34E750228BF5820042C323 /* Reachability.m */; };
 		CE389CE8223DF3440099BD35 /* ClearCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE389CE6223DF3440099BD35 /* ClearCacheViewController.m */; };
 		CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */; };
 		CE389CEF223DF3F40099BD35 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE389CED223DF3F40099BD35 /* OtherViewController.m */; };
@@ -286,6 +291,13 @@
 		CE287AF82265E77B00B6C517 /* DelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
 		CE287AF92265E77B00B6C517 /* DelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
 		CE287AFA2265E77B00B6C517 /* DelegateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateViewController.xib; sourceTree = "<group>"; };
+		CE34E745228BC3520042C323 /* NetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkViewController.h; sourceTree = "<group>"; };
+		CE34E746228BC3520042C323 /* NetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkViewController.m; sourceTree = "<group>"; };
+		CE34E747228BC3520042C323 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkViewController.xib; sourceTree = "<group>"; };
+		CE34E74B228BE1D70042C323 /* body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body.png; sourceTree = "<group>"; };
+		CE34E74C228BE1D70042C323 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		CE34E750228BF5820042C323 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CE34E751228BF5820042C323 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CE389CE5223DF3440099BD35 /* ClearCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearCacheViewController.h; sourceTree = "<group>"; };
 		CE389CE6223DF3440099BD35 /* ClearCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearCacheViewController.m; sourceTree = "<group>"; };
 		CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClearCacheViewController.xib; sourceTree = "<group>"; };
@@ -477,6 +489,7 @@
 		3D220CCE217DC17A00E3799F /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CE34E744228BC32F0042C323 /* network */,
 				CECDACE52271CAC40020A98F /* device */,
 				CE287AF72265E75B00B6C517 /* delegate */,
 				CE3B394F224CE8F800CF5E61 /* GCD */,
@@ -854,6 +867,35 @@
 			path = delegate;
 			sourceTree = "<group>";
 		};
+		CE34E744228BC32F0042C323 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				CE34E74A228BE1D70042C323 /* show */,
+				CE34E745228BC3520042C323 /* NetworkViewController.h */,
+				CE34E746228BC3520042C323 /* NetworkViewController.m */,
+				CE34E747228BC3520042C323 /* NetworkViewController.xib */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		CE34E74A228BE1D70042C323 /* show */ = {
+			isa = PBXGroup;
+			children = (
+				CE34E74B228BE1D70042C323 /* body.png */,
+				CE34E74C228BE1D70042C323 /* header.png */,
+			);
+			path = show;
+			sourceTree = "<group>";
+		};
+		CE34E74F228BF5660042C323 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CE34E751228BF5820042C323 /* Reachability.h */,
+				CE34E750228BF5820042C323 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		CE389CE4223DF2F00099BD35 /* clearCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -1063,6 +1105,7 @@
 		CE9420A92248907300C10CD0 /* judgeNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				CE34E74F228BF5660042C323 /* Reachability */,
 				CE9420AA2248908F00C10CD0 /* JudgeNetworkingVC.h */,
 				CE9420AB2248908F00C10CD0 /* JudgeNetworkingVC.m */,
 				CE9420AC2248908F00C10CD0 /* JudgeNetworkingVC.xib */,
@@ -1413,6 +1456,8 @@
 				CED3B95122670A61008988CE /* SerializeViewController.xib in Resources */,
 				CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
+				CE34E74E228BE1D80042C323 /* header.png in Resources */,
+				CE34E74D228BE1D80042C323 /* body.png in Resources */,
 				CE7386F22242593A004C7239 /* jump_maze.wav in Resources */,
 				CE7D1D402257453300DEE23E /* shot.wav in Resources */,
 				CEFA19D122648769002C245A /* DLSlideViewVC.xib in Resources */,
@@ -1424,6 +1469,7 @@
 				5F36E86E223D352400CE3093 /* RACViewController.xib in Resources */,
 				CE287AAF2265B70C00B6C517 /* test2.json in Resources */,
 				CE7D1D3C2257421300DEE23E /* AudioPlayerVC.xib in Resources */,
+				CE34E749228BC3520042C323 /* NetworkViewController.xib in Resources */,
 				CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
 				CE287AFC2265E77B00B6C517 /* DelegateViewController.xib in Resources */,
@@ -1483,6 +1529,7 @@
 				CEFA19CB22648744002C245A /* DLSlideView.m in Sources */,
 				CEFA19C922648744002C245A /* DLUtility.m in Sources */,
 				CE7D1D3B2257421300DEE23E /* AudioPlayerVC.m in Sources */,
+				CE34E748228BC3520042C323 /* NetworkViewController.m in Sources */,
 				5FF96AD92226E2430094DF79 /* ViewController.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
 				CE193BE3222BB554002F670B /* Color2ViewController.m in Sources */,
@@ -1552,6 +1599,7 @@
 				CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */,
 				CE40E2CF221BDB7E0072CF9E /* HQIndexBannerSubview.m in Sources */,
 				CED3B8BC2265F1C1008988CE /* Fish.m in Sources */,
+				CE34E752228BF5820042C323 /* Reachability.m in Sources */,
 				CED3B8CF22660844008988CE /* Man2.m in Sources */,
 				3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */,
 				CE287AFB2265E77B00B6C517 /* DelegateViewController.m in Sources */,

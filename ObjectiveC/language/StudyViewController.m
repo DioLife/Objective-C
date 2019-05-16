@@ -13,6 +13,7 @@
 #import "GCD/GCDViewController.h"
 #import "DelegateViewController.h"
 #import "device/DeviceViewController.h"
+#import "NetworkViewController.h"
 
 @interface StudyViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -25,6 +26,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    NetworkViewController *networkVC = [NetworkViewController new];
+    networkVC.title = @"原生网络请求";
+    [self.dataArray addObject:networkVC];
     
     DeviceViewController *devVC = [DeviceViewController new];
     devVC.title = @"设备信息";

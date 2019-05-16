@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,12 +31,86 @@
                         <action selector="judgeAF:" destination="-1" eventType="touchUpInside" id="a26-NH-PcR"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6P-Uw-OTP">
+                    <rect key="frame" x="100" y="105" width="175" height="40"/>
+                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5ro-Zf-tBZ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="bYJ-yG-qv0"/>
+                    </constraints>
+                    <state key="normal" title="原生"/>
+                    <connections>
+                        <action selector="reachability:" destination="-1" eventType="touchUpInside" id="sDv-kA-UXt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zy2-jq-StJ">
+                    <rect key="frame" x="100" y="170" width="175" height="40"/>
+                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="eHM-So-XZI"/>
+                    </constraints>
+                    <state key="normal" title="通过状态栏"/>
+                    <connections>
+                        <action selector="fromStatusBar:" destination="-1" eventType="touchUpInside" id="s4K-YA-wZO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBR-2L-xKR">
+                    <rect key="frame" x="100" y="235" width="175" height="40"/>
+                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="geD-zN-ykC"/>
+                        <constraint firstAttribute="height" constant="40" id="yJu-Fg-bMb"/>
+                    </constraints>
+                    <state key="normal" title="系统API"/>
+                    <connections>
+                        <action selector="sysAPI:" destination="-1" eventType="touchUpInside" id="0K2-rU-dq8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B78-gY-vg8">
+                    <rect key="frame" x="50" y="300" width="275" height="40"/>
+                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MGF-gl-d8D"/>
+                    </constraints>
+                    <state key="normal" title="SCNetworkReachabilityRef"/>
+                    <connections>
+                        <action selector="SCNetwork:" destination="-1" eventType="touchUpInside" id="lLZ-JR-xNe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="587-iN-isp">
+                    <rect key="frame" x="100" y="365" width="175" height="40"/>
+                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="I5s-BU-mg5"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="QJA-ad-ynt"/>
+                        <constraint firstAttribute="height" constant="40" id="lnK-5h-mO0"/>
+                    </constraints>
+                    <state key="normal" title="C 判断"/>
+                    <connections>
+                        <action selector="inCcode:" destination="-1" eventType="touchUpInside" id="jmo-Z1-0GU"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="T6P-Uw-OTP" firstAttribute="top" secondItem="RYe-jn-nyW" secondAttribute="bottom" constant="25" id="0ZL-M8-5Dd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="587-iN-isp" secondAttribute="trailing" constant="100" id="44k-T6-KNj"/>
+                <constraint firstItem="587-iN-isp" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="ASR-cd-xPd"/>
                 <constraint firstItem="RYe-jn-nyW" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="CoY-zU-yQp"/>
+                <constraint firstItem="587-iN-isp" firstAttribute="top" secondItem="B78-gY-vg8" secondAttribute="bottom" constant="25" id="E8l-N4-con"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="iBR-2L-xKR" secondAttribute="trailing" constant="100" id="GSN-wo-79F"/>
+                <constraint firstItem="Zy2-jq-StJ" firstAttribute="top" secondItem="T6P-Uw-OTP" secondAttribute="bottom" constant="25" id="Icc-n6-nPG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="T6P-Uw-OTP" secondAttribute="trailing" constant="100" id="K4f-VV-Z3S"/>
+                <constraint firstItem="Zy2-jq-StJ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="LoZ-q1-Mcm"/>
                 <constraint firstItem="RYe-jn-nyW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="MM1-Wg-lJe"/>
+                <constraint firstItem="T6P-Uw-OTP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="RYq-oY-31p"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="B78-gY-vg8" secondAttribute="trailing" constant="50" id="TDy-Zg-2gb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Zy2-jq-StJ" secondAttribute="trailing" constant="100" id="YgJ-LA-rFq"/>
+                <constraint firstItem="B78-gY-vg8" firstAttribute="top" secondItem="iBR-2L-xKR" secondAttribute="bottom" constant="25" id="bcF-E3-YfI"/>
+                <constraint firstItem="iBR-2L-xKR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="dOR-EN-37D"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RYe-jn-nyW" secondAttribute="trailing" constant="100" id="ehQ-0O-SQr"/>
+                <constraint firstItem="B78-gY-vg8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="j64-dc-V2f"/>
+                <constraint firstItem="iBR-2L-xKR" firstAttribute="top" secondItem="Zy2-jq-StJ" secondAttribute="bottom" constant="25" id="t6P-ML-NTv"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
