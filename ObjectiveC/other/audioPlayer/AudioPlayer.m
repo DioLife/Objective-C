@@ -37,6 +37,19 @@ static AudioPlayer *staticInstance = nil;
     [_player play];
 }
 
+//播放
+-(void)play {
+    [_player play];
+}
+//暂停
+-(void)plause {
+    [_player pause];
+}
+//停止
+-(void)stop {
+    [_player stop];
+}
+
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
     //flag 表示是否播放有错误
     if (flag) {

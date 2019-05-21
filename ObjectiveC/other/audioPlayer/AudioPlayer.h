@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedManager;
 -(void)play:(NSURL *)url;
+-(void)play;
+-(void)plause;
+-(void)stop;
+
 @end
 
 NS_ASSUME_NONNULL_END

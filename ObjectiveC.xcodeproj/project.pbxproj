@@ -100,6 +100,9 @@
 		CE40E2CF221BDB7E0072CF9E /* HQIndexBannerSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = CE40E2C9221BDB7E0072CF9E /* HQIndexBannerSubview.m */; };
 		CE40E2D0221BDB7E0072CF9E /* HQImagePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE40E2CA221BDB7E0072CF9E /* HQImagePageControl.m */; };
 		CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE40E2D3221BDBC90072CF9E /* HQFlowViewVC.m */; };
+		CE4187A3228E715600A3A8ED /* music_on.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4187A1228E715600A3A8ED /* music_on.png */; };
+		CE4187A4228E715600A3A8ED /* music_off.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4187A2228E715600A3A8ED /* music_off.png */; };
+		CE4187A6228E71DC00A3A8ED /* paihangbang_anniu.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4187A5228E71DC00A3A8ED /* paihangbang_anniu.png */; };
 		CE7386D922410957004C7239 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7386D722410957004C7239 /* AVPlayerViewController.m */; };
 		CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7386D822410957004C7239 /* AVPlayerViewController.xib */; };
 		CE7386EC2242508B004C7239 /* bg_maze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE7386E92242508B004C7239 /* bg_maze.mp3 */; };
@@ -325,6 +328,9 @@
 		CE40E2D2221BDBC90072CF9E /* HQFlowViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQFlowViewVC.h; sourceTree = "<group>"; };
 		CE40E2D3221BDBC90072CF9E /* HQFlowViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQFlowViewVC.m; sourceTree = "<group>"; };
 		CE40E2D6221BDF450072CF9E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CE4187A1228E715600A3A8ED /* music_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_on.png; sourceTree = "<group>"; };
+		CE4187A2228E715600A3A8ED /* music_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_off.png; sourceTree = "<group>"; };
+		CE4187A5228E71DC00A3A8ED /* paihangbang_anniu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paihangbang_anniu.png; sourceTree = "<group>"; };
 		CE7386D622410957004C7239 /* AVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
 		CE7386D722410957004C7239 /* AVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		CE7386D822410957004C7239 /* AVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
@@ -553,6 +559,9 @@
 		3DB19AFF217DC59500CD9E24 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CE4187A5228E71DC00A3A8ED /* paihangbang_anniu.png */,
+				CE4187A2228E715600A3A8ED /* music_off.png */,
+				CE4187A1228E715600A3A8ED /* music_on.png */,
 				3DB19B00217DC59500CD9E24 /* myimage.jpg */,
 			);
 			path = images;
@@ -1420,8 +1429,10 @@
 			files = (
 				CE193C01222BB61B002F670B /* colors_pantone.plist in Resources */,
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
+				CE4187A6228E71DC00A3A8ED /* paihangbang_anniu.png in Resources */,
 				CE94209022478D6800C10CD0 /* RequestViewController.xib in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
+				CE4187A3228E715600A3A8ED /* music_on.png in Resources */,
 				CE7386ED2242508B004C7239 /* bg_ordinary.mp3 in Resources */,
 				CE027753225079A600BA7A88 /* Localizable.strings in Resources */,
 				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
@@ -1436,6 +1447,7 @@
 				CEFA19E0226576D8002C245A /* message.json in Resources */,
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
+				CE4187A4228E715600A3A8ED /* music_off.png in Resources */,
 				CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */,
 				3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */,
 				3D220CF0217DC20200E3799F /* SDKViewController.xib in Resources */,

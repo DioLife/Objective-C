@@ -24,6 +24,9 @@
     //手机系统
     NSString *osType = [[UIDevice currentDevice] systemName];
     NSLog(@"手机系统:%@", osType);
+    if (@available(iOS 10, *)) {
+        NSLog(@"系统版本大于等于10");
+    }
     //手机系统版本
     NSString *osVersion = [[UIDevice currentDevice] systemVersion];
     NSLog(@"手机系统版本:%@", osVersion);

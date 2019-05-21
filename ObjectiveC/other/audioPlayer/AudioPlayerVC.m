@@ -15,6 +15,19 @@
 
 @implementation AudioPlayerVC
 
+//播放
+- (IBAction)goPlay:(UIButton *)sender {
+    [[AudioPlayer sharedManager] play];
+}
+//停止
+- (IBAction)goStop:(UIButton *)sender {
+    [[AudioPlayer sharedManager] stop];
+}
+//暂停
+- (IBAction)goPlause:(UIButton *)sender {
+    [[AudioPlayer sharedManager] plause];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
@@ -30,7 +43,8 @@
 }
 
 - (IBAction)play2:(UIButton *)sender {
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"rock_clash.wav" withExtension:nil];
+    NSString *urlStr = [[NSBundle mainBundle] pathForResource:@"bg_maze" ofType:@"mp3"];
+    NSURL *url = [NSURL URLWithString:urlStr];
     [[AudioPlayer sharedManager] play:url];
 }
 

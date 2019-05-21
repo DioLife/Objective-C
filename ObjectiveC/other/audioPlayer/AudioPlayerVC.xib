@@ -40,13 +40,52 @@
                         <action selector="play2:" destination="-1" eventType="touchUpInside" id="xIy-zw-egO"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncz-3y-pbb">
+                    <rect key="frame" x="334" y="59" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="3v2-XW-mCI"/>
+                        <constraint firstAttribute="height" constant="60" id="Zbd-6z-vKF"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="music_on.png"/>
+                    <connections>
+                        <action selector="goPlay:" destination="-1" eventType="touchUpInside" id="mGu-3I-hkZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi3-Uf-D8A">
+                    <rect key="frame" x="334" y="134" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="ekd-Cj-wIf"/>
+                        <constraint firstAttribute="height" constant="60" id="lFa-WZ-98k"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="music_off.png"/>
+                    <connections>
+                        <action selector="goStop:" destination="-1" eventType="touchUpInside" id="g6t-kA-552"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGU-p9-ctv">
+                    <rect key="frame" x="334" y="209" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="9pT-47-pgt"/>
+                        <constraint firstAttribute="height" constant="60" id="zRv-i6-a5u"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="paihangbang_anniu.png"/>
+                    <connections>
+                        <action selector="goPlause:" destination="-1" eventType="touchUpInside" id="bAF-QR-xSC"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Ncz-3y-pbb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="15" id="5xN-yn-LkR"/>
                 <constraint firstItem="bcs-zA-Sil" firstAttribute="width" secondItem="JUy-Ke-BNh" secondAttribute="width" id="9hU-EG-8PM"/>
+                <constraint firstItem="zi3-Uf-D8A" firstAttribute="top" secondItem="Ncz-3y-pbb" secondAttribute="bottom" constant="15" id="9wA-Vk-VqJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ncz-3y-pbb" secondAttribute="trailing" constant="20" id="A3p-eK-9Jc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="SGU-p9-ctv" secondAttribute="trailing" constant="20" id="J8p-SX-Trn"/>
                 <constraint firstItem="JUy-Ke-BNh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="UwF-ST-JNt"/>
                 <constraint firstItem="bcs-zA-Sil" firstAttribute="top" secondItem="JUy-Ke-BNh" secondAttribute="bottom" constant="20" id="VPH-78-b33"/>
                 <constraint firstItem="bcs-zA-Sil" firstAttribute="height" secondItem="JUy-Ke-BNh" secondAttribute="height" id="Vcf-zm-3ey"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="zi3-Uf-D8A" secondAttribute="trailing" constant="20" id="WFc-op-umz"/>
+                <constraint firstItem="SGU-p9-ctv" firstAttribute="top" secondItem="zi3-Uf-D8A" secondAttribute="bottom" constant="15" id="Z59-ul-2KQ"/>
                 <constraint firstItem="bcs-zA-Sil" firstAttribute="centerX" secondItem="JUy-Ke-BNh" secondAttribute="centerX" id="cot-gH-j3L"/>
                 <constraint firstItem="JUy-Ke-BNh" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="jnr-7g-KGb"/>
             </constraints>
@@ -54,4 +93,9 @@
             <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
         </view>
     </objects>
+    <resources>
+        <image name="music_off.png" width="109" height="113"/>
+        <image name="music_on.png" width="109" height="113"/>
+        <image name="paihangbang_anniu.png" width="109" height="113"/>
+    </resources>
 </document>
