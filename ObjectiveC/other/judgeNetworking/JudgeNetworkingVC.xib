@@ -90,6 +90,19 @@
                         <action selector="inCcode:" destination="-1" eventType="touchUpInside" id="jmo-Z1-0GU"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31q-W5-bRP">
+                    <rect key="frame" x="100" y="430" width="175" height="40"/>
+                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="B4b-o9-5HO"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="EmP-vc-Q5J"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="TEa-Sc-Vkc"/>
+                    </constraints>
+                    <state key="normal" title="判断运营"/>
+                    <connections>
+                        <action selector="judeWhichNet:" destination="-1" eventType="touchUpInside" id="i8r-Nj-Vut"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -105,12 +118,15 @@
                 <constraint firstItem="RYe-jn-nyW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="MM1-Wg-lJe"/>
                 <constraint firstItem="T6P-Uw-OTP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="RYq-oY-31p"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="B78-gY-vg8" secondAttribute="trailing" constant="50" id="TDy-Zg-2gb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="31q-W5-bRP" secondAttribute="trailing" constant="100" id="WT5-Sl-NqR"/>
+                <constraint firstItem="31q-W5-bRP" firstAttribute="top" secondItem="587-iN-isp" secondAttribute="bottom" constant="25" id="WdQ-RT-g7l"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Zy2-jq-StJ" secondAttribute="trailing" constant="100" id="YgJ-LA-rFq"/>
                 <constraint firstItem="B78-gY-vg8" firstAttribute="top" secondItem="iBR-2L-xKR" secondAttribute="bottom" constant="25" id="bcF-E3-YfI"/>
                 <constraint firstItem="iBR-2L-xKR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="dOR-EN-37D"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RYe-jn-nyW" secondAttribute="trailing" constant="100" id="ehQ-0O-SQr"/>
                 <constraint firstItem="B78-gY-vg8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="j64-dc-V2f"/>
                 <constraint firstItem="iBR-2L-xKR" firstAttribute="top" secondItem="Zy2-jq-StJ" secondAttribute="bottom" constant="25" id="t6P-ML-NTv"/>
+                <constraint firstItem="31q-W5-bRP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="wXU-nn-pxP"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>

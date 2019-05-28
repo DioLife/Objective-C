@@ -10,19 +10,10 @@
 #import <AFNetworking.h>
 #import "Reachability.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTCarrier.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <netinet/in.h>
 
-//#include <net/if.h>
-//#include <stdio.h>
-//#include <netinet/in.h>
-//#include <arpa/inet.h>
-//#include <errno.h>
-//#include <sys/types.h>
-//#include <stdlib.h>
-//#include <sys/types.h>
-//#include <sys/stat.h>
-//#include <fcntl.h>
 
 
 @interface JudgeNetworkingVC ()
@@ -38,8 +29,22 @@
     
 }
 
-- (IBAction)inCcode:(UIButton *)sender {
+- (IBAction)judeWhichNet:(UIButton *)sender {
+    CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
+    CTCarrier *carrier = [info subscriberCellularProvider];
+    //当前手机所属运营商名称
+    NSString *mobile;
+    //先判断有没有SIM卡，如果没有则不获取本机运营商
+    if (!carrier.isoCountryCode) {
+        mobile = @"无运营商";
+    }else{
+        mobile = [carrier carrierName];
+    }
+    NSLog(@"%@", mobile);
+}
 
+- (IBAction)inCcode:(UIButton *)sender {
+    
 }
 
 //SCNetworkReachabilityRef   注:Reachability就是封土装的SCNetworkReachabilityRef
@@ -90,7 +95,7 @@
         NSArray *network2G = @[CTRadioAccessTechnologyGPRS, CTRadioAccessTechnologyEdge, CTRadioAccessTechnologyCDMA1x];
         NSArray *network3G = @[CTRadioAccessTechnologyWCDMA, CTRadioAccessTechnologyHSDPA, CTRadioAccessTechnologyHSUPA, CTRadioAccessTechnologyCDMAEVDORev0, CTRadioAccessTechnologyCDMAEVDORevA, CTRadioAccessTechnologyCDMAEVDORevB, CTRadioAccessTechnologyeHRPD];
         NSArray *network4G = @[CTRadioAccessTechnologyLTE];
-
+        
         if ([network2G containsObject:currentStatus]) {
             networkType = @"2G";
         }else if ([network3G containsObject:currentStatus]) {
@@ -188,7 +193,7 @@
 - (void) reachabilityChanged:(NSNotification *)note {
     Reachability* curReach = [note object];
     NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
-
+    
     // 自己获取网络
     NetworkStatus netStatus = [curReach currentReachabilityStatus];
     switch (netStatus) {
@@ -241,7 +246,7 @@
                 break;
         }
     }];
-
+    
     //3.开始监听
     [manager startMonitoring];
     BOOL isConnecting = [manager isReachable];
