@@ -14,6 +14,7 @@
 #import "NibCollectionViewVC.h"
 #import "ViewController.h"
 #import "PickimageViewController.h"
+#import "brower/BrowerViewController.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -26,6 +27,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    BrowerViewController *browerVC = [BrowerViewController new];
+    browerVC.title = @"跳转到浏览器";
+    [self.dataArray addObject:browerVC];
     
     PickimageViewController *pickImageVC = [PickimageViewController new];
     pickImageVC.title = @"选取图片";
