@@ -15,6 +15,7 @@
 #import "ViewController.h"
 #import "PickimageViewController.h"
 #import "brower/BrowerViewController.h"
+#import "MyFontViewController.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -27,6 +28,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    MyFontViewController *fontVC = [MyFontViewController new];
+    fontVC.title = @"自定义字体";
+    [self.dataArray addObject:fontVC];
     
     BrowerViewController *browerVC = [BrowerViewController new];
     browerVC.title = @"跳转到浏览器";

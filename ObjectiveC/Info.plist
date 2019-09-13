@@ -65,5 +65,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>jianzhi.ttf</string>
+		<string>kangti.ttf</string>
+		<string>miaowu.ttf</string>
+		<string>time.ttf</string>
+		<string>yaoti.ttf</string>
+		<string>zhanbi.ttf</string>
+		<string>zhiyi.ttf</string>
+	</array>
 </dict>
 </plist>
