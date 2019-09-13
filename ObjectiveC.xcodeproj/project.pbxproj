@@ -64,6 +64,14 @@
 		CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BF9222BB61B002F670B /* KKColorListViewController.m */; };
 		CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */; };
 		CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */; };
+		CE1CBAB12322469200D3AE39 /* MyFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1CBAB02322469200D3AE39 /* MyFontViewController.m */; };
+		CE1CBABA232246E500D3AE39 /* jianzhi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAB3232246E500D3AE39 /* jianzhi.ttf */; };
+		CE1CBABB232246E500D3AE39 /* kangti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAB4232246E500D3AE39 /* kangti.ttf */; };
+		CE1CBABC232246E500D3AE39 /* yaoti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAB5232246E500D3AE39 /* yaoti.ttf */; };
+		CE1CBABD232246E500D3AE39 /* zhanbi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAB6232246E500D3AE39 /* zhanbi.ttf */; };
+		CE1CBABE232246E500D3AE39 /* time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAB7232246E500D3AE39 /* time.ttf */; };
+		CE1CBABF232246E500D3AE39 /* miaowu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAB8232246E500D3AE39 /* miaowu.ttf */; };
+		CE1CBAC0232246E500D3AE39 /* zhiyi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAB9232246E500D3AE39 /* zhiyi.ttf */; };
 		CE287AA02265833500B6C517 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287A9F2265833500B6C517 /* TestModel.m */; };
 		CE287AA62265838500B6C517 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287AA52265838500B6C517 /* DataModel.m */; };
 		CE287AA92265839900B6C517 /* PhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287AA82265839900B6C517 /* PhoneModel.m */; };
@@ -78,6 +86,8 @@
 		CE287AEB2265D0DB00B6C517 /* test3.json in Resources */ = {isa = PBXBuildFile; fileRef = CE287AEA2265D0DB00B6C517 /* test3.json */; };
 		CE287AFB2265E77B00B6C517 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287AF92265E77B00B6C517 /* DelegateViewController.m */; };
 		CE287AFC2265E77B00B6C517 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE287AFA2265E77B00B6C517 /* DelegateViewController.xib */; };
+		CE2EF18922D4446200C09B22 /* BrowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2EF18722D4446200C09B22 /* BrowerViewController.m */; };
+		CE2EF18A22D4446200C09B22 /* BrowerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2EF18822D4446200C09B22 /* BrowerViewController.xib */; };
 		CE34E748228BC3520042C323 /* NetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34E746228BC3520042C323 /* NetworkViewController.m */; };
 		CE34E749228BC3520042C323 /* NetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE34E747228BC3520042C323 /* NetworkViewController.xib */; };
 		CE34E74D228BE1D80042C323 /* body.png in Resources */ = {isa = PBXBuildFile; fileRef = CE34E74B228BE1D70042C323 /* body.png */; };
@@ -270,6 +280,15 @@
 		CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
 		CE193BFF222BB61B002F670B /* UIView+KKToolKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KKToolKitAdditions.h"; sourceTree = "<group>"; };
 		CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KKToolKitAdditions.m"; sourceTree = "<group>"; };
+		CE1CBAAF2322469200D3AE39 /* MyFontViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFontViewController.h; sourceTree = "<group>"; };
+		CE1CBAB02322469200D3AE39 /* MyFontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFontViewController.m; sourceTree = "<group>"; };
+		CE1CBAB3232246E500D3AE39 /* jianzhi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = jianzhi.ttf; sourceTree = "<group>"; };
+		CE1CBAB4232246E500D3AE39 /* kangti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kangti.ttf; sourceTree = "<group>"; };
+		CE1CBAB5232246E500D3AE39 /* yaoti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yaoti.ttf; sourceTree = "<group>"; };
+		CE1CBAB6232246E500D3AE39 /* zhanbi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zhanbi.ttf; sourceTree = "<group>"; };
+		CE1CBAB7232246E500D3AE39 /* time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = time.ttf; sourceTree = "<group>"; };
+		CE1CBAB8232246E500D3AE39 /* miaowu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = miaowu.ttf; sourceTree = "<group>"; };
+		CE1CBAB9232246E500D3AE39 /* zhiyi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zhiyi.ttf; sourceTree = "<group>"; };
 		CE287A9E2265833500B6C517 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		CE287A9F2265833500B6C517 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		CE287AA42265838500B6C517 /* DataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
@@ -294,6 +313,9 @@
 		CE287AF82265E77B00B6C517 /* DelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
 		CE287AF92265E77B00B6C517 /* DelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
 		CE287AFA2265E77B00B6C517 /* DelegateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateViewController.xib; sourceTree = "<group>"; };
+		CE2EF18622D4446200C09B22 /* BrowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowerViewController.h; sourceTree = "<group>"; };
+		CE2EF18722D4446200C09B22 /* BrowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowerViewController.m; sourceTree = "<group>"; };
+		CE2EF18822D4446200C09B22 /* BrowerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowerViewController.xib; sourceTree = "<group>"; };
 		CE34E745228BC3520042C323 /* NetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkViewController.h; sourceTree = "<group>"; };
 		CE34E746228BC3520042C323 /* NetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkViewController.m; sourceTree = "<group>"; };
 		CE34E747228BC3520042C323 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkViewController.xib; sourceTree = "<group>"; };
@@ -512,6 +534,8 @@
 		3D220CCF217DC19700E3799F /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				CE1CBAAE2322467900D3AE39 /* myfont */,
+				CE2EF18522D4444D00C09B22 /* brower */,
 				CED3B95B22674A3C008988CE /* pickimage */,
 				5FF96AD42226E20C0094DF79 /* view */,
 				5FF96AC12226D0630094DF79 /* collectionview */,
@@ -817,6 +841,29 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		CE1CBAAE2322467900D3AE39 /* myfont */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CBAAF2322469200D3AE39 /* MyFontViewController.h */,
+				CE1CBAB02322469200D3AE39 /* MyFontViewController.m */,
+			);
+			path = myfont;
+			sourceTree = "<group>";
+		};
+		CE1CBAB2232246C900D3AE39 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CBAB3232246E500D3AE39 /* jianzhi.ttf */,
+				CE1CBAB4232246E500D3AE39 /* kangti.ttf */,
+				CE1CBAB8232246E500D3AE39 /* miaowu.ttf */,
+				CE1CBAB7232246E500D3AE39 /* time.ttf */,
+				CE1CBAB5232246E500D3AE39 /* yaoti.ttf */,
+				CE1CBAB6232246E500D3AE39 /* zhanbi.ttf */,
+				CE1CBAB9232246E500D3AE39 /* zhiyi.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		CE287A9D2265831400B6C517 /* model2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -874,6 +921,16 @@
 				CE287AFA2265E77B00B6C517 /* DelegateViewController.xib */,
 			);
 			path = delegate;
+			sourceTree = "<group>";
+		};
+		CE2EF18522D4444D00C09B22 /* brower */ = {
+			isa = PBXGroup;
+			children = (
+				CE2EF18622D4446200C09B22 /* BrowerViewController.h */,
+				CE2EF18722D4446200C09B22 /* BrowerViewController.m */,
+				CE2EF18822D4446200C09B22 /* BrowerViewController.xib */,
+			);
+			path = brower;
 			sourceTree = "<group>";
 		};
 		CE34E744228BC32F0042C323 /* network */ = {
@@ -1198,6 +1255,7 @@
 		CECFB03621D38BEC00CB737F /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				CE1CBAB2232246C900D3AE39 /* font */,
 				CE7D20352259E4E700DEE23E /* json */,
 				CE7386E822425068004C7239 /* sound */,
 				CE40E2D7221BE2B60072CF9E /* web */,
@@ -1439,12 +1497,14 @@
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
 				CE7D1BD22255C1F300DEE23E /* SpeechViewController.xib in Resources */,
 				CE7D1D3F2257453300DEE23E /* rock_clash.wav in Resources */,
+				CE1CBABF232246E500D3AE39 /* miaowu.ttf in Resources */,
 				CE287AEB2265D0DB00B6C517 /* test3.json in Resources */,
 				CE287AB82265BC8D00B6C517 /* test.json in Resources */,
 				CEFA19DD22657598002C245A /* ParseViewController.xib in Resources */,
 				CE7386EE2242508B004C7239 /* back02.mp3 in Resources */,
 				CE7D203B2259E4F700DEE23E /* water-loading.json in Resources */,
 				CEFA19E0226576D8002C245A /* message.json in Resources */,
+				CE1CBABD232246E500D3AE39 /* zhanbi.ttf in Resources */,
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
 				CE4187A4228E715600A3A8ED /* music_off.png in Resources */,
@@ -1477,23 +1537,29 @@
 				CE7D1BE1225626C500DEE23E /* MessageViewController.xib in Resources */,
 				3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */,
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
+				CE1CBABE232246E500D3AE39 /* time.ttf in Resources */,
 				CE0277DC2250DB3B00BA7A88 /* OrientationVC.xib in Resources */,
 				5F36E86E223D352400CE3093 /* RACViewController.xib in Resources */,
 				CE287AAF2265B70C00B6C517 /* test2.json in Resources */,
 				CE7D1D3C2257421300DEE23E /* AudioPlayerVC.xib in Resources */,
 				CE34E749228BC3520042C323 /* NetworkViewController.xib in Resources */,
 				CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */,
+				CE1CBABB232246E500D3AE39 /* kangti.ttf in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
 				CE287AFC2265E77B00B6C517 /* DelegateViewController.xib in Resources */,
 				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
 				CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */,
 				CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */,
+				CE2EF18A22D4446200C09B22 /* BrowerViewController.xib in Resources */,
+				CE1CBABC232246E500D3AE39 /* yaoti.ttf in Resources */,
 				CE9420BC2248BB2C00C10CD0 /* ToastViewController.xib in Resources */,
 				3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */,
 				CE7D20392259E4F700DEE23E /* Boat_Loader.json in Resources */,
 				3DB19B0F217DC59600CD9E24 /* myweb.html in Resources */,
 				3DB19B0D217DC59600CD9E24 /* show.html in Resources */,
 				CED3B96022674A52008988CE /* PickimageViewController.xib in Resources */,
+				CE1CBAC0232246E500D3AE39 /* zhiyi.ttf in Resources */,
+				CE1CBABA232246E500D3AE39 /* jianzhi.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1552,6 +1618,7 @@
 				CE287AA92265839900B6C517 /* PhoneModel.m in Sources */,
 				CEFA19E32265775C002C245A /* Message.m in Sources */,
 				CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */,
+				CE1CBAB12322469200D3AE39 /* MyFontViewController.m in Sources */,
 				CE7D1D37225741EB00DEE23E /* AudioPlayer.m in Sources */,
 				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
 				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
@@ -1575,6 +1642,7 @@
 				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
 				CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */,
 				CE40E2D0221BDB7E0072CF9E /* HQImagePageControl.m in Sources */,
+				CE2EF18922D4446200C09B22 /* BrowerViewController.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
 				CED3B8BF2265F3CF008988CE /* DelegateView.m in Sources */,
 				CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */,
