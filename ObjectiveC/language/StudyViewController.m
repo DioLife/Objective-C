@@ -14,6 +14,7 @@
 #import "DelegateViewController.h"
 #import "device/DeviceViewController.h"
 #import "NetworkViewController.h"
+#import "PolymorphismViewController.h"
 
 @interface StudyViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -26,6 +27,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    PolymorphismViewController *polyVC = [PolymorphismViewController new];
+    polyVC.title = @"多态";
+    [self.dataArray addObject:polyVC];
     
     NetworkViewController *networkVC = [NetworkViewController new];
     networkVC.title = @"原生网络请求";
