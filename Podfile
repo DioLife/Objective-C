@@ -14,5 +14,6 @@ target 'ObjectiveC' do
   pod 'ReactiveObjC', '3.1.0'
   pod 'lottie-ios', '2.5.0'
   pod 'YYModel', '1.0.4'
+  pod 'MJRefresh', '3.2.0'
   
 end

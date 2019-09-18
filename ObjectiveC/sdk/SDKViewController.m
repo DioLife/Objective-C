@@ -20,6 +20,7 @@
 #import "ToastViewController.h"
 #import "LottieViewController.h"
 #import "DLSlideViewVC.h"
+#import "MJRefreshViewController.h"
 
 @interface SDKViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -32,6 +33,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    MJRefreshViewController *mjVC = [MJRefreshViewController new];
+    mjVC.title = @"MJRefresh";
+    [self.dataArray addObject:mjVC];
     
     DLSlideViewVC *dlsVC = [DLSlideViewVC new];
     dlsVC.title = @"DLSlideView";
