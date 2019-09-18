@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -164,6 +164,14 @@
 		CED3B96022674A52008988CE /* PickimageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED3B95E22674A52008988CE /* PickimageViewController.xib */; };
 		CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */; };
 		CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */; };
+		CEE43DDE2330F254008FA43C /* PolymorphismViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE43DDD2330F254008FA43C /* PolymorphismViewController.m */; };
+		CEE43DE12330F306008FA43C /* CHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE43DE02330F306008FA43C /* CHPerson.m */; };
+		CEE43DE72330F437008FA43C /* CHChina.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE43DE62330F437008FA43C /* CHChina.m */; };
+		CEE43DEC2330F962008FA43C /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE43DEB2330F962008FA43C /* Tree.m */; };
+		CEE43DEF2330F9AA008FA43C /* Osier.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE43DEE2330F9AA008FA43C /* Osier.m */; };
+		CEE43DF22330F9DC008FA43C /* PineTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE43DF12330F9DC008FA43C /* PineTree.m */; };
+		CEE43F5C2331E0CA008FA43C /* MJRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE43F5A2331E0CA008FA43C /* MJRefreshViewController.m */; };
+		CEE43F5D2331E0CA008FA43C /* MJRefreshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE43F5B2331E0CA008FA43C /* MJRefreshViewController.xib */; };
 		CEE98C992283C838007DAF24 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE98C982283C838007DAF24 /* UserNotifications.framework */; };
 		CEFA19C522648744002C245A /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA19B522648744002C245A /* DLLRUCache.m */; };
 		CEFA19C622648744002C245A /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA19BB22648744002C245A /* DLTabedSlideView.m */; };
@@ -435,6 +443,21 @@
 		CEE30A6721E5ED7500AD82FA /* AFNetworkingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVC.h; sourceTree = "<group>"; };
 		CEE30A6821E5ED7500AD82FA /* AFNetworkingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVC.m; sourceTree = "<group>"; };
 		CEE30A6921E5ED7500AD82FA /* AFNetworkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFNetworkingVC.xib; sourceTree = "<group>"; };
+		CEE43DDC2330F254008FA43C /* PolymorphismViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolymorphismViewController.h; sourceTree = "<group>"; };
+		CEE43DDD2330F254008FA43C /* PolymorphismViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolymorphismViewController.m; sourceTree = "<group>"; };
+		CEE43DDF2330F306008FA43C /* CHPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHPerson.h; sourceTree = "<group>"; };
+		CEE43DE02330F306008FA43C /* CHPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHPerson.m; sourceTree = "<group>"; };
+		CEE43DE52330F437008FA43C /* CHChina.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHChina.h; sourceTree = "<group>"; };
+		CEE43DE62330F437008FA43C /* CHChina.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHChina.m; sourceTree = "<group>"; };
+		CEE43DEA2330F962008FA43C /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		CEE43DEB2330F962008FA43C /* Tree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
+		CEE43DED2330F9AA008FA43C /* Osier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Osier.h; sourceTree = "<group>"; };
+		CEE43DEE2330F9AA008FA43C /* Osier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Osier.m; sourceTree = "<group>"; };
+		CEE43DF02330F9DC008FA43C /* PineTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PineTree.h; sourceTree = "<group>"; };
+		CEE43DF12330F9DC008FA43C /* PineTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PineTree.m; sourceTree = "<group>"; };
+		CEE43F592331E0CA008FA43C /* MJRefreshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshViewController.h; sourceTree = "<group>"; };
+		CEE43F5A2331E0CA008FA43C /* MJRefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshViewController.m; sourceTree = "<group>"; };
+		CEE43F5B2331E0CA008FA43C /* MJRefreshViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MJRefreshViewController.xib; sourceTree = "<group>"; };
 		CEE98C982283C838007DAF24 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		CEFA19B322648744002C245A /* DLTabedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTabedSlideView.h; sourceTree = "<group>"; };
 		CEFA19B522648744002C245A /* DLLRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLRUCache.m; sourceTree = "<group>"; };
@@ -517,6 +540,7 @@
 		3D220CCE217DC17A00E3799F /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CEE43DDB2330F22C008FA43C /* polymorphism */,
 				CE34E744228BC32F0042C323 /* network */,
 				CECDACE52271CAC40020A98F /* device */,
 				CE287AF72265E75B00B6C517 /* delegate */,
@@ -552,6 +576,7 @@
 		3D220CD0217DC19F00E3799F /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				CEE43F582331E0A8008FA43C /* MJRefresh */,
 				CEFA19CC22648750002C245A /* DLSlideView */,
 				CE7D202F2259E42B00DEE23E /* lottie */,
 				CE9420B72248BB1C00C10CD0 /* toast */,
@@ -1335,6 +1360,51 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		CEE43DDB2330F22C008FA43C /* polymorphism */ = {
+			isa = PBXGroup;
+			children = (
+				CEE43DE92330F8F1008FA43C /* study2 */,
+				CEE43DE82330F8E6008FA43C /* study1 */,
+				CEE43DDC2330F254008FA43C /* PolymorphismViewController.h */,
+				CEE43DDD2330F254008FA43C /* PolymorphismViewController.m */,
+			);
+			path = polymorphism;
+			sourceTree = "<group>";
+		};
+		CEE43DE82330F8E6008FA43C /* study1 */ = {
+			isa = PBXGroup;
+			children = (
+				CEE43DDF2330F306008FA43C /* CHPerson.h */,
+				CEE43DE02330F306008FA43C /* CHPerson.m */,
+				CEE43DE52330F437008FA43C /* CHChina.h */,
+				CEE43DE62330F437008FA43C /* CHChina.m */,
+			);
+			path = study1;
+			sourceTree = "<group>";
+		};
+		CEE43DE92330F8F1008FA43C /* study2 */ = {
+			isa = PBXGroup;
+			children = (
+				CEE43DEA2330F962008FA43C /* Tree.h */,
+				CEE43DEB2330F962008FA43C /* Tree.m */,
+				CEE43DED2330F9AA008FA43C /* Osier.h */,
+				CEE43DEE2330F9AA008FA43C /* Osier.m */,
+				CEE43DF02330F9DC008FA43C /* PineTree.h */,
+				CEE43DF12330F9DC008FA43C /* PineTree.m */,
+			);
+			path = study2;
+			sourceTree = "<group>";
+		};
+		CEE43F582331E0A8008FA43C /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				CEE43F592331E0CA008FA43C /* MJRefreshViewController.h */,
+				CEE43F5A2331E0CA008FA43C /* MJRefreshViewController.m */,
+				CEE43F5B2331E0CA008FA43C /* MJRefreshViewController.xib */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
 		CEFA19B222648744002C245A /* DLSlideView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1429,6 +1499,7 @@
 				3D220CB0217DBF8F00E3799F /* Sources */,
 				3D220CB1217DBF8F00E3799F /* Frameworks */,
 				3D220CB2217DBF8F00E3799F /* Resources */,
+				396EC09A17BDADAD1835B8F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1462,7 +1533,7 @@
 				};
 			};
 			buildConfigurationList = 3D220CAF217DBF8E00E3799F /* Build configuration list for PBXProject "ObjectiveC" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1490,6 +1561,7 @@
 				CE4187A6228E71DC00A3A8ED /* paihangbang_anniu.png in Resources */,
 				CE94209022478D6800C10CD0 /* RequestViewController.xib in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
+				CEE43F5D2331E0CA008FA43C /* MJRefreshViewController.xib in Resources */,
 				CE4187A3228E715600A3A8ED /* music_on.png in Resources */,
 				CE7386ED2242508B004C7239 /* bg_ordinary.mp3 in Resources */,
 				CE027753225079A600BA7A88 /* Localizable.strings in Resources */,
@@ -1566,6 +1638,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		396EC09A17BDADAD1835B8F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6963AA2F720E27A63DC05148 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1594,14 +1683,17 @@
 				3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */,
 				CE193C03222BB61B002F670B /* KKColorCell.m in Sources */,
 				CED3B95422670E2A008988CE /* Person.m in Sources */,
+				CEE43DDE2330F254008FA43C /* PolymorphismViewController.m in Sources */,
 				CEFA19C722648744002C245A /* DLScrollTabbarView.m in Sources */,
 				CED3B8D52266085A008988CE /* Dog2.m in Sources */,
 				CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */,
+				CEE43DE12330F306008FA43C /* CHPerson.m in Sources */,
 				CE40E2CE221BDB7E0072CF9E /* HQFlowView.m in Sources */,
 				CE287AE92265CEB500B6C517 /* YYEatModel.m in Sources */,
 				CE287AE62265CE9900B6C517 /* YYPersonModel2.m in Sources */,
 				5FF96ADF2226E2670094DF79 /* MyView.m in Sources */,
 				CE7D20332259E44900DEE23E /* LottieViewController.m in Sources */,
+				CEE43DEC2330F962008FA43C /* Tree.m in Sources */,
 				CE389CEF223DF3F40099BD35 /* OtherViewController.m in Sources */,
 				3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */,
 				CEFA19CB22648744002C245A /* DLSlideView.m in Sources */,
@@ -1657,10 +1749,12 @@
 				5FF96AE72226E3160094DF79 /* BookModel.m in Sources */,
 				3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */,
 				5FF96AD22226DBE10094DF79 /* NibCollectionViewCell.m in Sources */,
+				CEE43F5C2331E0CA008FA43C /* MJRefreshViewController.m in Sources */,
 				CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */,
 				CECDACE92271CAEF0020A98F /* DeviceViewController.m in Sources */,
 				CE389CE8223DF3440099BD35 /* ClearCacheViewController.m in Sources */,
 				CEFA19DC22657598002C245A /* ParseViewController.m in Sources */,
+				CEE43DE72330F437008FA43C /* CHChina.m in Sources */,
 				3DB19B10217DC59600CD9E24 /* TableViewVC.m in Sources */,
 				CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */,
 				CE287AC82265C21E00B6C517 /* ContentModel.m in Sources */,
@@ -1680,6 +1774,8 @@
 				CE40E2CF221BDB7E0072CF9E /* HQIndexBannerSubview.m in Sources */,
 				CED3B8BC2265F1C1008988CE /* Fish.m in Sources */,
 				CE34E752228BF5820042C323 /* Reachability.m in Sources */,
+				CEE43DF22330F9DC008FA43C /* PineTree.m in Sources */,
+				CEE43DEF2330F9AA008FA43C /* Osier.m in Sources */,
 				CED3B8CF22660844008988CE /* Man2.m in Sources */,
 				3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */,
 				CE287AFB2265E77B00B6C517 /* DelegateViewController.m in Sources */,
