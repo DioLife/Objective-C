@@ -98,8 +98,10 @@ static NSInteger const ImageCount = 51;
 }
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+#pragma tabBar上做动画的功能在Xcode11运行会出问题,等以后找到解决方法再做
+    /*
     NSInteger index = [tabBarController.childViewControllers indexOfObject:viewController];
-    
+     
     //取到选中的tabBar 上的button
     UIButton *tabBarBtn = tabBarController.tabBar.subviews[index+1];
     //取到button上的imageView
@@ -125,7 +127,7 @@ static NSInteger const ImageCount = 51;
     self.currentImageView = imageView;
     // 记录当前选中的下标
     self.currentIndex = index;
-    
+    */
     return YES;
 }
 
