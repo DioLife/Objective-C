@@ -540,6 +540,7 @@
 		3D220CCE217DC17A00E3799F /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CE28CC862345F98500444FCD /* property */,
 				CEE43DDB2330F22C008FA43C /* polymorphism */,
 				CE34E744228BC32F0042C323 /* network */,
 				CECDACE52271CAC40020A98F /* device */,
@@ -946,6 +947,13 @@
 				CE287AFA2265E77B00B6C517 /* DelegateViewController.xib */,
 			);
 			path = delegate;
+			sourceTree = "<group>";
+		};
+		CE28CC862345F98500444FCD /* property */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = property;
 			sourceTree = "<group>";
 		};
 		CE2EF18522D4444D00C09B22 /* brower */ = {
@@ -1927,7 +1935,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMYS2HH4QK;
+				DEVELOPMENT_TEAM = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;
@@ -1950,7 +1958,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMYS2HH4QK;
+				DEVELOPMENT_TEAM = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;
