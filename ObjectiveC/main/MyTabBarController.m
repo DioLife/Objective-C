@@ -31,7 +31,7 @@
 
 //添加一个子控制器的方法
 - (void)addOneViewController:(UIViewController *)childViewController image:(NSString *)imageName selectedImage:(NSString *)selectedImageName title:(NSString *)title {
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:childViewController];
+    MyNavgationController *nav = [[MyNavgationController alloc] initWithRootViewController:childViewController];
     
     // 设置图片和文字之间的间距
     nav.tabBarItem.imageInsets = UIEdgeInsetsMake(-2, 0, 2, 0);
