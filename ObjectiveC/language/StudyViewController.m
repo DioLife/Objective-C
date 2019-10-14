@@ -15,6 +15,7 @@
 #import "device/DeviceViewController.h"
 #import "NetworkViewController.h"
 #import "PolymorphismViewController.h"
+#import "KVOViewController.h"
 
 @interface StudyViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -27,6 +28,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    KVOViewController *kvoVC = [KVOViewController new];
+    kvoVC.title = @"KVO";
+    [self.dataArray addObject: kvoVC];
     
     PolymorphismViewController *polyVC = [PolymorphismViewController new];
     polyVC.title = @"多态";
