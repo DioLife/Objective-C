@@ -17,6 +17,8 @@
 #import "AudioPlayerVC.h"
 #import "ParseViewController.h"
 #import "SerializeViewController.h"
+#import "ChangeIconViewController.h"
+
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -29,6 +31,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    ChangeIconViewController *changeIconVC = [[ChangeIconViewController alloc] init];
+    changeIconVC.title = @"更改App icon";
+    [self.dataArray addObject:changeIconVC];
     
     SerializeViewController *serializeVC = [SerializeViewController new];
     serializeVC.title = @"序列化";

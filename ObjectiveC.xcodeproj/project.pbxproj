@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -50,6 +50,20 @@
 		CE027753225079A600BA7A88 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE027755225079A600BA7A88 /* Localizable.strings */; };
 		CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0277D92250DB3B00BA7A88 /* OrientationVC.m */; };
 		CE0277DC2250DB3B00BA7A88 /* OrientationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0277DA2250DB3B00BA7A88 /* OrientationVC.xib */; };
+		CE0D2E4C2350648400BD6A0E /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D2E4B2350648400BD6A0E /* KVOViewController.m */; };
+		CE0D2E52235065AA00BD6A0E /* Person2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D2E51235065AA00BD6A0E /* Person2.m */; };
+		CE17E4C723547F3C004A7AA2 /* ChangeIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE17E4C523547F3C004A7AA2 /* ChangeIconViewController.m */; };
+		CE17E4C823547F3C004A7AA2 /* ChangeIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4C623547F3C004A7AA2 /* ChangeIconViewController.xib */; };
+		CE17E4E923548C2A004A7AA2 /* iWiBi-orange-two@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4DF23548C2A004A7AA2 /* iWiBi-orange-two@3x.png */; };
+		CE17E4EA23548C2A004A7AA2 /* AppIcon-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E023548C2A004A7AA2 /* AppIcon-default@2x.png */; };
+		CE17E4EB23548C2A004A7AA2 /* AppIcon-default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E123548C2A004A7AA2 /* AppIcon-default@3x.png */; };
+		CE17E4EC23548C2A004A7AA2 /* iWiBi-orange-two@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E223548C2A004A7AA2 /* iWiBi-orange-two@2x.png */; };
+		CE17E4ED23548C2A004A7AA2 /* iWiBi-orange-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E323548C2A004A7AA2 /* iWiBi-orange-icon@3x.png */; };
+		CE17E4EE23548C2A004A7AA2 /* iWiBi-orange-icon-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E423548C2A004A7AA2 /* iWiBi-orange-icon-light@3x.png */; };
+		CE17E4EF23548C2A004A7AA2 /* iWiBi-orange-blank@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E523548C2A004A7AA2 /* iWiBi-orange-blank@3x.png */; };
+		CE17E4F023548C2A004A7AA2 /* iWiBi-orange-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E623548C2A004A7AA2 /* iWiBi-orange-blank@2x.png */; };
+		CE17E4F123548C2A004A7AA2 /* iWiBi-orange-icon-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E723548C2A004A7AA2 /* iWiBi-orange-icon-light@2x.png */; };
+		CE17E4F223548C2A004A7AA2 /* iWiBi-orange-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E823548C2A004A7AA2 /* iWiBi-orange-icon@2x.png */; };
 		CE193BDF222B971A002F670B /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BDE222B971A002F670B /* ColorViewController.m */; };
 		CE193BE3222BB554002F670B /* Color2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BE1222BB554002F670B /* Color2ViewController.m */; };
 		CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE193BE2222BB554002F670B /* Color2ViewController.xib */; };
@@ -263,6 +277,23 @@
 		CE0277D82250DB3B00BA7A88 /* OrientationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrientationVC.h; sourceTree = "<group>"; };
 		CE0277D92250DB3B00BA7A88 /* OrientationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrientationVC.m; sourceTree = "<group>"; };
 		CE0277DA2250DB3B00BA7A88 /* OrientationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrientationVC.xib; sourceTree = "<group>"; };
+		CE0D2E4A2350648400BD6A0E /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		CE0D2E4B2350648400BD6A0E /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		CE0D2E50235065AA00BD6A0E /* Person2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person2.h; sourceTree = "<group>"; };
+		CE0D2E51235065AA00BD6A0E /* Person2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person2.m; sourceTree = "<group>"; };
+		CE17E4C423547F3C004A7AA2 /* ChangeIconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeIconViewController.h; sourceTree = "<group>"; };
+		CE17E4C523547F3C004A7AA2 /* ChangeIconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeIconViewController.m; sourceTree = "<group>"; };
+		CE17E4C623547F3C004A7AA2 /* ChangeIconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeIconViewController.xib; sourceTree = "<group>"; };
+		CE17E4DF23548C2A004A7AA2 /* iWiBi-orange-two@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-two@3x.png"; sourceTree = "<group>"; };
+		CE17E4E023548C2A004A7AA2 /* AppIcon-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-default@2x.png"; sourceTree = "<group>"; };
+		CE17E4E123548C2A004A7AA2 /* AppIcon-default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-default@3x.png"; sourceTree = "<group>"; };
+		CE17E4E223548C2A004A7AA2 /* iWiBi-orange-two@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-two@2x.png"; sourceTree = "<group>"; };
+		CE17E4E323548C2A004A7AA2 /* iWiBi-orange-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@3x.png"; sourceTree = "<group>"; };
+		CE17E4E423548C2A004A7AA2 /* iWiBi-orange-icon-light@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@3x.png"; sourceTree = "<group>"; };
+		CE17E4E523548C2A004A7AA2 /* iWiBi-orange-blank@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@3x.png"; sourceTree = "<group>"; };
+		CE17E4E623548C2A004A7AA2 /* iWiBi-orange-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@2x.png"; sourceTree = "<group>"; };
+		CE17E4E723548C2A004A7AA2 /* iWiBi-orange-icon-light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@2x.png"; sourceTree = "<group>"; };
+		CE17E4E823548C2A004A7AA2 /* iWiBi-orange-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@2x.png"; sourceTree = "<group>"; };
 		CE193BDD222B971A002F670B /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
 		CE193BDE222B971A002F670B /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 		CE193BE0222BB554002F670B /* Color2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color2ViewController.h; sourceTree = "<group>"; };
@@ -540,6 +571,7 @@
 		3D220CCE217DC17A00E3799F /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CE0D2E492350642E00BD6A0E /* KVO */,
 				CE28CC862345F98500444FCD /* property */,
 				CEE43DDB2330F22C008FA43C /* polymorphism */,
 				CE34E744228BC32F0042C323 /* network */,
@@ -609,6 +641,7 @@
 		3DB19AFF217DC59500CD9E24 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CE17E4DE23548C2A004A7AA2 /* change_app_icon */,
 				CE4187A5228E71DC00A3A8ED /* paihangbang_anniu.png */,
 				CE4187A2228E715600A3A8ED /* music_off.png */,
 				CE4187A1228E715600A3A8ED /* music_on.png */,
@@ -770,6 +803,44 @@
 				CE0277DA2250DB3B00BA7A88 /* OrientationVC.xib */,
 			);
 			path = Orientation;
+			sourceTree = "<group>";
+		};
+		CE0D2E492350642E00BD6A0E /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				CE0D2E4A2350648400BD6A0E /* KVOViewController.h */,
+				CE0D2E4B2350648400BD6A0E /* KVOViewController.m */,
+				CE0D2E50235065AA00BD6A0E /* Person2.h */,
+				CE0D2E51235065AA00BD6A0E /* Person2.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		CE17E4C323547D41004A7AA2 /* changeIcon */ = {
+			isa = PBXGroup;
+			children = (
+				CE17E4C423547F3C004A7AA2 /* ChangeIconViewController.h */,
+				CE17E4C523547F3C004A7AA2 /* ChangeIconViewController.m */,
+				CE17E4C623547F3C004A7AA2 /* ChangeIconViewController.xib */,
+			);
+			path = changeIcon;
+			sourceTree = "<group>";
+		};
+		CE17E4DE23548C2A004A7AA2 /* change_app_icon */ = {
+			isa = PBXGroup;
+			children = (
+				CE17E4DF23548C2A004A7AA2 /* iWiBi-orange-two@3x.png */,
+				CE17E4E023548C2A004A7AA2 /* AppIcon-default@2x.png */,
+				CE17E4E123548C2A004A7AA2 /* AppIcon-default@3x.png */,
+				CE17E4E223548C2A004A7AA2 /* iWiBi-orange-two@2x.png */,
+				CE17E4E323548C2A004A7AA2 /* iWiBi-orange-icon@3x.png */,
+				CE17E4E423548C2A004A7AA2 /* iWiBi-orange-icon-light@3x.png */,
+				CE17E4E523548C2A004A7AA2 /* iWiBi-orange-blank@3x.png */,
+				CE17E4E623548C2A004A7AA2 /* iWiBi-orange-blank@2x.png */,
+				CE17E4E723548C2A004A7AA2 /* iWiBi-orange-icon-light@2x.png */,
+				CE17E4E823548C2A004A7AA2 /* iWiBi-orange-icon@2x.png */,
+			);
+			path = change_app_icon;
 			sourceTree = "<group>";
 		};
 		CE193BDC222B9636002F670B /* colorPicker */ = {
@@ -1246,6 +1317,7 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CE17E4C323547D41004A7AA2 /* changeIcon */,
 				CED3B94C22670A52008988CE /* serialize */,
 				CEFA19D822657263002C245A /* paraseJSON */,
 				CE7D1D34225741CE00DEE23E /* audioPlayer */,
@@ -1541,7 +1613,7 @@
 				};
 			};
 			buildConfigurationList = 3D220CAF217DBF8E00E3799F /* Build configuration list for PBXProject "ObjectiveC" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1564,15 +1636,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE17E4EB23548C2A004A7AA2 /* AppIcon-default@3x.png in Resources */,
+				CE17E4EF23548C2A004A7AA2 /* iWiBi-orange-blank@3x.png in Resources */,
 				CE193C01222BB61B002F670B /* colors_pantone.plist in Resources */,
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
 				CE4187A6228E71DC00A3A8ED /* paihangbang_anniu.png in Resources */,
 				CE94209022478D6800C10CD0 /* RequestViewController.xib in Resources */,
+				CE17E4ED23548C2A004A7AA2 /* iWiBi-orange-icon@3x.png in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
+				CE17E4C823547F3C004A7AA2 /* ChangeIconViewController.xib in Resources */,
 				CEE43F5D2331E0CA008FA43C /* MJRefreshViewController.xib in Resources */,
+				CE17E4E923548C2A004A7AA2 /* iWiBi-orange-two@3x.png in Resources */,
 				CE4187A3228E715600A3A8ED /* music_on.png in Resources */,
 				CE7386ED2242508B004C7239 /* bg_ordinary.mp3 in Resources */,
 				CE027753225079A600BA7A88 /* Localizable.strings in Resources */,
+				CE17E4EA23548C2A004A7AA2 /* AppIcon-default@2x.png in Resources */,
 				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
 				CE3D1E1B21A8298E00015F2B /* t2.m3u8 in Resources */,
 				CE7D1BD22255C1F300DEE23E /* SpeechViewController.xib in Resources */,
@@ -1597,6 +1675,7 @@
 				CE02774F2250799E00BA7A88 /* InfoPlist.strings in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
 				CE7D1BDA2255C8B900DEE23E /* language.json in Resources */,
+				CE17E4EC23548C2A004A7AA2 /* iWiBi-orange-two@2x.png in Resources */,
 				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
 				CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */,
@@ -1626,7 +1705,9 @@
 				CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */,
 				CE1CBABB232246E500D3AE39 /* kangti.ttf in Resources */,
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
+				CE17E4F223548C2A004A7AA2 /* iWiBi-orange-icon@2x.png in Resources */,
 				CE287AFC2265E77B00B6C517 /* DelegateViewController.xib in Resources */,
+				CE17E4F023548C2A004A7AA2 /* iWiBi-orange-blank@2x.png in Resources */,
 				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
 				CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */,
 				CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */,
@@ -1640,6 +1721,8 @@
 				CED3B96022674A52008988CE /* PickimageViewController.xib in Resources */,
 				CE1CBAC0232246E500D3AE39 /* zhiyi.ttf in Resources */,
 				CE1CBABA232246E500D3AE39 /* jianzhi.ttf in Resources */,
+				CE17E4EE23548C2A004A7AA2 /* iWiBi-orange-icon-light@3x.png in Resources */,
+				CE17E4F123548C2A004A7AA2 /* iWiBi-orange-icon-light@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1707,6 +1790,7 @@
 				CEFA19CB22648744002C245A /* DLSlideView.m in Sources */,
 				CEFA19C922648744002C245A /* DLUtility.m in Sources */,
 				CE7D1D3B2257421300DEE23E /* AudioPlayerVC.m in Sources */,
+				CE17E4C723547F3C004A7AA2 /* ChangeIconViewController.m in Sources */,
 				CE34E748228BC3520042C323 /* NetworkViewController.m in Sources */,
 				5FF96AD92226E2430094DF79 /* ViewController.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
@@ -1730,6 +1814,7 @@
 				5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */,
 				CE287AB32265B74400B6C517 /* Author.m in Sources */,
 				CEFA19CA22648744002C245A /* DLCustomSlideView.m in Sources */,
+				CE0D2E52235065AA00BD6A0E /* Person2.m in Sources */,
 				CEE30A6A21E5ED7500AD82FA /* AFNetworkingVC.m in Sources */,
 				CE9420BB2248BB2C00C10CD0 /* ToastViewController.m in Sources */,
 				CED3B8B62265F185008988CE /* Man.m in Sources */,
@@ -1783,6 +1868,7 @@
 				CED3B8BC2265F1C1008988CE /* Fish.m in Sources */,
 				CE34E752228BF5820042C323 /* Reachability.m in Sources */,
 				CEE43DF22330F9DC008FA43C /* PineTree.m in Sources */,
+				CE0D2E4C2350648400BD6A0E /* KVOViewController.m in Sources */,
 				CEE43DEF2330F9AA008FA43C /* Osier.m in Sources */,
 				CED3B8CF22660844008988CE /* Man2.m in Sources */,
 				3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */,
