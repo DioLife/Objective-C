@@ -13,7 +13,7 @@
 #import "model2/DataModel.h"
 #import "model2/PhoneModel.h"
 #import "model3/YYPersonModel.h"
-#import <NSObject+YYModel.h>
+#import <YYModel.h>
 #import "model4/Book.h"
 #import "model4/Author.h"
 #import "model5/YYPersonModel2.h"
