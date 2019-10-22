@@ -24,9 +24,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//        [self study1];
-//    [self study2];
-    [self study3];
+//    [self study1];
+    [self study2];
+//    [self study3];
 }
 
 -(void)study3{
@@ -37,6 +37,14 @@
     delView.myDelegate2 = self;
 }
 
+-(void)touch:(NSString *)str{
+    NSLog(@"touch: %@",str);
+}
+
+-(void)testMethod:(NSString *)str{
+    NSLog(@"touch: %@",str);
+}
+
 -(void)study2{
     Man2 *man = [Man2 new];
     Dog2 *dog = [Dog2 new];
@@ -45,14 +53,6 @@
     if ([man.myDelegate respondsToSelector:@selector(watch)]) {
         [man.myDelegate watch];   // 通知代理方看门
     }
-}
-
--(void)touch:(NSString *)str{
-    NSLog(@"touch: %@",str);
-}
-
--(void)testMethod:(NSString *)str{
-    NSLog(@"touch: %@",str);
 }
 
 -(void)study1{
