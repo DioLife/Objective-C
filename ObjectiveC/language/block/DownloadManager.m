@@ -14,7 +14,7 @@
 {
     NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:URL]];
     NSURLSession * session = [NSURLSession sharedSession];
-
+    
     //执行请求任务
     NSURLSessionDataTask * task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (handler) {

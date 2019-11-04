@@ -55,7 +55,7 @@ typedef int (^Calculate)(int, int); // Calculate就是类型名
             NSLog(@"下载成功，%@",receiveData);
         }
     }];
-     */
+    **/
     
     //另一种写法,将block声明、实现和方法调用分开来写,这样写便于理解
     void (^hander)(NSData * receiveData, NSError * error);//block的声明
@@ -107,8 +107,7 @@ typedef int (^Calculate)(int, int); // Calculate就是类型名
     CGFloat result2 = [self testTimeConsume2:myBlock];
     NSLog(@"result2 = %f", result2);
 }
-// -------------------------- 无参数的 Block ---------------------------
-// 实现
+// -------------------------- 无参数的Block ---------------------------
 - (CGFloat)testTimeConsume:(void(^)(void))middleBlock {
     // 执行前记录下当前的时间
     CFTimeInterval startTime = CACurrentMediaTime();
@@ -117,8 +116,7 @@ typedef int (^Calculate)(int, int); // Calculate就是类型名
     CFTimeInterval endTime = CACurrentMediaTime();
     return endTime - startTime;
 }
-// ------------------------- 有参数的 Block ---------------------------
-// 实现
+// ------------------------- 有参数的Block ---------------------------
 - (CGFloat)testTimeConsume2:(void(^)(NSString * name))middleBlock {
     // 执行前记录下当前的时间
     CFTimeInterval startTime = CACurrentMediaTime();
