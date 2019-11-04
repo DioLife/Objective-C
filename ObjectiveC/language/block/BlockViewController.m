@@ -58,7 +58,7 @@ typedef int (^Calculate)(int, int); // Calculate就是类型名
     **/
     
     //另一种写法,将block声明、实现和方法调用分开来写,这样写便于理解
-    void (^hander)(NSData * receiveData, NSError * error);//block的声明
+    void (^handler)(NSData * receiveData, NSError * error);//block的声明
     handler = ^(NSData * receiveData, NSError * error){//block的实现
         if (error) {
             NSLog(@"下载失败：%@",error);
