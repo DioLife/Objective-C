@@ -6,28 +6,33 @@
 //  Copyright © 2018年 William. All rights reserved.
 //
 
-#import "StudyViewController.h"
+#import "LanguageViewController.h"
 #import "LazyloadViewController.h"
 #import "ShowSingletonViewController.h"
-#import "Audio/AVPlayerViewController.h"
-#import "GCD/GCDViewController.h"
+#import "AVPlayerViewController.h"
+#import "GCDViewController.h"
 #import "DelegateViewController.h"
-#import "device/DeviceViewController.h"
+#import "DeviceViewController.h"
 #import "NetworkViewController.h"
 #import "PolymorphismViewController.h"
 #import "KVOViewController.h"
+#import "BlockViewController.h"
 
-@interface StudyViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface LanguageViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 @property (nonatomic,strong) NSMutableArray *dataArray;
 
 @end
 
-@implementation StudyViewController
+@implementation LanguageViewController
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    BlockViewController *blockVC = [[BlockViewController alloc] init];
+    blockVC.title = @"Block";
+    [self.dataArray addObject:blockVC];
     
     KVOViewController *kvoVC = [KVOViewController new];
     kvoVC.title = @"KVO";

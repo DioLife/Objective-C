@@ -10,8 +10,8 @@
 		3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CB8217DBF8F00E3799F /* AppDelegate.m */; };
 		3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CC0217DBF9000E3799F /* Assets.xcassets */; };
 		3D220CC7217DBF9000E3799F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CC6217DBF9000E3799F /* main.m */; };
-		3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CE3217DC1E300E3799F /* StudyViewController.m */; };
-		3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CE4217DC1E300E3799F /* StudyViewController.xib */; };
+		3D220CE5217DC1E300E3799F /* LanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CE3217DC1E300E3799F /* LanguageViewController.m */; };
+		3D220CE6217DC1E300E3799F /* LanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CE4217DC1E300E3799F /* LanguageViewController.xib */; };
 		3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CE8217DC1F700E3799F /* MyUIViewController.m */; };
 		3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CE9217DC1F700E3799F /* MyUIViewController.xib */; };
 		3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CED217DC20200E3799F /* SDKViewController.m */; };
@@ -127,6 +127,8 @@
 		CE4187A3228E715600A3A8ED /* music_on.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4187A1228E715600A3A8ED /* music_on.png */; };
 		CE4187A4228E715600A3A8ED /* music_off.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4187A2228E715600A3A8ED /* music_off.png */; };
 		CE4187A6228E71DC00A3A8ED /* paihangbang_anniu.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4187A5228E71DC00A3A8ED /* paihangbang_anniu.png */; };
+		CE427A39236D8772001A90B4 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE427A38236D8772001A90B4 /* BlockViewController.m */; };
+		CE427A3C236FDAEA001A90B4 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE427A3B236FDAEA001A90B4 /* DownloadManager.m */; };
 		CE7386D922410957004C7239 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7386D722410957004C7239 /* AVPlayerViewController.m */; };
 		CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7386D822410957004C7239 /* AVPlayerViewController.xib */; };
 		CE7386EC2242508B004C7239 /* bg_maze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE7386E92242508B004C7239 /* bg_maze.mp3 */; };
@@ -211,9 +213,9 @@
 		3D220CC0217DBF9000E3799F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D220CC5217DBF9000E3799F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D220CC6217DBF9000E3799F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3D220CE2217DC1E300E3799F /* StudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyViewController.h; sourceTree = "<group>"; };
-		3D220CE3217DC1E300E3799F /* StudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyViewController.m; sourceTree = "<group>"; };
-		3D220CE4217DC1E300E3799F /* StudyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyViewController.xib; sourceTree = "<group>"; };
+		3D220CE2217DC1E300E3799F /* LanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageViewController.h; sourceTree = "<group>"; };
+		3D220CE3217DC1E300E3799F /* LanguageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageViewController.m; sourceTree = "<group>"; };
+		3D220CE4217DC1E300E3799F /* LanguageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageViewController.xib; sourceTree = "<group>"; };
 		3D220CE7217DC1F700E3799F /* MyUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUIViewController.h; sourceTree = "<group>"; };
 		3D220CE8217DC1F700E3799F /* MyUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUIViewController.m; sourceTree = "<group>"; };
 		3D220CE9217DC1F700E3799F /* MyUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyUIViewController.xib; sourceTree = "<group>"; };
@@ -392,6 +394,10 @@
 		CE4187A1228E715600A3A8ED /* music_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_on.png; sourceTree = "<group>"; };
 		CE4187A2228E715600A3A8ED /* music_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_off.png; sourceTree = "<group>"; };
 		CE4187A5228E71DC00A3A8ED /* paihangbang_anniu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paihangbang_anniu.png; sourceTree = "<group>"; };
+		CE427A37236D8772001A90B4 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		CE427A38236D8772001A90B4 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		CE427A3A236FDAEA001A90B4 /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		CE427A3B236FDAEA001A90B4 /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 		CE7386D622410957004C7239 /* AVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
 		CE7386D722410957004C7239 /* AVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		CE7386D822410957004C7239 /* AVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
@@ -571,6 +577,7 @@
 		3D220CCE217DC17A00E3799F /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CE427A36236D8754001A90B4 /* block */,
 				CE0D2E492350642E00BD6A0E /* KVO */,
 				CE28CC862345F98500444FCD /* property */,
 				CEE43DDB2330F22C008FA43C /* polymorphism */,
@@ -581,9 +588,6 @@
 				CE7386D5224108F4004C7239 /* Audio */,
 				CE80B8DB21B3FE4300E4748F /* Singleton */,
 				3DB19AFB217DC4AB00CD9E24 /* lazyload */,
-				3D220CE2217DC1E300E3799F /* StudyViewController.h */,
-				3D220CE3217DC1E300E3799F /* StudyViewController.m */,
-				3D220CE4217DC1E300E3799F /* StudyViewController.xib */,
 			);
 			path = language;
 			sourceTree = "<group>";
@@ -599,9 +603,6 @@
 				CE3D1E0A21A7F1B800015F2B /* video */,
 				3DB19B05217DC59600CD9E24 /* tableview */,
 				3DB19B08217DC59600CD9E24 /* webview */,
-				3D220CE7217DC1F700E3799F /* MyUIViewController.h */,
-				3D220CE8217DC1F700E3799F /* MyUIViewController.m */,
-				3D220CE9217DC1F700E3799F /* MyUIViewController.xib */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -622,9 +623,6 @@
 				3DB19B13217DC71E00CD9E24 /* masonry */,
 				3DB19B16217DC71E00CD9E24 /* MyMBProgressHUD */,
 				3DB19B1A217DC71E00CD9E24 /* sdautolayout */,
-				3D220CEC217DC20200E3799F /* SDKViewController.h */,
-				3D220CED217DC20200E3799F /* SDKViewController.m */,
-				3D220CEE217DC20200E3799F /* SDKViewController.xib */,
 			);
 			path = sdk;
 			sourceTree = "<group>";
@@ -1168,6 +1166,17 @@
 			path = web;
 			sourceTree = "<group>";
 		};
+		CE427A36236D8754001A90B4 /* block */ = {
+			isa = PBXGroup;
+			children = (
+				CE427A37236D8772001A90B4 /* BlockViewController.h */,
+				CE427A38236D8772001A90B4 /* BlockViewController.m */,
+				CE427A3A236FDAEA001A90B4 /* DownloadManager.h */,
+				CE427A3B236FDAEA001A90B4 /* DownloadManager.m */,
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
 		CE7386D5224108F4004C7239 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -1328,9 +1337,6 @@
 				CE9420A92248907300C10CD0 /* judgeNetworking */,
 				CE94208822478D3C00C10CD0 /* request */,
 				CE389CE4223DF2F00099BD35 /* clearCache */,
-				CE389CEC223DF3F40099BD35 /* OtherViewController.h */,
-				CE389CED223DF3F40099BD35 /* OtherViewController.m */,
-				CE389CEE223DF3F40099BD35 /* OtherViewController.xib */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -1353,6 +1359,18 @@
 				3D220CF3217DC23B00E3799F /* MyNavgationController.m */,
 				3D220CF1217DC23B00E3799F /* MyTabBarController.h */,
 				3D220CF4217DC23C00E3799F /* MyTabBarController.m */,
+				3D220CE2217DC1E300E3799F /* LanguageViewController.h */,
+				3D220CE3217DC1E300E3799F /* LanguageViewController.m */,
+				3D220CE4217DC1E300E3799F /* LanguageViewController.xib */,
+				3D220CE7217DC1F700E3799F /* MyUIViewController.h */,
+				3D220CE8217DC1F700E3799F /* MyUIViewController.m */,
+				3D220CE9217DC1F700E3799F /* MyUIViewController.xib */,
+				3D220CEC217DC20200E3799F /* SDKViewController.h */,
+				3D220CED217DC20200E3799F /* SDKViewController.m */,
+				3D220CEE217DC20200E3799F /* SDKViewController.xib */,
+				CE389CEC223DF3F40099BD35 /* OtherViewController.h */,
+				CE389CED223DF3F40099BD35 /* OtherViewController.m */,
+				CE389CEE223DF3F40099BD35 /* OtherViewController.xib */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -1708,7 +1726,7 @@
 				CE17E4F223548C2A004A7AA2 /* iWiBi-orange-icon@2x.png in Resources */,
 				CE287AFC2265E77B00B6C517 /* DelegateViewController.xib in Resources */,
 				CE17E4F023548C2A004A7AA2 /* iWiBi-orange-blank@2x.png in Resources */,
-				3D220CE6217DC1E300E3799F /* StudyViewController.xib in Resources */,
+				3D220CE6217DC1E300E3799F /* LanguageViewController.xib in Resources */,
 				CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */,
 				CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */,
 				CE2EF18A22D4446200C09B22 /* BrowerViewController.xib in Resources */,
@@ -1789,6 +1807,7 @@
 				3D220CEF217DC20200E3799F /* SDKViewController.m in Sources */,
 				CEFA19CB22648744002C245A /* DLSlideView.m in Sources */,
 				CEFA19C922648744002C245A /* DLUtility.m in Sources */,
+				CE427A39236D8772001A90B4 /* BlockViewController.m in Sources */,
 				CE7D1D3B2257421300DEE23E /* AudioPlayerVC.m in Sources */,
 				CE17E4C723547F3C004A7AA2 /* ChangeIconViewController.m in Sources */,
 				CE34E748228BC3520042C323 /* NetworkViewController.m in Sources */,
@@ -1805,7 +1824,7 @@
 				CE1CBAB12322469200D3AE39 /* MyFontViewController.m in Sources */,
 				CE7D1D37225741EB00DEE23E /* AudioPlayer.m in Sources */,
 				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
-				3D220CE5217DC1E300E3799F /* StudyViewController.m in Sources */,
+				3D220CE5217DC1E300E3799F /* LanguageViewController.m in Sources */,
 				CE94208B22478D5500C10CD0 /* RequestManager.m in Sources */,
 				CE7D1BD12255C1F300DEE23E /* SpeechViewController.m in Sources */,
 				CEFA19C822648744002C245A /* DLFixedTabbarView.m in Sources */,
@@ -1873,6 +1892,7 @@
 				CED3B8CF22660844008988CE /* Man2.m in Sources */,
 				3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */,
 				CE287AFB2265E77B00B6C517 /* DelegateViewController.m in Sources */,
+				CE427A3C236FDAEA001A90B4 /* DownloadManager.m in Sources */,
 				3D220CF5217DC23C00E3799F /* MyNavgationController.m in Sources */,
 				CEFA19C622648744002C245A /* DLTabedSlideView.m in Sources */,
 			);

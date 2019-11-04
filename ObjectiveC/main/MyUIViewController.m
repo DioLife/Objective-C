@@ -14,7 +14,7 @@
 #import "NibCollectionViewVC.h"
 #import "ViewController.h"
 #import "PickimageViewController.h"
-#import "brower/BrowerViewController.h"
+#import "BrowerViewController.h"
 #import "MyFontViewController.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
