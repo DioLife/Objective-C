@@ -15,7 +15,8 @@
 
 @implementation ChangeIconViewController
 
-//在设置icon的时候，会有个系统弹框，这样有时候会不太友好，我们可以使用Runtime，对UIViewController进行扩展来隐藏这个弹框：
+//在设置icon的时候，会有个系统弹框，这样有时候会不太友好，我们可以使用Runtime，对UIAlertController进行扩展来隐藏这个弹框(如果有这个需求可以加上下面的两个方法)
+
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -26,8 +27,8 @@
 }
 - (void)lq_presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
     if ([viewControllerToPresent isKindOfClass:[UIAlertController class]]) {
-//        NSLog(@"title : %@",((UIAlertController *)viewControllerToPresent).title);
-//        NSLog(@"message : %@",((UIAlertController *)viewControllerToPresent).message);
+        NSLog(@"title : %@",((UIAlertController *)viewControllerToPresent).title);
+        NSLog(@"message : %@",((UIAlertController *)viewControllerToPresent).message);
         
         UIAlertController *alertController = (UIAlertController *)viewControllerToPresent;
         if (alertController.title == nil && alertController.message == nil) {
@@ -48,45 +49,44 @@
     
     // icon1
     UIImage *image1 = [UIImage imageNamed:@"AppIcon-default"];
-    UIAlertAction *defaultIcon = [UIAlertAction actionWithTitle:@"默认图标" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *defaultAlertAction = [UIAlertAction actionWithTitle:@"默认图标" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self changeAppIconWithName:nil];
-        return;
     }];
-    [defaultIcon setValue:[image1 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
-    [refreshAlert addAction:defaultIcon];
+    [defaultAlertAction setValue:[image1 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
+    [refreshAlert addAction:defaultAlertAction];
     // icon2
     NSString *name2 = @"iWiBi-orange-icon-light";
     UIImage *image2 = [UIImage imageNamed:name2];
-    UIAlertAction *newIcon1 = [UIAlertAction actionWithTitle:@"橙色图标-轻亮" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *alertAction2 = [UIAlertAction actionWithTitle:@"橙色图标-轻亮" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self changeAppIconWithName:name2];
         return;
     }];
-    [newIcon1 setValue:[image2 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
-    [refreshAlert addAction:newIcon1];
+    [alertAction2 setValue:[image2 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
+    [refreshAlert addAction:alertAction2];
     // icon3
     NSString *name3 = @"iWiBi-orange-icon";
     UIImage *image3 = [UIImage imageNamed:name3];
-    UIAlertAction *newIcon3 = [UIAlertAction actionWithTitle:@"橙色图标-墨深" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *alertAction3 = [UIAlertAction actionWithTitle:@"橙色图标-墨深" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self changeAppIconWithName:name3];
     }];
-    [newIcon3 setValue:[image3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
-    [refreshAlert addAction:newIcon3];
+    [alertAction3 setValue:[image3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
+    [refreshAlert addAction:alertAction3];
     // icon4
     NSString *name4 = @"iWiBi-orange-two";
     UIImage *image4 = [UIImage imageNamed:name4];
-    UIAlertAction *newIcon4 = [UIAlertAction actionWithTitle:@"橙色图标-全彩" style: UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *alertAction4 = [UIAlertAction actionWithTitle:@"橙色图标-全彩" style: UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self changeAppIconWithName:name4];
     }];
-    [newIcon4 setValue:[image4 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
-    [refreshAlert addAction:newIcon4];
+    [alertAction4 setValue:[image4 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
+    [refreshAlert addAction:alertAction4];
     // icon5
     NSString *name5 = @"iWiBi-orange-blank";
     UIImage *image5 = [UIImage imageNamed:name5];
-    UIAlertAction *newIcon5 = [UIAlertAction actionWithTitle:@"橙色图标-留白" style: UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *alertAction5 = [UIAlertAction actionWithTitle:@"橙色图标-留白" style: UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self changeAppIconWithName:name5];
     }];
-    [newIcon5 setValue:[image5 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
-    [refreshAlert addAction:newIcon5];
+    [alertAction5 setValue:[image5 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]  forKey:@"image"];
+    [refreshAlert addAction:alertAction5];
     
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     [refreshAlert addAction:cancel];
