@@ -17,13 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    for (NSString *fontfamilyname in [UIFont familyNames]) {
+    /*
+     系统字体有81种,如果自己添加N种新字体, 总共就会有81+N种字体
+     **/
+    NSArray<NSString *> *familyNames = [UIFont familyNames];
+    for (int i = 0; i < familyNames.count; i++) {
+        NSString *fontfamilyname = [familyNames objectAtIndex:i];
         NSLog(@"fontfamilyname:'%@'",fontfamilyname);
         for(NSString *fontName in [UIFont fontNamesForFamilyName: fontfamilyname]) {
             NSLog(@"font:'%@'",fontName);
         }
-        NSLog(@"-------------------- done ---------------------");
+        NSLog(@"-------------------- %d done ---------------------",i);
     }
     
     UIFont *myfont = [UIFont fontWithName:@"MyanmarSangamMN-Bold" size:20];
