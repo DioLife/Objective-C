@@ -6,19 +6,70 @@
 //  Copyright © 2019 William. All rights reserved.
 //
 
-#import "MessageViewController.h"
+#import "JumpAppViewController.h"
 #import <MessageUI/MessageUI.h>
 #import <StoreKit/StoreKit.h>
 
-@interface MessageViewController ()<MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate>
+@interface JumpAppViewController ()<MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate>
 
 @end
 
-@implementation MessageViewController
+@implementation JumpAppViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+}
+
+//跳转到AppStore所在App的页面
+- (IBAction)store:(UIButton *)sender {
+    NSString *appid = @"925021570";
+    NSString *str = [NSString stringWithFormat:@"http://itunes.apple.com/us/app/id%@",appid];
+    NSURL *url = [NSURL URLWithString:str];
+    if (@available(iOS 10.0, *)) {
+        NSDictionary *dict = [NSDictionary dictionary];
+        [[UIApplication sharedApplication] openURL:url options:dict completionHandler:nil];
+    }
+}
+
+//仅支持iOS10.3+（需要做校验）且每个APP内每年最多弹出3次评分Alert
+- (IBAction)evaluatePage:(UIButton *)sender {
+    if([SKStoreReviewController respondsToSelector:@selector(requestReview)]){ // 在App内弹框评价
+        //防止键盘遮挡
+        [[UIApplication sharedApplication].keyWindow endEditing:YES];
+        [SKStoreReviewController requestReview];//调用弹框
+    } else { // 到AppStore里去评价
+        //不论iOS 版本均可使用APP内部打开网页形式，跳转到App Store 直接编辑评论
+        NSString *appid = @"925021570";
+        NSString *str =[NSString stringWithFormat:@"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=%@&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8", appid];
+        NSURL *url = [NSURL URLWithString:str];
+        if ([[UIApplication sharedApplication] canOpenURL: url]) {//判断当前环境是否可以打开此url
+            if ([[[UIDevice currentDevice] systemVersion]intValue] >= 10) {
+                NSDictionary *dict = [NSDictionary dictionary];
+                [[UIApplication sharedApplication] openURL:url options:dict completionHandler:nil];
+            }
+        }
+    }
+}
+
+//iOS 11之后可以直接跳转到评分编辑页面
+- (IBAction)evaluatePage2:(UIButton *)sender {
+    NSString *appid = @"925021570";
+    NSString *str = [[NSString alloc] init];;
+    
+    if ([[[UIDevice currentDevice] systemVersion]intValue] >= 11) {  //直接跳转到评分编辑页面
+        str = [NSString stringWithFormat:@"https://itunes.apple.com/us/app/twitter/id%@?mt=8&action=write-review",appid];
+    }else { //以普通方式去AppStore评价
+        str = [NSString stringWithFormat:@"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=%@&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8",appid];
+    }
+    
+    NSURL *url = [NSURL URLWithString:str];
+    if ([[UIApplication sharedApplication] canOpenURL: url]) {//判断当前环境是否可以打开此url
+        if ([[[UIDevice currentDevice] systemVersion]intValue] >= 10) {
+            NSDictionary *dict = [NSDictionary dictionary];
+            [[UIApplication sharedApplication] openURL:url options:dict completionHandler:nil];
+        }
+    }
 }
 
 - (IBAction)mail:(UIButton *)sender {
@@ -38,67 +89,6 @@
     }
 }
 
-//跳转到AppStore所在App的页面
-- (IBAction)store:(UIButton *)sender {
-    NSString *appid = @"925021570";
-    NSString *str = [NSString stringWithFormat:@"http://itunes.apple.com/us/app/id%@",appid];
-    NSURL *url = [NSURL URLWithString:str];
-    if (@available(iOS 10.0, *)) {
-        NSDictionary *dict = [NSDictionary dictionary];
-        [[UIApplication sharedApplication] openURL:url options:dict completionHandler:nil];
-    }else{
-        [[UIApplication sharedApplication] openURL:url];
-    }
-//    if ([[[UIDevice currentDevice] systemVersion]intValue] >= 10) {//iOS 系统版本 10 以上
-//        NSDictionary *dict = [NSDictionary dictionary];
-//        [[UIApplication sharedApplication] openURL:url options:dict completionHandler:nil];
-//    }else {
-//        [[UIApplication sharedApplication] openURL:url];
-//    }
-}
-
-//仅支持iOS10.3+（需要做校验）且每个APP内每年最多弹出3次评分alart
-- (IBAction)evaluatePage:(UIButton *)sender {
-    if([SKStoreReviewController respondsToSelector:@selector(requestReview)]){ // 在App内弹框评价
-        //防止键盘遮挡
-        [[UIApplication sharedApplication].keyWindow endEditing:YES];
-        [SKStoreReviewController requestReview];//调用弹框
-    } else { // 到AppStore里去评价
-        //不论iOS 版本均可使用APP内部打开网页形式，跳转到App Store 直接编辑评论
-        NSString *appid = @"925021570";
-        NSString *str =[NSString stringWithFormat:@"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=%@&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8", appid];
-        NSURL *url = [NSURL URLWithString:str];
-        if ([[UIApplication sharedApplication] canOpenURL: url]) {//判断当前环境是否可以打开此url
-            if ([[[UIDevice currentDevice] systemVersion]intValue] >= 10) {
-                NSDictionary *dict = [NSDictionary dictionary];
-                [[UIApplication sharedApplication] openURL:url options:dict completionHandler:nil];
-            }else {
-                [[UIApplication sharedApplication] openURL:url];
-            }
-        }
-    }
-}
-//iOS 11之后可以直接跳转到评分编辑页面
-- (IBAction)evaluatePage2:(UIButton *)sender {
-    NSString *appid = @"925021570";
-    NSString *str = [[NSString alloc] init];;
-
-    if ([[[UIDevice currentDevice] systemVersion]intValue] >= 11) {  //直接跳转到评分编辑页面
-        str = [NSString stringWithFormat:@"https://itunes.apple.com/us/app/twitter/id%@?mt=8&action=write-review",appid];
-    }else { //以普通方式去AppStore评价
-        str = [NSString stringWithFormat:@"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=%@&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8",appid]; //appID 解释如下
-    }
-
-    NSURL *url = [NSURL URLWithString:str];
-    if ([[UIApplication sharedApplication] canOpenURL: url]) {//判断当前环境是否可以打开此url
-        if ([[[UIDevice currentDevice] systemVersion]intValue] >= 10) {
-            NSDictionary *dict = [NSDictionary dictionary];
-            [[UIApplication sharedApplication] openURL:url options:dict completionHandler:nil];
-        }else {
-            [[UIApplication sharedApplication] openURL:url];
-        }
-    }
-}
 
 #pragma mark -发送邮件
 - (void)sendEmailAction {
@@ -141,6 +131,7 @@
     [self presentViewController:mailCompose animated:YES completion:nil];
 }
 
+#pragma mark - 实现 MFMailComposeViewControllerDelegate
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
     
     switch (result) {
@@ -164,7 +155,6 @@
 }
 
 
-#pragma mark -发送短信
 //  调用系统API发送短信
 - (void)sendMessageAction{
     MFMessageComposeViewController *messageVC = [[MFMessageComposeViewController alloc] init];
@@ -178,6 +168,7 @@
     [self presentViewController:messageVC animated:YES completion:nil];
 }
 
+#pragma mark - 实现 MFMessageComposeViewControllerDelegate
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result{
     
     switch (result) {

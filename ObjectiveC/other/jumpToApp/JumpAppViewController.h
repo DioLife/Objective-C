@@ -1,8 +1,8 @@
 //
-//  RACViewController.h
+//  MessageViewController.h
 //  ObjectiveC
 //
-//  Created by lzd_free on 2019/3/16.
+//  Created by hello on 2019/4/4.
 //  Copyright © 2019 William. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RACViewController : UIViewController
+@interface JumpAppViewController : UIViewController
 
 @end
 

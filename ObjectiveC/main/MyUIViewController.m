@@ -16,6 +16,7 @@
 #import "PickimageViewController.h"
 #import "BrowerViewController.h"
 #import "MyFontViewController.h"
+#import "ModalViewController.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -28,6 +29,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    ModalViewController *modalVC = [ModalViewController new];
+    modalVC.title = @"模态跳转";
+    [self.dataArray addObject:modalVC];
     
     MyFontViewController *fontVC = [MyFontViewController new];
     fontVC.title = @"自定义字体";

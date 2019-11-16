@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JumpAppViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm3-Wk-gs3">
-                    <rect key="frame" x="132" y="64" width="150" height="30"/>
+                    <rect key="frame" x="132" y="66" width="150" height="30"/>
                     <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="150" id="fy5-bZ-EX5"/>
@@ -33,7 +31,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-8d-hKv">
-                    <rect key="frame" x="132" y="109" width="150" height="30"/>
+                    <rect key="frame" x="132" y="111" width="150" height="30"/>
                     <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="KFz-En-fDG"/>
@@ -45,7 +43,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvH-8T-5NP">
-                    <rect key="frame" x="132" y="154" width="150" height="30"/>
+                    <rect key="frame" x="132" y="156" width="150" height="30"/>
                     <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="Fbr-yH-wT7"/>
@@ -57,7 +55,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-Rd-4nU">
-                    <rect key="frame" x="132" y="199" width="150" height="30"/>
+                    <rect key="frame" x="132" y="201" width="150" height="30"/>
                     <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="AmS-8r-Tfo"/>
@@ -69,7 +67,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I0-yb-pNr">
-                    <rect key="frame" x="132" y="244" width="150" height="30"/>
+                    <rect key="frame" x="132" y="246" width="150" height="30"/>
                     <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="FMt-eU-pHm"/>
@@ -88,7 +86,7 @@
                 <constraint firstItem="bdI-Rd-4nU" firstAttribute="top" secondItem="XvH-8T-5NP" secondAttribute="bottom" constant="15" id="Ajd-NF-HPg"/>
                 <constraint firstItem="ccn-8d-hKv" firstAttribute="top" secondItem="Mm3-Wk-gs3" secondAttribute="bottom" constant="15" id="BrN-gN-npA"/>
                 <constraint firstItem="ccn-8d-hKv" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="LNC-mx-x66"/>
-                <constraint firstItem="Mm3-Wk-gs3" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="RKz-RZ-eCD"/>
+                <constraint firstItem="Mm3-Wk-gs3" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="22" id="RKz-RZ-eCD"/>
                 <constraint firstItem="XvH-8T-5NP" firstAttribute="top" secondItem="ccn-8d-hKv" secondAttribute="bottom" constant="15" id="YXc-kU-Mac"/>
                 <constraint firstItem="Mm3-Wk-gs3" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="jLv-pc-u5T"/>
                 <constraint firstItem="XvH-8T-5NP" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="qdd-mX-a4u"/>

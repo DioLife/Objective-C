@@ -11,7 +11,6 @@ target 'ObjectiveC' do
   pod 'MBProgressHUD', '1.1.0'
   pod 'AFNetworking', '3.2.1'
   pod 'Color-Picker-for-iOS', '2.0'
-  pod 'ReactiveObjC', '3.1.0'
   pod 'lottie-ios', '2.5.0'
   pod 'YYModel', '1.0.4'
   pod 'MJRefresh', '3.2.0'

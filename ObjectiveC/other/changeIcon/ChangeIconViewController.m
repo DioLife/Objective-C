@@ -15,8 +15,11 @@
 
 @implementation ChangeIconViewController
 
-//在设置icon的时候，会有个系统弹框，这样有时候会不太友好，我们可以使用Runtime，对UIAlertController进行扩展来隐藏这个弹框(如果有这个需求可以加上下面的两个方法)
-
+/*
+ 在设置icon后，会有个系统弹框，这样有时候会不太友好，我们可以使用Runtime，对UIAlertController进行扩展来隐藏这个弹框(如果有这个需求可以加上下面的两个方法)
+ 注:这个方法加上后所有的presentViewController模态跳转方法 都会进行交换,影响很大
+ **/
+/*
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -29,7 +32,7 @@
     if ([viewControllerToPresent isKindOfClass:[UIAlertController class]]) {
         NSLog(@"title : %@",((UIAlertController *)viewControllerToPresent).title);
         NSLog(@"message : %@",((UIAlertController *)viewControllerToPresent).message);
-        
+
         UIAlertController *alertController = (UIAlertController *)viewControllerToPresent;
         if (alertController.title == nil && alertController.message == nil) {
             return;
@@ -37,7 +40,7 @@
     }
     [self lq_presentViewController:viewControllerToPresent animated:flag completion:completion];
 }
-
+*/
 
 - (void)viewDidLoad {
     [super viewDidLoad];

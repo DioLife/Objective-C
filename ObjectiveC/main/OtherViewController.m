@@ -13,7 +13,7 @@
 #import "LocalizableViewController.h"
 #import "OrientationVC.h"
 #import "SpeechViewController.h"
-#import "MessageViewController.h"
+#import "JumpAppViewController.h"
 #import "AudioPlayerVC.h"
 #import "ParseViewController.h"
 #import "SerializeViewController.h"
@@ -48,8 +48,8 @@
     audioVC.title = @"封装一个音频播放器";
     [self.dataArray addObject:audioVC];
     
-    MessageViewController *messageVC = [MessageViewController new];
-    messageVC.title = @"发信息";
+    JumpAppViewController *messageVC = [JumpAppViewController new];
+    messageVC.title = @"App间跳转";
     [self.dataArray addObject:messageVC];
     
     SpeechViewController *speechVC = [SpeechViewController new];

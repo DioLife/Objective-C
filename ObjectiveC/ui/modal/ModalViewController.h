@@ -1,8 +1,8 @@
 //
-//  MessageViewController.h
+//  ModalViewController.h
 //  ObjectiveC
 //
-//  Created by hello on 2019/4/4.
+//  Created by hello on 2019/11/16.
 //  Copyright © 2019 William. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MessageViewController : UIViewController
+@interface ModalViewController : UIViewController
 
 @end
 

@@ -16,7 +16,6 @@
 #import "MenuListViewController.h"
 #import "ColorViewController.h"
 #import "Color2ViewController.h"
-#import "RACViewController.h"
 #import "ToastViewController.h"
 #import "LottieViewController.h"
 #import "DLSlideViewVC.h"
@@ -49,10 +48,6 @@
     ToastViewController *toastVC = [ToastViewController new];
     toastVC.title= @"toast";
     [self.dataArray addObject:toastVC];
-    
-    RACViewController *racVC = [RACViewController new];
-    racVC.title = @"ReactiveCocoa";
-    [self.dataArray addObject:racVC];
     
     Color2ViewController *color2VC = [Color2ViewController new];
     color2VC.title = @"颜色选取2";
