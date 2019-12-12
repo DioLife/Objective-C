@@ -18,7 +18,7 @@
 #import "ParseViewController.h"
 #import "SerializeViewController.h"
 #import "ChangeIconViewController.h"
-
+#import "EncryptionViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -31,6 +31,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    EncryptionViewController *encryptionVC = [EncryptionViewController new];
+    encryptionVC.title = @"加密与解密";
+    [self.dataArray addObject:encryptionVC];
     
     ChangeIconViewController *changeIconVC = [[ChangeIconViewController alloc] init];
     changeIconVC.title = @"更改App icon";
