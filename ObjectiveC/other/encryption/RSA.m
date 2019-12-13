@@ -103,18 +103,18 @@ static NSData *base64_decode(NSString *str){
 }
 
 + (SecKeyRef)addPublicKey:(NSString *)key{
-	NSRange spos = [key rangeOfString:@"-----BEGIN PUBLIC KEY-----"];
-	NSRange epos = [key rangeOfString:@"-----END PUBLIC KEY-----"];
-	if(spos.location != NSNotFound && epos.location != NSNotFound){
-		NSUInteger s = spos.location + spos.length;
-		NSUInteger e = epos.location;
-		NSRange range = NSMakeRange(s, e-s);
-		key = [key substringWithRange:range];
-	}
-	key = [key stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-	key = [key stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-	key = [key stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-	key = [key stringByReplacingOccurrencesOfString:@" "  withString:@""];
+//	NSRange spos = [key rangeOfString:@"-----BEGIN PUBLIC KEY-----"];
+//	NSRange epos = [key rangeOfString:@"-----END PUBLIC KEY-----"];
+//	if(spos.location != NSNotFound && epos.location != NSNotFound){
+//		NSUInteger s = spos.location + spos.length;
+//		NSUInteger e = epos.location;
+//		NSRange range = NSMakeRange(s, e-s);
+//		key = [key substringWithRange:range];
+//	}
+//	key = [key stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+//	key = [key stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//	key = [key stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+//	key = [key stringByReplacingOccurrencesOfString:@" "  withString:@""];
 	
 	// This will be base64 encoded, decode it.
 	NSData *data = base64_decode(key);
@@ -165,26 +165,26 @@ static NSData *base64_decode(NSString *str){
 }
 
 + (SecKeyRef)addPrivateKey:(NSString *)key{
-	NSRange spos;
-	NSRange epos;
-	spos = [key rangeOfString:@"-----BEGIN RSA PRIVATE KEY-----"];
-	if(spos.length > 0){
-		epos = [key rangeOfString:@"-----END RSA PRIVATE KEY-----"];
-	}else{
-		spos = [key rangeOfString:@"-----BEGIN PRIVATE KEY-----"];
-		epos = [key rangeOfString:@"-----END PRIVATE KEY-----"];
-	}
-	if(spos.location != NSNotFound && epos.location != NSNotFound){
-		NSUInteger s = spos.location + spos.length;
-		NSUInteger e = epos.location;
-		NSRange range = NSMakeRange(s, e-s);
-		key = [key substringWithRange:range];
-	}
-	key = [key stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-	key = [key stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-	key = [key stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-	key = [key stringByReplacingOccurrencesOfString:@" "  withString:@""];
-
+//	NSRange spos;
+//	NSRange epos;
+//	spos = [key rangeOfString:@"-----BEGIN RSA PRIVATE KEY-----"];
+//	if(spos.length > 0){
+//		epos = [key rangeOfString:@"-----END RSA PRIVATE KEY-----"];
+//	}else{
+//		spos = [key rangeOfString:@"-----BEGIN PRIVATE KEY-----"];
+//		epos = [key rangeOfString:@"-----END PRIVATE KEY-----"];
+//	}
+//	if(spos.location != NSNotFound && epos.location != NSNotFound){
+//		NSUInteger s = spos.location + spos.length;
+//		NSUInteger e = epos.location;
+//		NSRange range = NSMakeRange(s, e-s);
+//		key = [key substringWithRange:range];
+//	}
+//	key = [key stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+//	key = [key stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//	key = [key stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+//	key = [key stringByReplacingOccurrencesOfString:@" "  withString:@""];
+    
 	// This will be base64 encoded, decode it.
 	NSData *data = base64_decode(key);
 	data = [RSA stripPrivateKeyHeader:data];

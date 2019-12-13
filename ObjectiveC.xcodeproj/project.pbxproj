@@ -42,6 +42,9 @@
 		5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF96AE32226E2890094DF79 /* MyNibView.xib */; };
 		5FF96AE72226E3160094DF79 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE62226E3160094DF79 /* BookModel.m */; };
 		5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE92226F2200094DF79 /* PersonModel.m */; };
+		9321B19E23A26E8C0028B245 /* EncryptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B19C23A26E8C0028B245 /* EncryptionViewController.m */; };
+		9321B19F23A26E8C0028B245 /* EncryptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9321B19D23A26E8C0028B245 /* EncryptionViewController.xib */; };
+		9321B1A223A270A80028B245 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B1A123A270A80028B245 /* RSA.m */; };
 		CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE027747225075C800BA7A88 /* LocalizableViewController.m */; };
 		CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE027748225075C800BA7A88 /* LocalizableViewController.xib */; };
 		CE02774F2250799E00BA7A88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0277512250799E00BA7A88 /* InfoPlist.strings */; };
@@ -268,6 +271,11 @@
 		5FF96AE62226E3160094DF79 /* BookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
 		5FF96AE82226F2200094DF79 /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		5FF96AE92226F2200094DF79 /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		9321B19B23A26E8C0028B245 /* EncryptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncryptionViewController.h; sourceTree = "<group>"; };
+		9321B19C23A26E8C0028B245 /* EncryptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptionViewController.m; sourceTree = "<group>"; };
+		9321B19D23A26E8C0028B245 /* EncryptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EncryptionViewController.xib; sourceTree = "<group>"; };
+		9321B1A023A270A80028B245 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		9321B1A123A270A80028B245 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
 		ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE027746225075C800BA7A88 /* LocalizableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizableViewController.h; sourceTree = "<group>"; };
 		CE027747225075C800BA7A88 /* LocalizableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizableViewController.m; sourceTree = "<group>"; };
@@ -768,6 +776,18 @@
 				5FF96AE32226E2890094DF79 /* MyNibView.xib */,
 			);
 			path = nib;
+			sourceTree = "<group>";
+		};
+		9321B19A23A26E700028B245 /* encryption */ = {
+			isa = PBXGroup;
+			children = (
+				9321B1A023A270A80028B245 /* RSA.h */,
+				9321B1A123A270A80028B245 /* RSA.m */,
+				9321B19B23A26E8C0028B245 /* EncryptionViewController.h */,
+				9321B19C23A26E8C0028B245 /* EncryptionViewController.m */,
+				9321B19D23A26E8C0028B245 /* EncryptionViewController.xib */,
+			);
+			path = encryption;
 			sourceTree = "<group>";
 		};
 		BBEEFED4BB651D1A5F8E0205 /* Pods */ = {
@@ -1337,6 +1357,7 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				9321B19A23A26E700028B245 /* encryption */,
 				CE17E4C323547D41004A7AA2 /* changeIcon */,
 				CED3B94C22670A52008988CE /* serialize */,
 				CEFA19D822657263002C245A /* paraseJSON */,
@@ -1696,6 +1717,7 @@
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
 				CE4187A4228E715600A3A8ED /* music_off.png in Resources */,
+				9321B19F23A26E8C0028B245 /* EncryptionViewController.xib in Resources */,
 				CE757CCC237E6EC20039C29D /* miaowu.ttf in Resources */,
 				CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */,
 				3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */,
@@ -1857,6 +1879,7 @@
 				CE193C07222BB61B002F670B /* KKColorsLoader.m in Sources */,
 				CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */,
 				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
+				9321B1A223A270A80028B245 /* RSA.m in Sources */,
 				CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */,
 				CE40E2D0221BDB7E0072CF9E /* HQImagePageControl.m in Sources */,
 				CE2EF18922D4446200C09B22 /* BrowerViewController.m in Sources */,
@@ -1881,6 +1904,7 @@
 				CECDACE92271CAEF0020A98F /* DeviceViewController.m in Sources */,
 				CE389CE8223DF3440099BD35 /* ClearCacheViewController.m in Sources */,
 				CEFA19DC22657598002C245A /* ParseViewController.m in Sources */,
+				9321B19E23A26E8C0028B245 /* EncryptionViewController.m in Sources */,
 				CEE43DE72330F437008FA43C /* CHChina.m in Sources */,
 				3DB19B10217DC59600CD9E24 /* TableViewVC.m in Sources */,
 				CE40E2D4221BDBC90072CF9E /* HQFlowViewVC.m in Sources */,
