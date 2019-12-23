@@ -45,6 +45,8 @@
 		9321B19E23A26E8C0028B245 /* EncryptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B19C23A26E8C0028B245 /* EncryptionViewController.m */; };
 		9321B19F23A26E8C0028B245 /* EncryptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9321B19D23A26E8C0028B245 /* EncryptionViewController.xib */; };
 		9321B1A223A270A80028B245 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B1A123A270A80028B245 /* RSA.m */; };
+		936DCCB223B0CFC300E38DB5 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936DCCB023B0CFC300E38DB5 /* LabelViewController.m */; };
+		936DCCB323B0CFC300E38DB5 /* LabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */; };
 		CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE027747225075C800BA7A88 /* LocalizableViewController.m */; };
 		CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE027748225075C800BA7A88 /* LocalizableViewController.xib */; };
 		CE02774F2250799E00BA7A88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0277512250799E00BA7A88 /* InfoPlist.strings */; };
@@ -276,6 +278,9 @@
 		9321B19D23A26E8C0028B245 /* EncryptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EncryptionViewController.xib; sourceTree = "<group>"; };
 		9321B1A023A270A80028B245 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
 		9321B1A123A270A80028B245 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		936DCCAF23B0CFC300E38DB5 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
+		936DCCB023B0CFC300E38DB5 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
+		936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelViewController.xib; sourceTree = "<group>"; };
 		ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE027746225075C800BA7A88 /* LocalizableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizableViewController.h; sourceTree = "<group>"; };
 		CE027747225075C800BA7A88 /* LocalizableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizableViewController.m; sourceTree = "<group>"; };
@@ -611,6 +616,7 @@
 		3D220CCF217DC19700E3799F /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				936DCCAE23B0CF9700E38DB5 /* label */,
 				CE7165A92380012400D476C3 /* modal */,
 				CE1CBAAE2322467900D3AE39 /* myfont */,
 				CE2EF18522D4444D00C09B22 /* brower */,
@@ -788,6 +794,16 @@
 				9321B19D23A26E8C0028B245 /* EncryptionViewController.xib */,
 			);
 			path = encryption;
+			sourceTree = "<group>";
+		};
+		936DCCAE23B0CF9700E38DB5 /* label */ = {
+			isa = PBXGroup;
+			children = (
+				936DCCAF23B0CFC300E38DB5 /* LabelViewController.h */,
+				936DCCB023B0CFC300E38DB5 /* LabelViewController.m */,
+				936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */,
+			);
+			path = label;
 			sourceTree = "<group>";
 		};
 		BBEEFED4BB651D1A5F8E0205 /* Pods */ = {
@@ -1697,6 +1713,7 @@
 				CE17E4ED23548C2A004A7AA2 /* iWiBi-orange-icon@3x.png in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
 				CE17E4C823547F3C004A7AA2 /* ChangeIconViewController.xib in Resources */,
+				936DCCB323B0CFC300E38DB5 /* LabelViewController.xib in Resources */,
 				CEE43F5D2331E0CA008FA43C /* MJRefreshViewController.xib in Resources */,
 				CE17E4E923548C2A004A7AA2 /* iWiBi-orange-two@3x.png in Resources */,
 				CE4187A3228E715600A3A8ED /* music_on.png in Resources */,
@@ -1865,6 +1882,7 @@
 				CEFA19C822648744002C245A /* DLFixedTabbarView.m in Sources */,
 				CE9420BF2248BB4C00C10CD0 /* CBToast.m in Sources */,
 				CE287AB62265B75D00B6C517 /* Book.m in Sources */,
+				936DCCB223B0CFC300E38DB5 /* LabelViewController.m in Sources */,
 				5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */,
 				CE287AB32265B74400B6C517 /* Author.m in Sources */,
 				CEFA19CA22648744002C245A /* DLCustomSlideView.m in Sources */,

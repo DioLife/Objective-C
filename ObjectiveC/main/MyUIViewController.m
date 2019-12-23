@@ -17,6 +17,7 @@
 #import "BrowerViewController.h"
 #import "MyFontViewController.h"
 #import "ModalViewController.h"
+#import "LabelViewController.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -29,6 +30,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    LabelViewController *labelVC = [LabelViewController new];
+    labelVC.title = @"UILabel";
+    [self.dataArray addObject:labelVC];
     
     ModalViewController *modalVC = [ModalViewController new];
     modalVC.title = @"模态跳转";
