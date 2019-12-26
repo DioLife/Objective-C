@@ -42,7 +42,7 @@
     [self.view addSubview:label2];
     NSMutableAttributedString *str2 = [[NSMutableAttributedString alloc] initWithString:textString];
     [str2 addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 3)];
-    [str2 addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:35] range:NSMakeRange(3, 7)];
+    [str2 addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:35] range:NSMakeRange(3, [textString length] - 3)];
     label2.attributedText = str2;
     
     //字体大小、颜色不统一，全部改变
