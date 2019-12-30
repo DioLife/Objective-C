@@ -14,8 +14,6 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <netinet/in.h>
 
-
-
 @interface JudgeNetworkingVC ()
 
 @property (nonatomic, strong) Reachability *reachability;
@@ -41,10 +39,6 @@
         mobile = [carrier carrierName];
     }
     NSLog(@"%@", mobile);
-}
-
-- (IBAction)inCcode:(UIButton *)sender {
-    
 }
 
 //SCNetworkReachabilityRef   注:Reachability就是封土装的SCNetworkReachabilityRef
@@ -75,8 +69,7 @@
     BOOL didRetrieveFlags = SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags);
     CFRelease(defaultRouteReachability);
     //如果不能获取连接标志，则不能连接网络，直接返回
-    if (!didRetrieveFlags)
-    {
+    if (!didRetrieveFlags) {
         NSLog(@"Error. Could not recover network reachability flags");
         return NO;
     }
@@ -107,59 +100,6 @@
         }
     }
     NSLog(@"%@", networkType);
-}
-
-//通过statusBar监控
-- (IBAction)fromStatusBar:(UIButton *)sender {
-    NSArray *children;
-    UIApplication *app = [UIApplication sharedApplication];
-    NSString *state = @"无网络";
-    //iPhone X
-    if ([[app valueForKeyPath:@"_statusBar"] isKindOfClass:NSClassFromString(@"UIStatusBar_Modern")]) {
-        children = [[[[app valueForKeyPath:@"_statusBar"] valueForKeyPath:@"_statusBar"] valueForKeyPath:@"foregroundView"] subviews];
-        for (UIView *view in children) {
-            for (id child in view.subviews) {
-                //wifi
-                if ([child isKindOfClass:NSClassFromString(@"_UIStatusBarWifiSignalView")]) {
-                    state = @"wifi";
-                }
-                //2G 3G 4G
-                if ([child isKindOfClass:NSClassFromString(@"_UIStatusBarStringView")]) {
-                    if ([[child valueForKey:@"_originalText"] containsString:@"G"]) {
-                        state = [child valueForKey:@"_originalText"];
-                    }
-                }
-            }
-        }
-    }else {
-        children = [[[app valueForKeyPath:@"_statusBar"] valueForKeyPath:@"foregroundView"] subviews];
-        for (id child in children) {
-            if ([child isKindOfClass:NSClassFromString(@"UIStatusBarDataNetworkItemView")]) {
-                //获取到状态栏
-                switch ([[child valueForKeyPath:@"dataNetworkType"] intValue]) {
-                    case 0:
-                        state = @"无网络";
-                        //无网模式
-                        break;
-                    case 1:
-                        state = @"2G";
-                        break;
-                    case 2:
-                        state = @"3G";
-                        break;
-                    case 3:
-                        state = @"4G";
-                        break;
-                    case 5:
-                        state = @"wifi";
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }
-    }
-    NSLog(@"网络状态:%@", state);
 }
 
 //启动网络监视
