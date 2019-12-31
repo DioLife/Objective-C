@@ -7,7 +7,7 @@
 //
 
 #import "ModalViewController.h"
-#import "EndModalViewController.h"
+#import "Modal1ViewController.h"
 
 @interface ModalViewController ()
 
@@ -21,7 +21,7 @@
 }
 
 - (IBAction)jump1Action:(UIButton *)sender {
-    EndModalViewController *vc = [[EndModalViewController alloc] initWithNibName:@"EndModalViewController" bundle:nil];
+    Modal1ViewController *vc = [[Modal1ViewController alloc] initWithNibName:@"Modal1ViewController" bundle:nil];
     vc.modalPresentationStyle = UIModalTransitionStyleCoverVertical;
     [self presentViewController:vc animated:YES completion:^{
         NSLog(@"跳转已执行");

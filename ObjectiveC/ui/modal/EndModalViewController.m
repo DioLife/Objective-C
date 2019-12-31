@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
 }
 
 - (IBAction)backAction:(UIButton *)sender {
@@ -25,5 +25,16 @@
     }];
 }
 
+- (IBAction)backFirstAction:(UIButton *)sender {
+    [self dismissModalStack];
+}
+
+- (void)dismissModalStack {
+    UIViewController *vc = self.presentingViewController;
+    while (vc.presentingViewController) {
+        vc = vc.presentingViewController;
+    }
+    [vc dismissViewControllerAnimated:YES completion:NULL];
+}
 
 @end
