@@ -9,6 +9,7 @@
 #import "MyUIViewController.h"
 #import "TableViewVC.h"
 #import "WKWebViewVC.h"
+#import "AVPlayerViewController.h"
 #import "MyVideoViewController.h"
 #import "MyCollectionViewVC.h"
 #import "NibCollectionViewVC.h"
@@ -66,6 +67,10 @@
     MyVideoViewController *videoVC = [MyVideoViewController new];
     videoVC.title = @"Video";
     [self.dataArray addObject:videoVC];
+    
+    AVPlayerViewController *audioVC = [AVPlayerViewController new];
+    audioVC.title = @"音频播放";
+    [self.dataArray addObject:audioVC];
     
     WKWebViewVC *wk = [WKWebViewVC new];
     wk.title = @"WKWebView";

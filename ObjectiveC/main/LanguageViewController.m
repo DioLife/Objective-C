@@ -9,7 +9,6 @@
 #import "LanguageViewController.h"
 #import "LazyloadViewController.h"
 #import "ShowSingletonViewController.h"
-#import "AVPlayerViewController.h"
 #import "GCDViewController.h"
 #import "DelegateViewController.h"
 #import "DeviceViewController.h"
@@ -57,10 +56,6 @@
     GCDViewController *GCDVC = [GCDViewController new];
     GCDVC.title = @"GCD";
     [self.dataArray addObject:GCDVC];
-    
-    AVPlayerViewController *audioVC = [AVPlayerViewController new];
-    audioVC.title = @"音频播放";
-    [self.dataArray addObject:audioVC];
     
     ShowSingletonViewController *showSingletonVC = [ShowSingletonViewController new];
     showSingletonVC.title = @"单例";
