@@ -47,6 +47,8 @@
 		9321B1A223A270A80028B245 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B1A123A270A80028B245 /* RSA.m */; };
 		936DCCB223B0CFC300E38DB5 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936DCCB023B0CFC300E38DB5 /* LabelViewController.m */; };
 		936DCCB323B0CFC300E38DB5 /* LabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */; };
+		93EFF45C23BB3F1300A4BC67 /* Modal1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EFF45A23BB3F1300A4BC67 /* Modal1ViewController.m */; };
+		93EFF45D23BB3F1300A4BC67 /* Modal1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EFF45B23BB3F1300A4BC67 /* Modal1ViewController.xib */; };
 		CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE027747225075C800BA7A88 /* LocalizableViewController.m */; };
 		CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE027748225075C800BA7A88 /* LocalizableViewController.xib */; };
 		CE02774F2250799E00BA7A88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0277512250799E00BA7A88 /* InfoPlist.strings */; };
@@ -281,6 +283,9 @@
 		936DCCAF23B0CFC300E38DB5 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
 		936DCCB023B0CFC300E38DB5 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 		936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelViewController.xib; sourceTree = "<group>"; };
+		93EFF45923BB3F1300A4BC67 /* Modal1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modal1ViewController.h; sourceTree = "<group>"; };
+		93EFF45A23BB3F1300A4BC67 /* Modal1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Modal1ViewController.m; sourceTree = "<group>"; };
+		93EFF45B23BB3F1300A4BC67 /* Modal1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Modal1ViewController.xib; sourceTree = "<group>"; };
 		ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE027746225075C800BA7A88 /* LocalizableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizableViewController.h; sourceTree = "<group>"; };
 		CE027747225075C800BA7A88 /* LocalizableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizableViewController.m; sourceTree = "<group>"; };
@@ -606,7 +611,6 @@
 				CECDACE52271CAC40020A98F /* device */,
 				CE287AF72265E75B00B6C517 /* delegate */,
 				CE3B394F224CE8F800CF5E61 /* GCD */,
-				CE7386D5224108F4004C7239 /* Audio */,
 				CE80B8DB21B3FE4300E4748F /* Singleton */,
 				3DB19AFB217DC4AB00CD9E24 /* lazyload */,
 			);
@@ -623,6 +627,7 @@
 				CED3B95B22674A3C008988CE /* pickimage */,
 				5FF96AD42226E20C0094DF79 /* view */,
 				5FF96AC12226D0630094DF79 /* collectionview */,
+				CE7386D5224108F4004C7239 /* Audio */,
 				CE3D1E0A21A7F1B800015F2B /* video */,
 				3DB19B05217DC59600CD9E24 /* tableview */,
 				3DB19B08217DC59600CD9E24 /* webview */,
@@ -1217,6 +1222,9 @@
 				CE7165B2238001FD00D476C3 /* ModalViewController.h */,
 				CE7165B3238001FD00D476C3 /* ModalViewController.m */,
 				CE7165B4238001FD00D476C3 /* ModalViewController.xib */,
+				93EFF45923BB3F1300A4BC67 /* Modal1ViewController.h */,
+				93EFF45A23BB3F1300A4BC67 /* Modal1ViewController.m */,
+				93EFF45B23BB3F1300A4BC67 /* Modal1ViewController.xib */,
 				CE7165AD2380016C00D476C3 /* EndModalViewController.h */,
 				CE7165AE2380016C00D476C3 /* EndModalViewController.m */,
 				CE7165AF2380016C00D476C3 /* EndModalViewController.xib */,
@@ -1728,6 +1736,7 @@
 				CE287AEB2265D0DB00B6C517 /* test3.json in Resources */,
 				CE287AB82265BC8D00B6C517 /* test.json in Resources */,
 				CEFA19DD22657598002C245A /* ParseViewController.xib in Resources */,
+				93EFF45D23BB3F1300A4BC67 /* Modal1ViewController.xib in Resources */,
 				CE7386EE2242508B004C7239 /* back02.mp3 in Resources */,
 				CE7D203B2259E4F700DEE23E /* water-loading.json in Resources */,
 				CEFA19E0226576D8002C245A /* message.json in Resources */,
@@ -1850,6 +1859,7 @@
 				CE80B8E121B4002700E4748F /* ShowSingletonViewController.m in Sources */,
 				CEE43DE12330F306008FA43C /* CHPerson.m in Sources */,
 				CE40E2CE221BDB7E0072CF9E /* HQFlowView.m in Sources */,
+				93EFF45C23BB3F1300A4BC67 /* Modal1ViewController.m in Sources */,
 				CE287AE92265CEB500B6C517 /* YYEatModel.m in Sources */,
 				CE287AE62265CE9900B6C517 /* YYPersonModel2.m in Sources */,
 				5FF96ADF2226E2670094DF79 /* MyView.m in Sources */,
@@ -2097,7 +2107,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2U94TLD4SJ;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;
@@ -2120,7 +2130,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2U94TLD4SJ;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;
