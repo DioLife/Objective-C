@@ -18,7 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+}
 
+
+- (IBAction)otherApp:(UIButton *)sender {
+    NSString *urlStr = @"weixin://scanqrcode";
+    NSURL *url = [NSURL URLWithString:urlStr];
+    UIApplication *application = [UIApplication sharedApplication];
+    if([application canOpenURL:url]){
+        NSDictionary *dict = [NSDictionary dictionary];
+        [[UIApplication sharedApplication] openURL:url options:dict completionHandler:^(BOOL success) {
+            NSLog(@"跳转 %d", success);
+        }];
+    }else {
+        NSLog(@"没安装对应的App: %@", urlStr);
+    }
 }
 
 //跳转到AppStore所在App的页面
@@ -123,9 +138,9 @@
     NSData *imageData = UIImagePNGRepresentation(image);
     [mailCompose addAttachmentData:imageData mimeType:@"png" fileName:@"photo.png"];
     
-//    NSString *file = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"pdf"];
-//    NSData *pdf = [NSData dataWithContentsOfFile:file];
-//    [mailCompose addAttachmentData:pdf mimeType:@"" fileName:@"pdf文件"];
+    //    NSString *file = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"pdf"];
+    //    NSData *pdf = [NSData dataWithContentsOfFile:file];
+    //    [mailCompose addAttachmentData:pdf mimeType:@"" fileName:@"pdf文件"];
     
     // 弹出邮件发送视图
     [self presentViewController:mailCompose animated:YES completion:nil];

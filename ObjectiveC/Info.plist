@@ -74,6 +74,16 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>scanqrcode</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>weixin</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLIconFile</key>
 			<string></string>
 			<key>CFBundleURLName</key>
@@ -128,5 +138,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Information Property List</key>
+	<dict>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>weixin</string>
+		</array>
+	</dict>
 </dict>
 </plist>
