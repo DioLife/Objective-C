@@ -6,14 +6,14 @@
 //  Copyright © 2019 William. All rights reserved.
 //
 
-#import "NetworkViewController.h"
+#import "NSURLSessionVC.h"
 #import <CommonCrypto/CommonDigest.h>
 
-@interface NetworkViewController ()
+@interface NSURLSessionVC ()
 
 @end
 
-@implementation NetworkViewController
+@implementation NSURLSessionVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

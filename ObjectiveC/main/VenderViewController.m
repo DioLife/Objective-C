@@ -6,7 +6,7 @@
 //  Copyright © 2018年 William. All rights reserved.
 //
 
-#import "SDKViewController.h"
+#import "VenderViewController.h"
 #import "HUDViewController.h"
 #import "MasonryVC.h"
 #import "SDViewController.h"
@@ -21,14 +21,14 @@
 #import "DLSlideViewVC.h"
 #import "MJRefreshViewController.h"
 
-@interface SDKViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface VenderViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 @property (nonatomic,strong) NSMutableArray *dataArray;
 
 @end
 
-@implementation SDKViewController
+@implementation VenderViewController
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];

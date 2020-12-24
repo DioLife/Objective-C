@@ -12,7 +12,7 @@
 #import "GCDViewController.h"
 #import "DelegateViewController.h"
 #import "DeviceViewController.h"
-#import "NetworkViewController.h"
+#import "NSURLSessionVC.h"
 #import "PolymorphismViewController.h"
 #import "KVOViewController.h"
 #import "BlockViewController.h"
@@ -41,7 +41,7 @@
     polyVC.title = @"多态";
     [self.dataArray addObject:polyVC];
     
-    NetworkViewController *networkVC = [NetworkViewController new];
+    NSURLSessionVC *networkVC = [NSURLSessionVC new];
     networkVC.title = @"原生网络请求";
     [self.dataArray addObject:networkVC];
     

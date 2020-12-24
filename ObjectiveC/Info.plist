@@ -96,6 +96,13 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Information Property List</key>
+	<dict>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>weixin</string>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -138,12 +145,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>Information Property List</key>
-	<dict>
-		<key>LSApplicationQueriesSchemes</key>
-		<array>
-			<string>weixin</string>
-		</array>
-	</dict>
 </dict>
 </plist>

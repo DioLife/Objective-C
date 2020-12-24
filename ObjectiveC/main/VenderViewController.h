@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SDKViewController : UIViewController
+@interface VenderViewController : UIViewController
 
 @end

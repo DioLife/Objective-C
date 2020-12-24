@@ -10,7 +10,7 @@
 #import "MyNavgationController.h"
 #import "LanguageViewController.h"
 #import "MyUIViewController.h"
-#import "SDKViewController.h"
+#import "VenderViewController.h"
 #import "OtherViewController.h"
 
 @interface MyTabBarController ()
@@ -25,7 +25,7 @@
     // 添加子控制器
     [self addOneViewController:[[LanguageViewController alloc] init] image:@"tab_home_normal" selectedImage:@"tab_home_50" title:@"language"];
     [self addOneViewController:[[MyUIViewController alloc] init] image:@"tab_c2c_normal" selectedImage:@"tab_c2c_50" title:@"ui"];
-    [self addOneViewController:[[SDKViewController alloc] init] image:@"tab_team_normal" selectedImage:@"tab_team_50" title:@"sdk"];
+    [self addOneViewController:[[VenderViewController alloc] init] image:@"tab_team_normal" selectedImage:@"tab_team_50" title:@"vender"];
     [self addOneViewController:[[OtherViewController alloc] init] image:@"tab_mine_normal" selectedImage:@"tab_mine_50" title:@"other"];
 }
 

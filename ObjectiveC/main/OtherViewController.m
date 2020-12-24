@@ -18,7 +18,7 @@
 #import "ParseViewController.h"
 #import "SerializeViewController.h"
 #import "ChangeIconViewController.h"
-#import "EncryptionViewController.h"
+#import "CryptoViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -32,7 +32,7 @@
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
     
-    EncryptionViewController *encryptionVC = [EncryptionViewController new];
+    CryptoViewController *encryptionVC = [CryptoViewController new];
     encryptionVC.title = @"加密与解密";
     [self.dataArray addObject:encryptionVC];
     

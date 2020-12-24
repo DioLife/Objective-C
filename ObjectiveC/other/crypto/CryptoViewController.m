@@ -6,11 +6,11 @@
 //  Copyright © 2019 William. All rights reserved.
 //
 
-#import "EncryptionViewController.h"
-#import <CommonCrypto/CommonDigest.h>
+#import "CryptoViewController.h"
+#import "CryptoUtil.h"
 #import "RSA.h"
 
-@interface EncryptionViewController ()
+@interface CryptoViewController ()
 
 @property(nonatomic, copy)NSString *originString;//待加密字符串
 @property(nonatomic, copy)NSString *publickKey;//公钥
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation EncryptionViewController
+@implementation CryptoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,33 +48,14 @@
 }
 
 - (IBAction)MD5encryption:(UIButton *)sender {
-    NSString *result = [self md5:self.originString];
+    NSString *result = [CryptoUtil md5:self.originString];
     NSLog(@"MD5: %@", result);
 }
 
 - (IBAction)base64encryption:(UIButton *)sender {
-    NSString *result = [self base64EncodeString:self.originString];
+    NSString *result = [CryptoUtil base64EncodeString:self.originString];
     NSLog(@"Base64: %@", result);
 }
 
-/************************* 加密代码 ****************************/
-//对string进行base64加密
--(NSString *)base64EncodeString:(NSString *)string {
-    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    return [data base64EncodedStringWithOptions:0];
-}
-//对string进行md5加密
-- (NSString *)md5:(NSString *)Getmd5string {
-    const char *cStr = [Getmd5string UTF8String];
-    unsigned char result[16];
-    CC_MD5(cStr, (CC_LONG)strlen(cStr), result);
-    return [NSString stringWithFormat:
-            @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
-            result[0], result[1], result[2], result[3],
-            result[4], result[5], result[6], result[7],
-            result[8], result[9], result[10], result[11],
-            result[12], result[13], result[14], result[15]
-            ];
-}
 
 @end
