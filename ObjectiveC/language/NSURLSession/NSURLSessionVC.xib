@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,57 +19,60 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gse-i7-NLZ">
-                    <rect key="frame" x="120" y="15" width="174" height="40"/>
-                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lhj-vZ-HMM">
+                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gse-i7-NLZ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="42.5"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="GET"/>
+                            <connections>
+                                <action selector="getAction:" destination="-1" eventType="touchUpInside" id="jdC-4q-v5y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amW-CM-Yjn">
+                            <rect key="frame" x="0.0" y="52.5" width="414" height="42.5"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="POST"/>
+                            <connections>
+                                <action selector="postAction:" destination="-1" eventType="touchUpInside" id="0V8-KQ-Piu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjd-3n-inr">
+                            <rect key="frame" x="0.0" y="105" width="414" height="42.5"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="form-data"/>
+                            <connections>
+                                <action selector="formdataAction:" destination="-1" eventType="touchUpInside" id="Gph-xl-Tqq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8a-ck-zxN">
+                            <rect key="frame" x="0.0" y="157.5" width="414" height="42.5"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="Https"/>
+                            <connections>
+                                <action selector="httpsAction:" destination="-1" eventType="touchUpInside" id="uiz-VL-qkA"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="ImA-LC-ML4"/>
+                        <constraint firstAttribute="height" constant="200" id="Ejg-oB-kkW"/>
                     </constraints>
-                    <state key="normal" title="GET"/>
-                    <connections>
-                        <action selector="getAction:" destination="-1" eventType="touchUpInside" id="jdC-4q-v5y"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amW-CM-Yjn">
-                    <rect key="frame" x="120" y="85" width="174" height="40"/>
-                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="ciL-vD-oeM"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="eS2-eG-HbE"/>
-                    </constraints>
-                    <state key="normal" title="POST"/>
-                    <connections>
-                        <action selector="postAction:" destination="-1" eventType="touchUpInside" id="Jla-lL-r0y"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjd-3n-inr">
-                    <rect key="frame" x="120" y="152" width="174" height="40"/>
-                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="7jF-eS-Mfz"/>
-                        <constraint firstAttribute="height" constant="40" id="KFI-XT-9bt"/>
-                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="hwz-G4-w7o"/>
-                    </constraints>
-                    <state key="normal" title="post example"/>
-                    <connections>
-                        <action selector="postExample:" destination="-1" eventType="touchUpInside" id="XBl-l5-EAn"/>
-                    </connections>
-                </button>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="amW-CM-Yjn" firstAttribute="top" secondItem="Gse-i7-NLZ" secondAttribute="bottom" constant="30" id="5Nh-uC-sxI"/>
-                <constraint firstItem="Gse-i7-NLZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="120" id="7Jf-Hu-23U"/>
-                <constraint firstItem="amW-CM-Yjn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="120" id="krs-3o-d5d"/>
-                <constraint firstItem="Gse-i7-NLZ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="15" id="lcu-QB-3GN"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cjd-3n-inr" secondAttribute="trailing" constant="120" id="mvf-Wh-nbU"/>
-                <constraint firstItem="cjd-3n-inr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="120" id="tF3-ey-d99"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="amW-CM-Yjn" secondAttribute="trailing" constant="120" id="uBG-TH-Qig"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Gse-i7-NLZ" secondAttribute="trailing" constant="120" id="uk4-ew-ph8"/>
-                <constraint firstItem="cjd-3n-inr" firstAttribute="top" secondItem="amW-CM-Yjn" secondAttribute="bottom" constant="27" id="wzG-Cz-va9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Lhj-vZ-HMM" secondAttribute="trailing" id="0f2-cC-gf0"/>
+                <constraint firstItem="Lhj-vZ-HMM" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="7Sx-ys-idq"/>
+                <constraint firstItem="Lhj-vZ-HMM" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ZfY-V8-HrU"/>
             </constraints>
             <point key="canvasLocation" x="138" y="64"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

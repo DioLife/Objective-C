@@ -22,11 +22,16 @@
 - (IBAction)delay:(UIButton *)sender {
     NSInteger time = 3;
     dispatch_queue_t mainQueue = dispatch_get_main_queue();
-    //在主线程执行
+    //在主线程延迟执行
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, time * NSEC_PER_SEC), mainQueue, ^{
         NSLog(@"在主线程执行: 3秒后执行这个方法");
     });
-
+    
+    //在主线程中异步、立即执行,一般用在子线程中任务完成更新UI
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"回调主线程");
+    });
+    
     dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
     //在子线程执行
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, time * NSEC_PER_SEC), globalQueue, ^{
@@ -177,9 +182,9 @@
     });
     /*
      dispatch_group_wait 返回0表示: 不超时所有任务完成
-                          其他表示: 已经超时任务还在进行
+     其他表示: 已经超时任务还在进行
      **/
-//    long result = dispatch_group_wait(group, DISPATCH_TIME_FOREVER); //表示永久等待下去
+    //    long result = dispatch_group_wait(group, DISPATCH_TIME_FOREVER); //表示永久等待下去
     long result = dispatch_group_wait(group, dispatch_time(DISPATCH_TIME_NOW, 5 * NSEC_PER_SEC));
     if (result==0) {
         NSLog(@"all tasks has finished");

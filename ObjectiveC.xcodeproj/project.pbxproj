@@ -31,8 +31,9 @@
 		3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB19B18217DC71E00CD9E24 /* HUDViewController.xib */; };
 		3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19B1C217DC71E00CD9E24 /* SDViewController.m */; };
 		5F2F0F2B2592691E00197207 /* CryptoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0F2A2592691E00197207 /* CryptoUtil.m */; };
-		5FE897F52593648B0020059D /* ObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE897F42593648B0020059D /* ObjectiveCUITests.m */; };
-		5FE89805259364950020059D /* ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE89804259364950020059D /* ObjectiveCTests.m */; };
+		5F80D1EB25A8300E00A63227 /* cert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5F80D1EA25A8300E00A63227 /* cert.pem */; };
+		5F80D1F125A83D4100A63227 /* cert.cer in Resources */ = {isa = PBXBuildFile; fileRef = 5F80D1F025A83D4000A63227 /* cert.cer */; };
+		5F9921732597B082009F938C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9921722597B081009F938C /* SceneDelegate.m */; };
 		5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AC42226D0CB0094DF79 /* MyCollectionViewVC.m */; };
 		5FF96AC82226D49C0094DF79 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AC72226D49C0094DF79 /* MyCollectionViewCell.m */; };
 		5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96ACB2226DBC70094DF79 /* NibCollectionViewVC.m */; };
@@ -105,8 +106,6 @@
 		CE2EF18A22D4446200C09B22 /* BrowerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2EF18822D4446200C09B22 /* BrowerViewController.xib */; };
 		CE34E748228BC3520042C323 /* NSURLSessionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34E746228BC3520042C323 /* NSURLSessionVC.m */; };
 		CE34E749228BC3520042C323 /* NSURLSessionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE34E747228BC3520042C323 /* NSURLSessionVC.xib */; };
-		CE34E74D228BE1D80042C323 /* body.png in Resources */ = {isa = PBXBuildFile; fileRef = CE34E74B228BE1D70042C323 /* body.png */; };
-		CE34E74E228BE1D80042C323 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = CE34E74C228BE1D70042C323 /* header.png */; };
 		CE34E752228BF5820042C323 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34E750228BF5820042C323 /* Reachability.m */; };
 		CE389CE8223DF3440099BD35 /* ClearCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE389CE6223DF3440099BD35 /* ClearCacheViewController.m */; };
 		CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE389CE7223DF3440099BD35 /* ClearCacheViewController.xib */; };
@@ -218,23 +217,6 @@
 		F045CC4C41AE49B78FE92A83 /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7EB9D31CE439C73CED966 /* libPods-ObjectiveC.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5FE897F72593648B0020059D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D220CAC217DBF8E00E3799F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D220CB3217DBF8F00E3799F;
-			remoteInfo = ObjectiveC;
-		};
-		5FE89807259364950020059D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D220CAC217DBF8E00E3799F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D220CB3217DBF8F00E3799F;
-			remoteInfo = ObjectiveC;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0E94860C7857D9655B0E2759 /* Pods-ObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
 		3D220CB4217DBF8F00E3799F /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,12 +258,10 @@
 		3DB19B1C217DC71E00CD9E24 /* SDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
 		5F2F0F292592691E00197207 /* CryptoUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoUtil.h; sourceTree = "<group>"; };
 		5F2F0F2A2592691E00197207 /* CryptoUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoUtil.m; sourceTree = "<group>"; };
-		5FE897F22593648B0020059D /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FE897F42593648B0020059D /* ObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCUITests.m; sourceTree = "<group>"; };
-		5FE897F62593648B0020059D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FE89802259364950020059D /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FE89804259364950020059D /* ObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTests.m; sourceTree = "<group>"; };
-		5FE89806259364950020059D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F80D1EA25A8300E00A63227 /* cert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cert.pem; sourceTree = "<group>"; };
+		5F80D1F025A83D4000A63227 /* cert.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.cer; sourceTree = "<group>"; };
+		5F9921712597B081009F938C /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		5F9921722597B081009F938C /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		5FF96AC32226D0CB0094DF79 /* MyCollectionViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewVC.h; sourceTree = "<group>"; };
 		5FF96AC42226D0CB0094DF79 /* MyCollectionViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewVC.m; sourceTree = "<group>"; };
 		5FF96AC62226D49C0094DF79 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
@@ -399,8 +379,6 @@
 		CE34E745228BC3520042C323 /* NSURLSessionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLSessionVC.h; sourceTree = "<group>"; };
 		CE34E746228BC3520042C323 /* NSURLSessionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionVC.m; sourceTree = "<group>"; };
 		CE34E747228BC3520042C323 /* NSURLSessionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSURLSessionVC.xib; sourceTree = "<group>"; };
-		CE34E74B228BE1D70042C323 /* body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body.png; sourceTree = "<group>"; };
-		CE34E74C228BE1D70042C323 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		CE34E750228BF5820042C323 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CE34E751228BF5820042C323 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CE389CE5223DF3440099BD35 /* ClearCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearCacheViewController.h; sourceTree = "<group>"; };
@@ -588,20 +566,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FE897EF2593648B0020059D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5FE897FF259364950020059D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -609,8 +573,6 @@
 			isa = PBXGroup;
 			children = (
 				3D220CB6217DBF8F00E3799F /* ObjectiveC */,
-				5FE897F32593648B0020059D /* ObjectiveCUITests */,
-				5FE89803259364950020059D /* ObjectiveCTests */,
 				3D220CB5217DBF8F00E3799F /* Products */,
 				BBEEFED4BB651D1A5F8E0205 /* Pods */,
 				D6A82ECBDE9E9FEF0A3FDAA7 /* Frameworks */,
@@ -621,8 +583,6 @@
 			isa = PBXGroup;
 			children = (
 				3D220CB4217DBF8F00E3799F /* ObjectiveC.app */,
-				5FE897F22593648B0020059D /* ObjectiveCUITests.xctest */,
-				5FE89802259364950020059D /* ObjectiveCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -767,22 +727,13 @@
 			path = sdautolayout;
 			sourceTree = "<group>";
 		};
-		5FE897F32593648B0020059D /* ObjectiveCUITests */ = {
+		5F80D1E925A82FF400A63227 /* cer */ = {
 			isa = PBXGroup;
 			children = (
-				5FE897F42593648B0020059D /* ObjectiveCUITests.m */,
-				5FE897F62593648B0020059D /* Info.plist */,
+				5F80D1F025A83D4000A63227 /* cert.cer */,
+				5F80D1EA25A8300E00A63227 /* cert.pem */,
 			);
-			path = ObjectiveCUITests;
-			sourceTree = "<group>";
-		};
-		5FE89803259364950020059D /* ObjectiveCTests */ = {
-			isa = PBXGroup;
-			children = (
-				5FE89804259364950020059D /* ObjectiveCTests.m */,
-				5FE89806259364950020059D /* Info.plist */,
-			);
-			path = ObjectiveCTests;
+			path = cer;
 			sourceTree = "<group>";
 		};
 		5FF96AC12226D0630094DF79 /* collectionview */ = {
@@ -1135,21 +1086,11 @@
 		CE34E744228BC32F0042C323 /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				CE34E74A228BE1D70042C323 /* show */,
 				CE34E745228BC3520042C323 /* NSURLSessionVC.h */,
 				CE34E746228BC3520042C323 /* NSURLSessionVC.m */,
 				CE34E747228BC3520042C323 /* NSURLSessionVC.xib */,
 			);
 			path = NSURLSession;
-			sourceTree = "<group>";
-		};
-		CE34E74A228BE1D70042C323 /* show */ = {
-			isa = PBXGroup;
-			children = (
-				CE34E74B228BE1D70042C323 /* body.png */,
-				CE34E74C228BE1D70042C323 /* header.png */,
-			);
-			path = show;
 			sourceTree = "<group>";
 		};
 		CE34E74F228BF5660042C323 /* Reachability */ = {
@@ -1467,6 +1408,8 @@
 		CECFB03521D38BD200CB737F /* main */ = {
 			isa = PBXGroup;
 			children = (
+				5F9921712597B081009F938C /* SceneDelegate.h */,
+				5F9921722597B081009F938C /* SceneDelegate.m */,
 				3D220CB7217DBF8F00E3799F /* AppDelegate.h */,
 				3D220CB8217DBF8F00E3799F /* AppDelegate.m */,
 				3D220CF2217DC23B00E3799F /* MyNavgationController.h */,
@@ -1492,6 +1435,7 @@
 		CECFB03621D38BEC00CB737F /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				5F80D1E925A82FF400A63227 /* cer */,
 				CE1CBAB2232246C900D3AE39 /* font */,
 				CE7D20352259E4E700DEE23E /* json */,
 				CE7386E822425068004C7239 /* sound */,
@@ -1722,42 +1666,6 @@
 			productReference = 3D220CB4217DBF8F00E3799F /* ObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5FE897F12593648B0020059D /* ObjectiveCUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5FE897F92593648B0020059D /* Build configuration list for PBXNativeTarget "ObjectiveCUITests" */;
-			buildPhases = (
-				5FE897EE2593648B0020059D /* Sources */,
-				5FE897EF2593648B0020059D /* Frameworks */,
-				5FE897F02593648B0020059D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5FE897F82593648B0020059D /* PBXTargetDependency */,
-			);
-			name = ObjectiveCUITests;
-			productName = ObjectiveCUITests;
-			productReference = 5FE897F22593648B0020059D /* ObjectiveCUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		5FE89801259364950020059D /* ObjectiveCTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5FE89809259364950020059D /* Build configuration list for PBXNativeTarget "ObjectiveCTests" */;
-			buildPhases = (
-				5FE897FE259364950020059D /* Sources */,
-				5FE897FF259364950020059D /* Frameworks */,
-				5FE89800259364950020059D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5FE89808259364950020059D /* PBXTargetDependency */,
-			);
-			name = ObjectiveCTests;
-			productName = ObjectiveCTests;
-			productReference = 5FE89802259364950020059D /* ObjectiveCTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1778,14 +1686,6 @@
 							};
 						};
 					};
-					5FE897F12593648B0020059D = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 3D220CB3217DBF8F00E3799F;
-					};
-					5FE89801259364950020059D = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 3D220CB3217DBF8F00E3799F;
-					};
 				};
 			};
 			buildConfigurationList = 3D220CAF217DBF8E00E3799F /* Build configuration list for PBXProject "ObjectiveC" */;
@@ -1803,8 +1703,6 @@
 			projectRoot = "";
 			targets = (
 				3D220CB3217DBF8F00E3799F /* ObjectiveC */,
-				5FE897F12593648B0020059D /* ObjectiveCUITests */,
-				5FE89801259364950020059D /* ObjectiveCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1847,6 +1745,7 @@
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
 				CE4187A4228E715600A3A8ED /* music_off.png in Resources */,
+				5F80D1F125A83D4100A63227 /* cert.cer in Resources */,
 				9321B19F23A26E8C0028B245 /* CryptoViewController.xib in Resources */,
 				CE757CCC237E6EC20039C29D /* miaowu.ttf in Resources */,
 				CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */,
@@ -1872,10 +1771,9 @@
 				CED3B95122670A61008988CE /* SerializeViewController.xib in Resources */,
 				CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */,
 				5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */,
+				5F80D1EB25A8300E00A63227 /* cert.pem in Resources */,
 				CE7165B82380119700D476C3 /* LaunchScreen.storyboard in Resources */,
-				CE34E74E228BE1D80042C323 /* header.png in Resources */,
 				CE757CCB237E6EC20039C29D /* jianzhi.ttf in Resources */,
-				CE34E74D228BE1D80042C323 /* body.png in Resources */,
 				CE7386F22242593A004C7239 /* jump_maze.wav in Resources */,
 				CE7D1D402257453300DEE23E /* shot.wav in Resources */,
 				CEFA19D122648769002C245A /* DLSlideViewVC.xib in Resources */,
@@ -1906,20 +1804,6 @@
 				CED3B96022674A52008988CE /* PickimageViewController.xib in Resources */,
 				CE17E4EE23548C2A004A7AA2 /* iWiBi-orange-icon-light@3x.png in Resources */,
 				CE17E4F123548C2A004A7AA2 /* iWiBi-orange-icon-light@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5FE897F02593648B0020059D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5FE89800259364950020059D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1969,6 +1853,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */,
+				5F9921732597B082009F938C /* SceneDelegate.m in Sources */,
 				CE193C03222BB61B002F670B /* KKColorCell.m in Sources */,
 				CED3B95422670E2A008988CE /* Person.m in Sources */,
 				CEE43DDE2330F254008FA43C /* PolymorphismViewController.m in Sources */,
@@ -2083,36 +1968,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FE897EE2593648B0020059D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5FE897F52593648B0020059D /* ObjectiveCUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5FE897FE259364950020059D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5FE89805259364950020059D /* ObjectiveCTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5FE897F82593648B0020059D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D220CB3217DBF8F00E3799F /* ObjectiveC */;
-			targetProxy = 5FE897F72593648B0020059D /* PBXContainerItemProxy */;
-		};
-		5FE89808259364950020059D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D220CB3217DBF8F00E3799F /* ObjectiveC */;
-			targetProxy = 5FE89807259364950020059D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE0277512250799E00BA7A88 /* InfoPlist.strings */ = {
@@ -2255,7 +2111,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZV6AT693V;
+				DEVELOPMENT_TEAM = 37J2F4W4WM;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;
@@ -2265,7 +2121,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dio.studyObjC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.studyObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2278,7 +2134,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZV6AT693V;
+				DEVELOPMENT_TEAM = 37J2F4W4WM;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveC/utils/PrefixHeader.pch;
@@ -2288,97 +2144,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dio.studyObjC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.studyObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		5FE897FA2593648B0020059D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZV6AT693V;
-				INFOPLIST_FILE = ObjectiveCUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = myself.ObjectiveCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ObjectiveC;
-			};
-			name = Debug;
-		};
-		5FE897FB2593648B0020059D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZV6AT693V;
-				INFOPLIST_FILE = ObjectiveCUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = myself.ObjectiveCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ObjectiveC;
-			};
-			name = Release;
-		};
-		5FE8980A259364950020059D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZV6AT693V;
-				INFOPLIST_FILE = ObjectiveCTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = myself.ObjectiveCTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveC.app/ObjectiveC";
-			};
-			name = Debug;
-		};
-		5FE8980B259364950020059D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZV6AT693V;
-				INFOPLIST_FILE = ObjectiveCTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = myself.ObjectiveCTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveC.app/ObjectiveC";
 			};
 			name = Release;
 		};
@@ -2399,24 +2167,6 @@
 			buildConfigurations = (
 				3D220CCB217DBF9000E3799F /* Debug */,
 				3D220CCC217DBF9000E3799F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5FE897F92593648B0020059D /* Build configuration list for PBXNativeTarget "ObjectiveCUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5FE897FA2593648B0020059D /* Debug */,
-				5FE897FB2593648B0020059D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5FE89809259364950020059D /* Build configuration list for PBXNativeTarget "ObjectiveCTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5FE8980A259364950020059D /* Debug */,
-				5FE8980B259364950020059D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
